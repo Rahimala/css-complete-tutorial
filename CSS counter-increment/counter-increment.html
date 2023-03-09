@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>counter-increment </title>
+
+    <style>
+        body {
+            /* "my-counter" to 0 */
+            counter-reset: my-counter;
+        }
+
+        h2::before {
+            /* "my-counter" by 1 */
+            counter-increment: my-counter;
+            content: "Section " counter(my-counter) ". ";
+        }
+    </style>
+</head>
+
+<body>
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>JavaScript Tutorial</h2>
+    <h2>PHP Tutorial</h2>
+
+</body>
+
+</html>
+<!-- The counter-increment property in CSS is used to increase the value of a counter, which can be used to automatically number elements such as lists or -->
+<!-- counter-name: the name of the counter variable you want to increase.
+increment: how much you want to increase the counter variable by, which is a positive or negative number. The default value is 1. -->
+

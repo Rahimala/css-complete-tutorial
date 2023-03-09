@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            border: 2px solid lime;
+            border-spacing: 10px;
+            font-family: sans-serif;
+        }
+
+        table tr {
+            background-color: #cccccc;
+        }
+
+        /* Selects the last three elements */
+
+        tr:nth-last-child(-n+3) {
+            background-color: #8EBF41;
+        }
+
+        table tr td {
+            padding: 10px;
+        }
+
+        /* Selects every element starting from the second to last item */
+
+        tr:nth-last-child(n+2) {
+            color: red;
+        }
+
+        /* Select only the last second element */
+
+        tr:nth-last-child(n+2){
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>First row</td>
+            </tr>
+            <tr>
+                <td>Second row</td>
+            </tr>
+            <tr>
+                <td>Third row</td>
+            </tr>
+            <tr>
+                <td>Fourth row</td>
+            </tr>
+            <tr>
+                <td>Fifth row</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

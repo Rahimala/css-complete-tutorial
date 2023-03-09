@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-collapse</title>
+
+    <style>
+        thead {
+            background-color: aqua;
+        }
+
+        table {
+            /* collapse,  */
+            border-collapse: separate;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Heading</th>
+                <th>Heading</th>
+                <th>Heading</th>
+                <th>Heading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>border collapse</td>
+                <td>border collapse</td>
+                <td>border collapse</td>
+                <td>border collapse</td>
+
+            </tr>
+            <tr>
+                <td>border collapse</td>
+                <td>border collapse</td>
+                <td>border collapse</td>
+                <td>border collapse</td>
+
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+
+<!-- 
+    The CSS border-collapse property is used to specify how the borders of a table should be displayed. The possible values for this property are:
+
+separate: The default value, which displays table borders as separate lines for each cell.
+collapse: Borders are collapsed into a single border for the entire table. This can make the table look more compact and visually cohesive.
+
+This will collapse the borders of the table and create a single border for the entire table.
+ -->

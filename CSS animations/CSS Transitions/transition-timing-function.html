@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-timing-function</title>
+
+    <style>
+        .box {
+            border-radius: 5px;
+            height: 200px;
+            width: 200px;
+            background-color: tomato;
+            transition-duration: 1s;
+            transition-timing-function:ease-in;
+        }
+
+        .box:hover {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
+<!-- The transition-timing-function CSS property sets the speed curve of a CSS transition effect. It allows you to specify the speed of a transition over its duration. The transition timing function can be set using keywords (e.g. "linear", "ease", "ease-in", "ease-out", "ease-in-out") or a cubic Bézier curve using control points (e.g. "cubic-bezier(0.25, 0.1, 0.25, 1)"). The default value is "ease". -->
+
+<!-- The transition-timing-function property controls the speed curve of the transition. It can take either of these values – -->

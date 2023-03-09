@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arget psudo-class to create a tabbed menu:</title>
+
+    <style>
+        .tab-menu div {
+            display: none;
+            background-color: #f5f5f5;
+            padding: 0 20px 20px;
+        }
+
+        .tab-menu a {
+            text-decoration: none;
+            padding: 10px;
+            margin: 20px 0;
+            display: inline-block;
+        }
+
+        .tab-menu div:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab-menu">
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#php">PHP</a>
+        <div id="html">
+            <h2>
+                <a href="https://www.w3docs.com/learn-html.html">Lean HTML</a>
+            </h2>
+            <p>HTML-Hyper Text Markup Language
+            </p>
+        </div>
+        <div id="css">
+            <h2>
+                <a href="https://www.w3docs.com/learn-css.html">Learn CSS</a>
+            </h2>
+            <p>CSS-Cascading Style Sheets
+            </p>
+        </div>
+        <div id="php">
+            <h2>
+                <a href="https://www.w3docs.com/learn-php.html">Learn PHP</a>
+            </h2>
+            <p>PHP-Hyertext Preprocessor
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

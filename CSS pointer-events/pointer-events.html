@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        /* pointer-events: auto | none | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | initial | inherit; */
+        div.example {
+            pointer-events: none;
+        }
+
+        div.example2 {
+            pointer-events: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>The pointer-events Property</h2>
+    <h3>Pointer-events: none</h3>
+    <div class="example">
+        Click here: <a href="https://www.w3docs.com/learn-javascript.html">JavaScript Tutorial</a>
+    </div>
+    <h3>Pointer-events: auto</h3>
+    <div class="example2">
+        Click here: <a href="https://www.w3docs.com/learn-css.html">CSS Tutorial</a>
+    </div>
+</body>
+
+</html>
+
+<!-- The CSS pointer-events property is used to control whether an element can be the target for pointer events, such as clicks or hover events. The property can be set to one of several values:
+
+none: The element is completely invisible to pointer events and cannot be clicked on or hovered over.
+auto: The element behaves as normal and can be interacted with using pointer events. This is the default value.
+visiblePainted: The element can be interacted with using pointer events, but only if it is visible (i.e. not hidden behind another element) and has been painted on the screen.
+visibleFill: The element can be interacted with using pointer events, but only if it is visible (i.e. not hidden behind another element) and its fill area is non-transparent.
+visibleStroke: The element can be interacted with using pointer events, but only if it is visible (i.e. not hidden behind another element) and its stroke area is non-transparent.
+painted: The element can be interacted with using pointer events, but only if it has been painted on the screen.
+fill: The element can be interacted with using pointer events, but only if its fill area is non-transparent.
+stroke: The element can be interacted with using pointer events, but only if its stroke area is non-transparent.
+all: The element can be interacted with using pointer events, regardless of whether it is visible or its fill/stroke areas are transparent.
+Example :
+
+css
+Copy code
+element {
+  pointer-events: none;
+}
+This will make the element not clickable or hoverable.
+
+
+
+
+ -->

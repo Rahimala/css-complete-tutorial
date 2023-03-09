@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      :root {
+        --primary-color: blue;
+      }
+      h1 {
+        color: var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading with blue text</h1>
+  </body>
+</html>
+<!-- CSS variables are declared with the -- syntax, followed by the variable name. The value of the variable can be assigned using the : syntax. To use the value of a CSS variable, it can be referenced using the var() function. -->
+
+
+<!-- In this example, we have declared a CSS variable --primary-color with a value of blue in the :root pseudo-class. The :root pseudo-class represents the highest-level element in the document tree, and it is a common place to declare global variables that can be reused throughout the stylesheet. The value of the --primary-color variable is then used in the a selector, where the color property is set to var(--primary-color). This means that the text color of any a element in the document will be blue.
+
+CSS variables are supported in modern browsers and can be used in conjunction with preprocessors like Sass and Less to provide even more power and flexibility in stylesheet management. -->

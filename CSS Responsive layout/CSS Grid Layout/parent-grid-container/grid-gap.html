@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-gap</title>
+
+    <!-- grid-gap -->
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* gap: 2em 1em; */
+        }
+
+        /* ETC (Formatting only): */
+
+        body {
+            margin: 1.5em;
+            font-size: 130%;
+            font-family: sans-serif;
+            background: #F2F0EC;
+            color: #2E2C08;
+        }
+
+        .container {
+            border: 10px solid #2E2C08;
+            background: wheat;
+            padding: 1em;
+
+            /* ---------------- */
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            /* ----- grid: gap; ------ */
+
+            /* gap: 2em 10em; */
+
+            /* Set the gap between rows and columns to 50px: */
+            grid-gap: 50px;
+        }
+
+        .column {
+            padding: 0.5em;
+            background: #bf8c0d;
+            color: #2E2C08;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="column">1</p>
+        <p class="column">2</p>
+        <p class="column">3</p>
+        <p class="column">4</p>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+
+    grid-row-gap
+    ------------
+
+
+    The grid-gap property defines the size of the gap between the rows and columns in a grid layout, and is a shorthand property for the following properties:
+    grid-row-gap
+    grid-column-gap
+Note: This property was renamed to gap in CSS3
+
+value: px, %, 0
+ -->

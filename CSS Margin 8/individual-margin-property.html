@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- margin: 0 auto, the top/bottom margin is 0, and the left/right margin is auto, center -->
+    <style>
+        .margin_individual1 {
+            border: 10px solid orange;
+            margin-top: 0.75rem;
+            margin-bottom:2em;
+            margin-left: 50px;
+        }
+
+        .margin_individual2 {
+            border: 5px dashed tomato;
+            margin-right: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="margin_individual1">
+        <p><strong>margin-top: 10em;margin-bottom:5em;margin-left:50px</strong> is same as: top margin is 10em,
+            bottom margin is 5em,left margin is 50px and <u><mark> right margin is 0</mark></u> </p>
+    </div>
+    <br>
+    <div class="margin_individual2">
+        <p><strong>margin-right:60px;</strong> is same as: right margin is 60px while <mark><u> top margin is 0,
+                    bottom margin is 0 and left margin is 0</u></mark> </p>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+
+margin: auto is a CSS shorthand property that sets the margins of an element to be equal on all sides. Using margin: auto will center the element within its parent element.
+
+You can also use margin: auto to center elements horizontally, by setting the element's width and using margin: auto to center it within its parent element.
+
+This will center the element with the class center-me vertically within the parent element with the class parent
+
+margin: auto is a shorthand property in CSS that sets the margin of an element to be equal on all sides. It can be used to horizontally center an element within its parent container by setting the value of margin-left and margin-right to auto
+
+
+In this example, the .child element will be horizontally centered within the .parent element because the margin: auto property will set the margin-left and margin-right values to equal amounts of space, effectively centering the element within its parent.
+
+You can also use margin: auto to vertically center an element by setting the value of margin-top and margin-bottom to auto. However, this only works if the height of the parent element is explicitly set.
+
+
+.parent {
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+
+.center-me {
+  height: 50%;
+  margin: auto;
+}
+
+ -->

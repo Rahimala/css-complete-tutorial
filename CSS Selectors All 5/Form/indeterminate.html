@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <style>
+        input:indeterminate+label {
+            background: lime;
+        }
+    </style>
+
+    <!-- The :indeterminate CSS pseudo-class represents any form element whose state is indeterminate -->
+</head>
+
+<body>
+    <fieldset>
+        <legend>Checkbox</legend>
+        <div>
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox">This checkbox</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Radio</legend>
+        <div>
+            <input type="radio" id="radio1" name="radioButton" value="val1">
+            <label for="radio1">First radio label starts out lime.</label>
+
+        </div>
+        <div>
+            <input type="radio" id="radio2" name="radioButton" value="val2" />
+            <label for="radio2">Second radio label also starts out lime.</label>
+        </div>
+    </fieldset>
+
+
+    <div class="uoe-checkbox">
+        <label>
+            <input type="checkbox" indeterminate>
+            Indeterminate (natural)
+        </label>
+    </div>
+
+
+    <script>
+        const inputs = document.getElementsByTagName("input");
+
+        for (let i = 0; i < inputs.length; i++) {
+            inputs[i].indeterminate = true;
+        }
+
+        // var checkbox=document.getElementById("box");
+        // checkbox.indeterminate=true;
+    </script>
+</body>
+
+</html>

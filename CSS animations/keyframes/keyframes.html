@@ -1,0 +1,81 @@
+<!-- @keyframes is a rule in CSS that allows you to define a sequence of styles to be applied to an element over a period of time. It is used to create animations in CSS by specifying how the appearance of an element should change at different points in time.
+
+The @keyframes rule begins with the @ symbol, followed by the keyword keyframes, and then a name for the animation. The name can be any valid identifier in CSS, such as move, spin, or fade. After the name, curly braces {} are used to define the actual animation.
+
+Within the curly braces, you define a series of from and to or percentage-based keyframe selectors that specify the styles for the element at different points in the animation. For example, you might use from to define the starting style of the element, and to to define the ending style, like this:z -->
+
+<!-- todo: . The percentage values represent the progress of the animation, | from 0% at the beginning to 100% at the end. -->
+
+<!-- todo: from - selector specifies the styles for the element at the beginning of the animation -->
+
+<!-- todo: to - selector specifies the styles for the element at the end of the animation -->
+
+<div class="box"></div>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: scale 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes scale {
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(1.5);
+        }
+    }
+</style>
+
+<!-- The percentage values  -->
+
+<div class="The-percentage"></div>
+<style>
+    .The-percentage {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: color-change 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes color-change {
+        0% {
+            width: 10px;
+        }
+
+        25% {
+            width: 25px;
+        }
+        50% {
+            width: 50px;
+        }
+
+        100% {
+            width: 100px;
+        }
+        /* 0% {
+            background-color: red;
+        }
+
+        25% {
+            background-color: blue;
+        }
+
+        50% {
+            background-color: green;
+        }
+
+        75% {
+            background-color: yellow;
+        }
+
+        100% {
+            background-color: red;
+        } */
+
+
+    }
+</style>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-area</title>
+
+    <style>
+        body {
+            margin: 40px;
+        }
+
+        /*  Parent wrapper*/
+        .wrapper {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 100px);
+            background-color: white;
+            color: #444;
+        }
+
+        /* Child box */
+        .box {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            font-size: 150%;
+            border-radius: 5px;
+        }
+
+        /* grid-area  > col/row)*/
+        .a {
+            grid-area: 1 / 3;
+        }
+
+        .b {
+            grid-area: 1/2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+ CSS Grid Layout, the grid-area property is used to specify the name of a grid area. If a value is assigned to grid-area without any other grid-placement properties (e.g. grid-row, grid-column), the element will span all rows and columns of the grid by default.
+
+The value 1/2 means that the grid area will start at the second column line in the grid.
+
+Here is an example of how you might use grid-area in a CSS Grid Layout:
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.item1 {
+  grid-area: 1 / 2 / 3 / 4;
+}
+This will create a grid with 3 columns and 3 rows, and the element with a class of item1 will be placed in the grid starting at the second column line and spanning 3 rows and 3 columns.
+
+Tip: you can switch to manual trigger mode in
+ -->

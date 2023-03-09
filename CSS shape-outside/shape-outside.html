@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The shape-outside CSS property defines the shape around which text should be wrapped. The shape is defined by a shape function, such as circle() or polygon(), and the values passed to the shape function determine the size and position of the shape.
+
+The CSS shape-outside property defines a custom shape around which text can be flowed. It allows you to wrap text around non-rectangular shapes such as circles, ellipses, polyggon, and images. The value of shape-outside can be set to a basic shape function (e.g. circle(), ellipse(), inset()), an image URL, or a reference to a CSS clip-path reference. The text content will then wrap around the specified shape rather than the box of the element itself.
+Applies to	Floats. -->
+    <title>Document</title>
+
+    <style>
+        /*   div {
+        shape-outside: ellipse(120px 200px at 40% 50%);
+        clip-path: ellipse(120px 200px at 40% 50%);
+        width: 300px;
+        height: 500px;
+        float: right;
+        opacity: 0.6;
+        background-color: #8ebf42;
+        shape-outside: url("/upl)
+      } */
+        .half-slant {
+            display: flex;
+        }
+
+        .half-slant header {
+            flex: 1;
+            text-align: right;
+            background: #E9D9D2;
+        }
+
+        .half-slant header img {
+            float: right;
+            height: 100%;
+            clip-path: polygon(calc(100% - 55vw) 0,
+                    100% 0,
+                    100% 100%,
+                    calc(100% - 45vw) 100%);
+            shape-outside: polygon(calc(100% - 55vw) 0,
+                    100% 0,
+                    100% 100%,
+                    calc(100% - 45vw) 100%);
+            shape-margin: 0.5em;
+            max-width: 100%;
+
+        }
+
+        .half-slant h1 {
+            margin-top: clamp(1em, 40vw, 8%);
+            color: #243C7E;
+        }
+
+        .half-slant p {
+            color: #A85F8B;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="half-slant">
+        <header>
+            <img src="https://picsum.photos/id/1001/1200/400">
+            <h1>Title</h1>
+            <p>some text below</p>
+            <p>and more</p>
+        </header>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-blend-mode</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-size: 14px;
+        }
+
+        body .background {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 450px;
+            height: 465px;
+        }
+
+        body .background div {
+            position: relative;
+
+            background-image: linear-gradient(to right, #ef4578 0%, #ffb545 100%), url("https://wallpapershome.com/images/pages/pic_h/16623.jpg");
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+            margin-bottom: 30px;
+        }
+
+        body .background div:after {
+            content: attr(class);
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+        }
+
+        body .background .color{
+            background-blend-mode:color;
+        }
+        
+        body .background .color-burn{
+            background-blend-mode:color-burn;
+        }
+        .color-dodge{
+            background-blend-mode: color-dodge;
+        }
+
+        .lighten{
+            background-blend-mode: lighten;
+        }
+        .overlay{
+            background-blend-mode: overlay;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="color"></div>
+        <div class="color-burn"></div>
+        <div class="color-dodge"></div>
+        <div class="darken"></div>
+        <div class="difference"></div>
+        <div class="exclusion"></div>
+        <div class="hard-light"></div>
+        <div class="hue"></div>
+        <div class="lighten"></div>
+        <div class="luminosity"></div>
+        <div class="multiply"></div>
+        <div class="normal"></div>
+        <div class="overlay"></div>
+        <div class="saturation"></div>
+        <div class="screen"></div>
+        <div class="soft-light"></div>
+    </div>
+
+    <a class="signature" href="https://itsmenatalie.com" target="_blank">Created by ItsMeNatalie</a>
+</body>
+
+</html>
+
+
+<!-- background-blend-mode: normal | multiply | screen | overlay | darken | lighten | color-dodge | saturation | color | luminosity;
+
+
+
+
+    The background-blend-mode property in CSS is used to specify the blending mode for each background layer of an element. Blending modes determine how the colors of the element's background layers are combined with the colors of the element's content and other background layers
+
+
+    There are many different blend modes available, including [normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, and luminosity.] Each blend mode produces a different visual effect, so you can experiment with different blend modes to find the one that best fits your needs.
+
+
+
+ .blended-background {
+  background-color: red;
+  background-image: url(image1.jpg), url(image2.jpg);
+  background-blend-mode: multiply, screen;
+}
+
+
+
+The background-blend-mode property in CSS specifies how a background image or color should blend with the background color or image of the element. It allows you to create a variety of visual effects by blending the background image or color of an element with the background image or color behind it.
+
+The background-blend-mode property can be set to one of the following blend modes:
+
+normal: This is the default blend mode. The background image or color is displayed on top of the other background, with no blending.
+multiply: The colors of the two backgrounds are multiplied together, resulting in a darker color.
+screen: The colors of the two backgrounds are inverted, multiplied, and then inverted again, resulting in a lighter color.
+overlay: The colors of the two backgrounds are blended together, with the bottom background appearing through the top background in darker areas and the top background appearing over the bottom background in lighter areas.
+darken: The darker of the two background colors is displayed.
+lighten: The lighter of the two background colors is displayed.
+color-dodge: The bottom background color is brightened to reflect the top background color.
+color-burn: The bottom background color is darkened to reflect the top background color.
+hard-light: The top background is blended with the bottom background using the overlay blend mode, but with the blend mode applied differently depending on the luminosity of the top background color.
+soft-light: The top background is blended with the bottom background using the overlay blend mode, but with the blend mode applied differently depending on the luminosity of the top background color.
+difference: The difference between the two background colors is displayed.
+exclusion: The intersection of the two background colors is displayed.
+
+
+
+body {
+  background-image: url(bg.jpg);
+  background-color: #fff;
+  background-blend-mode: multiply;
+}
+
+ -->

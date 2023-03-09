@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="BackgroundImageWithRGBA.css">
+    <title>Transparent Color</title>
+
+    <style>
+  
+        body {
+            background: url(../img/Lente-Optica.jpeg) no-repeat center aqua;
+        }
+
+        div {
+            background-color: gray;
+            border: 10px solid rgb(6, 128, 0);
+            padding: 40px;
+            margin: 40px;
+        }
+
+        .second {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>First</h1>
+    </div>
+    <div class="second">
+        <h1>Second</h1>
+    </div>
+</body>
+</html>
+
+<!-- 
+    * Transparent color in CSS makes background elements visible from another top element of the page. Transparent color can be applied with background-color property and color. If we take background-color as transparent then it makes backside elements of background completely visible. But in real-time we don’t want that we need semitransparent colors. The semitransparent feature can be achieved through rgba value with background color and color property.
+ -->

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        /* effective when minimum width is greater than 500px */
+        @media only screen and (max-width: 500px) {
+            body {
+                background-color: lightpink;
+                color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Media query example max-width</h2>
+    <p>Background color device screen smaller than width 500px is <b>lightpink</b> and background-color greater than
+        500px is <b>black</b>.</p>
+    <p><b>( Note: Resize your window to see the effect. )</b></p>
+
+
+
+    <!-- /* this is also valid */
+    @media screen and (max-width: 500px) {
+    body {
+    background-color: lightpink;
+    color: black;
+  }
+} -->
+</body>
+
+</html>

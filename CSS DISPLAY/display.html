@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+    <style>
+        .display li {
+            /* display: inline; */
+            /* display: block; */
+            /* display: contents; like inline */
+            /* display: flex; like block */
+            /* display: grid;  Represents an element as a block-level grid container.*/
+            /* display: inline-block; */
+            /* display: inline-flex; */
+            /* display: inline-flexbox; */
+        }
+
+        /* .flex {
+            display: flex; */
+            /* Represents an element as a block-level-flex container. */
+        /* } */
+
+        div {
+            display:row;
+        }
+        .flex {
+            background-color: brown;
+            padding: 40px;
+            margin: 10px;
+        }
+        div {
+            display:block;
+            
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            margin: 10px;
+            width: 350px;
+            height: 90px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="display">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Upwork</a></li>
+        <li><a href="#">iPhone</a></li>
+        <li><a href="#">Apple</a></li>
+    </ul>
+
+    <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+
+
+    <!-- 
+
+        The display property defines the type of the box which is used for an HTML element.
+        
+
+        display: inline | block | contents | flex | grid | inline-block | inline-flex | inline-grid | inline-table | list-item | run-in | table | table-caption | table-column-group | table-header-group | table-footer-group | table-row-group | table-cell | table-column | table-row | none | initial | inherit;
+
+
+        There are 5 important display properties –
+
+            inline
+            block
+            inline-block
+            none
+            table
+     -->
+
+     <!-- The CSS display property is used to specify how an element should be displayed. It can have several values, each of which changes the way an element is rendered on a web page. Some of the most common values include:
+
+"block" : The element is a block-level element, which means it takes up the full width of its parent container and creates a new line after it. Examples of elements that are typically set to "block" include headings (h1, h2, etc.), paragraphs (p), and divs.
+
+"inline" : The element is an inline-level element, which means it only takes up as much width as necessary and does not create a new line after it. Examples of elements that are typically set to "inline" include links (a), images (img), and span elements.
+
+"inline-block" : The element is an inline-level element, but it can have a width and height set, and it can have padding and margins applied.
+
+"none" : The element is not displayed on the page at all.
+
+Syntax:
+display: [value];
+
+Example:
+
+Copy code
+div {
+  display: block;
+}
+In this example, all "div" elements will be displayed as block-level elements.
+
+It is important to note that the default value of the display property is dependent on the HTML element, for example, div and h1 are block-level element and span and a are inline elements. Changing the display property can change the layout and the way an element interacts with other elements on the page. -->
+
+
+</body>
+
+</html>

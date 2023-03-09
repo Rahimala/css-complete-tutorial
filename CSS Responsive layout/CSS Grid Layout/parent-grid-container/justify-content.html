@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: 100px auto;
+            grid-template-rows: 50px auto 50px;
+        }
+
+        .parent {
+            height: 50vh;
+            border: 5px solid #333;
+            margin-bottom: 10px;
+
+            /* justify-content: start, end, center, stretch, space-around, space-between, space-evenly; */
+
+            justify-content:space-evenly ;
+        }
+        /* same style CSS */
+
+        .child {
+            background-color: #F8F3A8;
+            border: 5px solid #949494;
+            font: 30px Georgia;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="property">justify-content:</div>
+    <div class="parent start">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    n CSS, justify-content is a property of a grid container that aligns the grid items within a grid along the horizontal axis (i.e., left-right). The possible values for justify-content are:
+
+start: aligns the grid items to the start of the grid (left edge for left-to-right languages, right edge for right-to-left languages)
+end: aligns the grid items to the end of the grid (right edge for left-to-right languages, left edge for right-to-left languages)
+center: aligns the grid items to the center of the grid
+stretch: stretches the grid items to fill the grid along the horizontal axis
+space-around: distributes the grid items evenly along the grid, with half-sized spaces on either end
+space-between: distributes the grid items evenly along the grid, with no space on either end
+space-evenly: distributes the grid items evenly along the grid, with equal sized spaces on either end
+
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+}
+
+
+This will center the grid items within the grid along the horizontal axis.
+ -->

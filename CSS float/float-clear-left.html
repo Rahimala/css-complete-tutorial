@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float clear</title>
+
+    <style>
+        .wrapper {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .left {
+            border: 1px solid black;
+
+            clear: left;
+        }
+
+        .black {
+
+            float: left;
+
+
+            background-color: black;
+            color: white;
+            width: 20%;
+            margin: 0;
+        }
+
+        .red {
+            float: left;
+
+
+            margin: 0;
+            background-color: pink;
+            width: 20%;
+        }
+        
+        p {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p class="black">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eius veritatis nesciunt aspernatur suscipit
+            laboriosam! Officia tenetur voluptates nulla neque!
+        </p>
+
+        <p class="red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, officia.</p>
+
+        <p class="left">This paragraph clears left.</p>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    In CSS, the "clear" property is used to specify on which sides of an element floating elements are not allowed to float.
+
+The clear property can have the following values:
+
+left: No floating elements allowed on the left side of the element.
+right: No floating elements allowed on the right side of the element.
+both: No floating elements allowed on either the left or the right side of the element.
+none: Default value. Allows floating elements on both sides of the element.
+
+
+
+CSS Clear property is used to stop next element to wrap around the adjacent floating elements. Clear can have clear left, clear right or clear both values.
+
+Values of clear property
+None:Default
+Left:Clear left floating only
+Right:Clear right floating only
+Both:Clear Both left & right floating
+clear none example
+Without clear:both, the paragraph after floating divs will wrap around. And the next division will also wrap around, but after paragraph.
+ -->

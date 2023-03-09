@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+    <style>
+        .-clone {
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+        }
+
+        .-slice {
+            -webkit-box-decoration-break: slice;
+            box-decoration-break: slice;
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 2em;
+            background-image: linear-gradient(-144deg, #6AEEC6 0%, #698D28 100%);
+            border-radius: 4px;
+            padding: 4px 18px;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            max-width: 320px;
+            margin: 1em auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap">
+            <span class="text -clone">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quas amet sit at quibusdam culpa rem
+                similique, reiciendis quos nulla eaque eius qui quo deserunt. Ratione molestias nisi neque illum!
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- box-decoration-break: slice | clone | initial | inherit | unset; -->
+
+<!-- The "box-decoration-break" property in CSS is used to specify how the background, border, and padding of an element should be applied when the element is broken across multiple boxes (i.e. when it spans multiple columns or pages).
+
+The possible values for this property are:
+
+"slice" (the default): The background, border, and padding are applied to each box separately, so that the color and style of the backgrounds, borders and paddings will be the same for each box.
+"clone": The background, border and padding are cloned into each box, so that the color and style of the backgrounds, borders and paddings will be the same for each box.
+This property can be useful when working with multi-column layout or when an element is broken across multiple pages.
+
+Note that this property is not well supported in all browser. -->
+
+<!-- "slice" : The default value, causes the background and border to be rendered only once and then be "sliced" so that it fits in the multiple boxes or pages.
+"clone": causes the background and border to be rendered separately for each box or page, creating a continuous effect. -->

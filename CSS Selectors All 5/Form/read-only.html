@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>read-only:css</title>
+
+    <style>
+        input {
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+
+        input:-moz-read-only {
+            background-color: red;
+        }
+
+        input:read-only {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="normal">read-only</label>
+            <input value="normal input" id="normal" />
+        </div>
+        <div>
+            <label for="read-only">read-only</label>
+            <input readonly value="read-only input" id="read-only" </div>
+    </form>
+</body>
+
+</html>

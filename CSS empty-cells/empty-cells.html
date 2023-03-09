@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>empty-cells css</title>
+
+    <style>
+        .show {
+            empty-cells: show;
+        }
+
+        .hide {
+            empty-cells: hide;
+        }
+
+        td {
+            border: 1px solid tomato;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="show">
+        <tr>
+            <td>Moe</td>
+            <td>Larry</td>
+        </tr>
+        <tr>
+            <td>Curly</td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <p>In this table the "hide" value is used:</p>
+    <table class="hide">
+        <tr>
+            <td>Moe</td>
+            <td>Larry</td>
+        </tr>
+        <tr>
+            <td>Curly</td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
+
+<!-- In CSS, the "empty-cells" property determines whether or not to display borders and background on empty cells in a table. By default, empty cells are not displayed. To display empty cells, set the "empty-cells" property to "show". To hide empty cells, set the "empty-cells" property to "hide". This property can be applied to the entire table or to specific cells. -->

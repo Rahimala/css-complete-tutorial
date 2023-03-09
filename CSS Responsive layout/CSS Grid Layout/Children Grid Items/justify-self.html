@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-self</title>
+
+    <style>
+        body {
+            margin: 40px;
+            font: 80% Arial, Helvetica, sans-serif;
+        }
+
+        .wrapper {
+            display: grid;
+            background: no-repeat url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/12005/grid.png);
+            grid-template-columns: repeat(6, 150px);
+            grid-template-rows: repeat(4, 150px);
+            grid-gap: 10px;
+            background-color: #fff;
+            color: #444;
+        }
+
+        .box {
+            border: 2px solid #444;
+            padding: 20px;
+            font-size: 150%;
+        }
+
+        .a {
+            grid-column: 1/3;
+            grid-row: 1 / 3;
+
+            /* justify-self: stretch, end, start, center */
+            justify-self: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box a">
+            <p>This is box A. </p>
+            <code>justify-self: stretch</code>
+        </div>
+        <div class="box b">
+            <p>This is box B.</p>
+            <code>justify-self: end</code>
+        </div>
+        <div class="box c">
+            <p>This is box C.</p>
+            <code>justify-self: start</code>
+
+        </div>
+        <div class="box d">
+            <p>This is box D.</p>
+            <code>justify-self: center</code>
+        </div>
+        <div class="box e">
+            <p>Each of the boxes on the left has a grid area of 3 columns and 3 rows (we're counting the gutter
+                col/row). So each covers the same size area as box A.</p>
+            <p>The justify-self property is used to justify the content inside the grid-area.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    justify-self is a CSS property that can be used to align an element within its parent container along the horizontal axis. It is used as part of the CSS Grid layout system, and can be applied to grid items (elements that have been placed onto the grid) as well as to grid cells (the individual boxes that make up the grid).
+
+The justify-self property can take one of several values:
+
+start: aligns the element to the start of the grid cell.
+end: aligns the element to the end of the grid cell.
+center: aligns the element to the center of the grid cell.
+stretch: stretches the element to fill the entire width of the grid cell.
+ -->

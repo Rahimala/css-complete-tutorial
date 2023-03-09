@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      .opacity-one {
+        fill: url(#pattern-one);
+      }
+      .opacity-two {
+        fill: url(#pattern-two);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Fill</h3>
+    <div class="container">
+      <svg viewBox="0 0 800 800">
+        <defs>
+          <pattern id="pattern-one" viewBox="0, 0, 11, 11" width="15%" height="15%">
+            <circle r="10" fill="green" />
+          </pattern>
+          <pattern id="pattern-two" viewBox="0, 0, 9, 9" width="15%" height="15%">
+            <rect height="4" width="4" fill="red" />
+          </pattern>
+        </defs>
+        <circle class="opacity-one" cx="150" cy="150" r="55" />
+        <circle class="opacity-two" cx="300" cy="150" r="55" />
+      </svg>
+    </div>
+  </body>
+</html>

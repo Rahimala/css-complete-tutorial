@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation-name: slidein;
+      animation-duration: 2s;
+      /* animation-direction: alternate; */
+
+      animation-direction: reverse;
+    }
+
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+      }
+      to {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
+
+
+<!-- /* The animation-direction property in CSS is used to specify whether an animation should play forwards or backwards, or alternate between the two, when it is repeating. This property can be applied to an element that has an animation defined using the @keyframes rule.
+
+The possible values for animation-direction are:
+
+normal (default): The animation plays forwards from the beginning to the end of each iteration.
+reverse: The animation plays backwards from the end to the beginning of each iteration.
+alternate: The animation plays forwards and then backwards in alternate iterations.
+alternate-reverse: The animation plays backwards and then forwards in alternate iterations. */ -->
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            height: 250px;
+            background-color: gray;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 5px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 48px;
+            flex: 1 1 1em;
+        }
+
+        /* #grow {
+            flex: 3;
+        } */
+
+        #shrink {
+            flex:3;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>The CSS Flex Shorthand Property </h2>
+    <p>There are six flex items in the container below. The first can grow three items wider than the other items. You
+        might have to resize the browser to see. The second can shrink two times more than the others. The last four
+        items are set at to an initial width of 1em.</p>
+
+    <div class="flex-container">
+        <div id="grow">1</div>
+        <div id="shrink">2</div>
+        <div class="example">3</div>
+        <div class="example">4</div>
+        <div class="example">5</div>
+        <div class="example">6</div>
+    </div>
+</body>
+
+</html>
+
+<!-- Flex shorthand in CSS is a way of writing Flexbox layout CSS using a more concise and readable syntax. It makes use of the "flex" property, which is a shorthand for the "flex-grow", "flex-shrink" and "flex-basis" properties. The "flex" property can be used to define the main-axis and cross-axis properties of an element in a single line of code.
+
+For example, the following CSS code uses the "flex" property to define the main-axis and cross-axis properties of an element: -->
+
+<!-- he "flex" property takes three values:
+
+The first value defines the flex-grow property, which controls the element's ability to grow in relation to other elements in the container.
+The second value defines the flex-shrink property, which controls the element's ability to shrink in relation to other elements in the container.
+The third value defines the flex-basis property, which controls the element's initial size before any growth or shrinkage.
+In the example above, the .item will take all the available space in the container with a default size before any growth or shrinkage. -->

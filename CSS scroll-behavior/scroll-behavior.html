@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The CSS "scroll-behavior" property defines the scrolling behavior for a scrollable element when a user reaches the end of its scrollable area. Possible values are: "auto" (default behavior, depends on the browser), "smooth" (smooth scrolling animation), "instant" (no animation, jumping to the target). This property can be used to create a smooth scrolling effect when navigating between anchors or when using JavaScript to scroll an element. -->
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Title of the document</title>
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            #element1 {
+                height: 600px;
+                background-color: #ccc;
+            }
+
+            #element2 {
+                height: 600px;
+                background-color: #8ebf42;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Scroll-behavior property example</h2>
+        <div class="main" id="element1">
+            <h2>Element 1</h2>
+            <a href="#element2">Click to scroll to Element 2</a>
+        </div>
+        <div class="main" id="element2">
+            <h2>Element 2</h2>
+            <a href="#element1">Click to scroll to Element 1</a>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>

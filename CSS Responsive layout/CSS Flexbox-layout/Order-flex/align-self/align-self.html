@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Flex Container */
+        .flex-container {
+            display: flex;
+            height: 6em;
+            background: #def;
+        }
+
+        /* Align-self */
+        .auto {
+            align-self: auto;
+        }
+
+        .flex-start {
+            align-self: flex-start;
+        }
+
+        .flex-end {
+            align-self: flex-end;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        /* Flex Items */
+        .flex-item {
+            text-align: center;
+            background: gray;
+            border: 1px solid black;
+            color: white;
+            padding: 0.5em;
+            box-sizing: border-box;
+            flex-basis: 20%;
+        }
+
+        /* Global style */
+        h2 {
+            text-align: center;
+            margin: 1em 0 0;
+        }
+
+
+
+
+
+
+        /* div {
+            display: inline-flex;
+            width: 100px;
+            height: 100px;
+            margin: 0 2em 2em 0;
+            outline: 5px solid rgba(0, 0, 0, .5);
+            vertical-align: top;
+            position: relative;
+            text-align: center;
+        }
+
+        div:before,
+        div:after {
+            content: attr(title);
+            position: absolute;
+            left: -5px;
+            right: -5px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: 14px;
+            line-height: 14px;
+            color: #fff;
+            white-space: nowrap;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        div:before {
+            background: rgba(0, 0, 0, .5);
+        }
+
+        div:after {
+            background: rgba(0, 0, 0, .75);
+        }
+
+        h2+div:after,
+        div+div:before {
+            transform: rotate(90deg) translateY(-63px);
+        }
+
+        h2+div:before,
+        div+div:after {
+            transform: translateY(63px);
+        }
+
+        div:after {
+            content: "cross axis";
+            color: #ff0;
+        }
+
+        div+div {
+            flex-direction: column;
+        }
+
+        i {
+            color: #fff;
+            min-width: 25px;
+            min-height: 25px;
+            line-height: 25px;
+        }
+
+        i:nth-child(1) {
+            background: red;
+        }
+
+        i:nth-child(2) {
+            background: green;
+            font-size: 1.5em;
+        }
+
+        i:nth-child(3) {
+            background: blue;
+            font-size: 2em;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+
+        .flex-end {
+            align-items: flex-end;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+
+        .stretch>:nth-child(3) {
+            align-self: auto;
+        }
+
+        .flex-start>:nth-child(3) {
+            align-self: flex-end;
+        }
+
+        .flex-end>:nth-child(3) {
+            align-self: flex-start;
+        }
+
+        .center>:nth-child(3) {
+            align-self: stretch;
+        }
+
+        .baseline>:nth-child(3) {
+            align-self: center;
+        } */
+    </style>
+</head>
+
+<body>
+    <h2>align-self: &lt;value&gt;;</h2>
+    <div class="flex-container">
+        <div class="flex-item flex-start">flex-start</div>
+        <div class="flex-item flex-end">flex-end</div>
+        <div class="flex-item center">center</div>
+        <div class="flex-item stretch">stretch</div>
+        <div class="flex-item baseline">baseline</div>
+    </div>
+
+
+
+
+
+    <h2>align-items: stretch // default <br>
+    &nbsp;ㄴ align-self: auto // default</h2>
+    <div class="stretch" title="flex-direction:row"><i>1</i><i>2</i><i>3</i></div>
+    <div class="stretch" title="flex-direction:column"><i>1</i><i>2</i><i>3</i></div>
+
+    <h2>align-items: flex-start<br>
+        &nbsp;ㄴ align-self: flex-end</h2>
+    <div class="flex-start" title="flex-direction:row"><i>1</i><i>2</i><i>3</i></div>
+    <div class="flex-start" title="flex-direction:column"><i>1</i><i>2</i><i>3</i></div>
+
+    <h2>align-items: flex-end<br>
+        &nbsp;ㄴ align-self: flex-start</h2>
+    <div class="flex-end" title="flex-direction:row"><i>1</i><i>2</i><i>3</i></div>
+    <div class="flex-end" title="flex-direction:column"><i>1</i><i>2</i><i>3</i></div>
+
+    <h2>align-items: center<br>
+        &nbsp;ㄴ align-self: stretch</h2>
+    <div class="center" title="flex-direction:row"><i>1</i><i>2</i><i>3</i></div>
+    <div class="center" title="flex-direction:column"><i>1</i><i>2</i><i>3</i></div>
+
+    <h2>align-items: baseline<br>
+        &nbsp;ㄴ align-self: center</h2>
+    <div class="baseline" title="flex-direction:row"><i>1</i><i>2</i><i>3</i></div>
+    <div class="baseline" title="flex-direction:column"><i>1</i><i>2</i><i>3</i></div>
+</body>
+
+</html>
+
+
+<!-- 
+    align-self is a CSS property that is used to align a single item within a flex container. It works similarly to the align-items property, but allows you to specify the alignment for a specific item, rather than for all items within the container. The possible values for align-self include flex-start, flex-end, center, baseline, and stretch.
+
+
+====================
+
+Child elemanet
+
+===================
+
+    align-self is a CSS property that is used to align a single item within a flex container along the cross axis. This property allows you to override the default alignment set by the align-items property on the container. The possible values for align-self are:
+ -->

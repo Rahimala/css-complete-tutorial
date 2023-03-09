@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            height: 400px;
+            width: 400px;
+            background-color: lightgray;
+            position: relative;
+        }
+
+        .element {
+            height: 50px;
+            width: 50px;
+            background-color: lightblue;
+            position: absolute;
+            offset-path: path("M0 0 Q 200 200, 400 0");
+            offset-distance: 50%;
+            /* offset-rotate: auto | reverse | <angle>; */
+            offset-rotate:42deg;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="element"></div>
+    </div>
+</body>
+
+</html>
+
+<!-- The offset-rotate property in CSS is used to define the orientation of an element along the path defined by the offset-path property. The offset-rotate property is used in combination with the offset-path and offset-distance properties to define the position and orientation of an element along a custom path.
+
+Here is an example of how you might use the offset-rotate property in CSS: -->
+
+<!-- In this example, the offset-path property defines a path, the offset-distance property sets the position of the element along the path, and the offset-rotate property sets the orientation of the element along the path. The value of offset-rotate is set to auto, meaning that the element's orientation will be automatically determined based on the shape of the path. -->

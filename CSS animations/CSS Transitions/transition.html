@@ -1,0 +1,33 @@
+<html>
+<head>
+    <style>
+        /* Define the initial state of the element */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition:0.3s;
+        }
+
+        /* Define the transition effect */
+        .box:hover {
+            /* background-color: blue; */
+               width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Add the element to be transitioned -->
+    <div class="box"></div>
+</body>
+
+</html>
+
+<!-- yntax of individual transition all:
+transition-property: all;
+transition-duration: [time];
+transition-timing-function: [linear|ease|ease-in|ease-out|ease-in-out|cubic-bezier(a,b,c,d)];
+transition-delay:[time(in seonds/milliseconds);
+
+Here, transition-property and transition-duration are mandatory. -->

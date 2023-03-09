@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select checkbox</title>
+
+    <style>
+        input[type="checkbox"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="checkbox" id="newsletter">
+        <label for="newsletter">Subscribe to our newsletter</label>
+        <br><br>
+        <input type="checkbox" id="promotions">
+        <label for="promotions">Receive promotions and special offers</label>
+    </form>
+
+</body>
+
+</html>

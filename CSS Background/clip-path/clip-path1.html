@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>The title of the document </title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: rgb(133, 117, 117);
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+                grid-template-rows: 200px 200px 200px;
+                grid-gap: 20px;
+                justify-content: center;
+            }
+
+            .container div {
+                background-image: url("https://ishadeed.com/assets/clip-path/how-inset-works.png");
+                background-position: center;
+                background-size: cover;
+                color: #000;
+                font-size: 18px;
+                font-family: sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .example {
+                /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+
+                /* clip-path: inset(25% 0 25% 0 round 0 25% 0 25%); */
+
+                /* clip-path: circle(50% at 50% 50%); */
+
+                /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+
+                clip-path: ellipse(90px 50px at 100px 100px);
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Clip-path property example</h1>
+        <div class="container">
+            <div class="example">polygon</div>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>
+
+<!-- The CSS clip-path property is used to define a visible region of an element. It allows you to create complex shapes by clipping the element to a basic shape (circle, ellipse, polygon) or an SVG path. This can be used to create interesting effects and designs, such as shapes that appear to be cut out of the element. The property can be applied to any HTML element, including images, text, and containers. The syntax for using the property is as follows: clip-path: path(value), where "value" is the path data for the desired shape or SVG path. -->
+
+<!-- <circle>
+<clipPath>
+<ellipse>
+<g>
+<glyph>
+<image>
+<line>
+<marker>
+<mask>
+<path>
+<pattern>
+<polygon>
+<polyline>
+<rect>
+<svg>
+<symbol>
+<text>
+<use> -->

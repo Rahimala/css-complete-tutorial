@@ -1,0 +1,81 @@
+<p class="content-box">
+    This is a bunch of text split into three columns. Take note of how the
+    `column-rule` property is used to adjust the style, width, and color of the
+    rule that appears between the columns.
+</p>
+
+
+<style>
+    .content-box {
+        padding: 0.3em;
+        background: #ff7;
+        column-count: 2;
+        border-bottom: solid;
+        border-top: solid;
+        /* column-rule: inset 2px #33f; */
+
+        column-rule-style: solid;
+
+        column-rule-color: tomato;
+
+        /* column-rule-width: 0.5em; */
+    }
+</style>
+
+<!-- Formal syntax
+column-rule = 
+  <'column-rule-width'>  ||
+  <'column-rule-style'>  ||
+  <'column-rule-color'>  
+ -->
+
+ <!-- /* Keyword values */
+column-rule-width: thin;
+column-rule-width: medium;
+column-rule-width: thick;
+
+/* <length> values */
+column-rule-width: 1px;
+column-rule-width: 2.5em;
+
+/* Global values */
+column-rule-width: inherit;
+column-rule-width: initial;
+column-rule-width: revert;
+column-rule-width: revert-layer;
+column-rule-width: unset;
+ -->
+
+ <!-- column-rule: dotted;
+column-rule: solid 8px;
+column-rule: solid blue;
+column-rule: thick inset blue;
+
+/* Global values */
+column-rule: inherit;
+column-rule: initial;
+column-rule: revert;
+column-rule: revert-layer;
+column-rule: unset;
+ -->
+
+
+ <!-- The "column-rule" property in CSS is used to set the width, style, and color of the vertical rule or line that separates the columns in a multi-column layout. It is a shorthand property that is used to set the "column-rule-width", "column-rule-style", and "column-rule-color" properties at the same time.
+
+The syntax of the "column-rule" property is as follows:
+
+Copy code
+column-rule: width style color;
+"width" : The width of the rule, in any valid CSS length units.
+"style" : The style of the rule, which can be one of the following: "none", "hidden", "dotted", "dashed", "solid", "double", "groove", "ridge", "inset", or "outset".
+"color" : The color of the rule, in any valid CSS color format.
+Example:
+
+Copy code
+div {
+  column-count: 3;
+  column-rule: 1px solid blue;
+}
+This CSS rule creates a 3-column layout, with a 1-pixel-wide blue solid line separating the columns.
+
+Please note that this property only works when the element has a "column-count" or "column-width" property set and the element has a display property of "block", "inline-block", "table-cell", "table-caption" or "inline-table". -->

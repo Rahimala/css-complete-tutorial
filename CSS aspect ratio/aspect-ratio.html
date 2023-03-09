@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .element {
+            background-position: center;
+            background-size: cover;
+            min-height: 50px;
+            border: 1px solid gray;
+            width: 150px;
+            display: inline-block;
+            margin-right: 5px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            vertical-align: top;
+        }
+
+        .square .element {
+            /* 5 is height / 2 is width */
+            aspect-ratio: 2/5; 
+        }
+
+        .photo .element {
+            aspect-ratio: 3/2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aspect ratio in CSS</h1>
+
+    <h2>Aspect ratio: 1:1</h2>
+    <div class="square">
+        <div class="element" style="background-image: url('https://source.unsplash.com/random')"></div>
+        <div class="element" style="background-image: url('https://source.unsplash.com/random?1')"></div>
+        <div class="element" style="background-image: url('https://source.unsplash.com/random?2')"></div>
+        <div class="element"></div>
+    </div>
+
+    <h2>Aspect ratio: 3:2</h2>
+    <div class="photo">
+        <div class="element" style="background-image: url('https://source.unsplash.com/random?3')"></div>
+        <div class="element" style="background-image: url('https://source.unsplash.com/random?4')"></div>
+        <div class="element" style="background-image: url('https://source.unsplash.com/random?5')"></div>
+        <div class="element" style="background-image: url('https://source.unsplash.com/random?6')"></div>
+    </div>
+</body>
+
+</html>
+
+<!-- In CSS, aspect ratio is the ratio of the width of an element to its height. 
+It can be specified using the padding-bottom or padding-top property with percentage values, 
+where the percentage value represents the aspect ratio. For example, 
+if you want to maintain a 4:3 aspect ratio for a container, 
+you can set its padding-bottom to 75% -->
+
+<!-- The box's preferred aspect ratio is the specified ratio of width / height. 
+If height and the preceding slash character are omitted, 
+height defaults to 1. 
+Size calculations involving preferred aspect ratio work with the dimensions of the box 
+specified by box-sizing. -->
+
+/* CSS aspect-ratio is a property that allows you to set the aspect ratio of an element. 
+The aspect ratio is the proportional relationship between the width and height of an element. */

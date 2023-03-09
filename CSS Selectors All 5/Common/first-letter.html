@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::first-letter</title>
+
+    <!-- CSS Style Sheet -->
+
+    <style>
+        #p::first-letter {
+            font-size: 5em;
+            color: lime;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px #f25f;
+        }
+
+        /* section--1 style */
+
+        p {
+            width: 500px;
+            line-height: 1.5;
+        }
+
+        h2+p::first-letter {
+            color: white;
+            background-color: black;
+            border-radius: 2px;
+            box-shadow: 3px 3px 0 red;
+            font-size: 250%;
+            padding: 6px 3px;
+            margin-right: 6px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="p">Scientists exploring the depths of Monterey Bay unexpectedly encountered a rare and unique species of
+        dragonfish.
+        This species is the rarest of its species.</p>
+
+    <p id="p">When Robison and a team of researchers discovered this fish, they were aboard a week-long expedition.</p>
+
+
+    <!-- Section--1 -->
+    <h2>My heading</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+        kasd gubergren, no sea takimata sanctus est.
+    </p>
+    <p>
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+        consequat.
+    </p>
+
+
+
+    <!-- The ::first-letter CSS pseudo-element applies styles to the first letter of the first line of a block-level element,  -->
+</body>
+
+</html>

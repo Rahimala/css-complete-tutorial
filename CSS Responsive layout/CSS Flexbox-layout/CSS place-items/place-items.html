@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        #container {
+            height: 150px;
+            width: 150px;
+
+            /* place-items: auto | normal | start | end | flex-start | flex-end | self-start | self-end | center | left | right | baseline | first baseline | last baseline | stretch | initial | inherit; */
+            place-items: flex-start;
+
+            background-color: #ccc;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        div>div {
+            box-sizing: border-box;
+            border: 1px solid #666;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #box1 {
+            background-color: #1c87c9;
+            min-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Place-items property example</h2>
+    <h3>place-items: flex-end</h3>
+    <div id="container" class="flex">
+        <div id="box1">1</div>
+    </div>
+</body>
+
+</html>
+
+<!-- The CSS place-items property is a shorthand property for setting both the align-items and justify-items properties. It is used to align and justify the items within a flexible container.
+
+The property takes two values:
+
+The first value sets the horizontal alignment (align-items) and can be one of: start, center, end, stretch
+The second value sets the vertical alignment (justify-items) and can be one of: start, center, end, stretch
+For example, place-items: center center; aligns items horizontally at the center and vertically at the center of the container.
+
+It is supported in most modern browser.
+
+
+
+ -->

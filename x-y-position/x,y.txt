@@ -1,0 +1,17 @@
+
+what is mean Translate x
+
+"Translate X" usually refers to a command or option in a computer graphics or 3D modeling software that allows the user to move an object or group of objects along the X-axis. In other words, it enables the user to change the position of an object [ horizontally ]. The X-axis is one of three coordinate axes used in a 3D space, with the other two being the Y-axis and the Z-axis. By using the "Translate X" command, the user can move an object along the X-axis without changing its orientation or size.
+"Translate X" সাধারণত একটি কম্পিউটার গ্রাফিক্স বা 3D মডেলিং সফ্টওয়্যারের একটি কমান্ড বা বিকল্পকে বোঝায় যা ব্যবহারকারীকে X-অক্ষ বরাবর একটি বস্তু বা বস্তুর গোষ্ঠী সরাতে দেয়। অন্য কথায়, এটি ব্যবহারকারীকে একটি বস্তুর অবস্থান অনুভূমিকভাবে পরিবর্তন করতে সক্ষম করে। X-অক্ষ হল একটি 3D স্পেসে ব্যবহৃত তিনটি স্থানাঙ্ক অক্ষের একটি, বাকি দুটি হল Y-অক্ষ এবং Z-অক্ষ। "Translate X" কমান্ড ব্যবহার করে, ব্যবহারকারী একটি বস্তুকে তার অভিযোজন বা আকার পরিবর্তন না করেই X-অক্ষ বরাবর স্থানান্তর করতে পারে।
+----------------------------------------------------------------------------------------------------
+
+what is mean Translate y
+"Translate Y" usually refers to a command or option in a computer graphics or 3D modeling software that allows the user to move an object or group of objects along the Y-axis. In other words, it enables the user to change the position of an object[ vertically ] . The Y-axis is one of three coordinate axes used in a 3D space, with the other two being the X-axis and the Z-axis. By using the "Translate Y" command, the user can move an object along the Y-axis without changing its orientation or size.
+
+Translate Y" সাধারণত একটি কম্পিউটার গ্রাফিক্স বা 3D মডেলিং সফ্টওয়্যারের একটি কমান্ড বা বিকল্পকে বোঝায় যা ব্যবহারকারীকে Y-অক্ষ বরাবর একটি বস্তু বা বস্তুর গোষ্ঠী সরাতে দেয়। অন্য কথায়, এটি ব্যবহারকারীকে একটি বস্তুর অবস্থান উল্লম্বভাবে পরিবর্তন করতে সক্ষম করে। Y-অক্ষ হল একটি 3D স্পেসে ব্যবহৃত তিনটি স্থানাঙ্ক অক্ষের মধ্যে একটি, বাকি দুটি হল X-অক্ষ এবং Z-অক্ষ। "Translate Y" কমান্ড ব্যবহার করে, ব্যবহারকারী একটি বস্তুকে তার অবস্থান বা আকার পরিবর্তন না করেই Y-অক্ষ বরাবর স্থানান্তর করতে পারে।
+
+-----------------------------------------------------------------------------------------------------
+what is mean Translate Z
+Translate Z" usually refers to a command or option in a computer graphics or 3D modeling software that allows the user to move an object or group of objects along the Z-axis. In other words, it enables the user to change the position of an object in depth. The Z-axis is one of three coordinate axes used in a 3D space, with the other two being the X-axis and the Y-axis. By using the "Translate Z" command, the user can move an object along the Z-axis without changing its orientation or size.
+
+Translate Z" সাধারণত একটি কম্পিউটার গ্রাফিক্স বা 3D মডেলিং সফ্টওয়্যারের একটি কমান্ড বা বিকল্পকে বোঝায় যা ব্যবহারকারীকে Z-অক্ষ বরাবর একটি বস্তু বা বস্তুর গোষ্ঠী সরাতে দেয়। অন্য কথায়, এটি ব্যবহারকারীকে একটি বস্তুর অবস্থান গভীরভাবে পরিবর্তন করতে সক্ষম করে। Z-অক্ষ হল একটি 3D স্পেসে ব্যবহৃত তিনটি স্থানাঙ্ক অক্ষের মধ্যে একটি, বাকি দুটি হল X-অক্ষ এবং Y-অক্ষ। "Translate Z" কমান্ড ব্যবহার করে, ব্যবহারকারী একটি বস্তুকে তার অভিযোজন বা আকার পরিবর্তন না করেই Z-অক্ষ বরাবর স্থানান্তর করতে পারে।

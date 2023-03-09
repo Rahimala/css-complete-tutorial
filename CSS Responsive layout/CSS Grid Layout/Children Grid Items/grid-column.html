@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-column</title>
+
+  <style>
+    body {
+      margin: 10px;
+      font-family: 'Abel';
+      text-align: center;
+      width: 580px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 180px 180px 180px;
+      grid-template-rows: repeat(3, 100px);
+      gap: 10px;
+    }
+
+    .a {
+      background: #0d9;
+    }
+
+    .b {
+      background: #d90;
+    }
+
+    .c {
+      background: #9d0;
+    }
+
+    .d {
+      background: #90d;
+    }
+
+    .e {
+      background: #d09;
+    }
+
+    .f {
+      background: #09d;
+    }
+
+    /* placed within a grid layout */
+
+    .c {
+      grid-row: 1/2;
+      /* grid-column:span 5; */
+      grid-column:3/1;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Using <code>grid-row</code> and <code>grid-column</code></h1>
+  <div class="container">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+    <div class="item e">E</div>
+    <div class="item f">F</div>
+  </div>
+</body>
+
+</html>
+
+<!--    1/2 for the grid-column property means that the grid item will start at the first grid line and end at the second grid line
+
+
+
+  In CSS, the grid-column property is used to specify how an element should be placed within a grid layout. It is used in conjunction with the grid-row property to specify an element's position within a grid.
+
+The grid-column property can take a variety of values, including:
+
+A numeric value, which specifies the index of the grid column in which the element should be placed. For example, grid-column: 3 would place the element in the third column of the grid.
+
+A range of numeric values, separated by a slash (/). For example, grid-column: 2 / 4 would place the element in a grid cell that spans across the second, third, and fourth columns.
+
+The auto keyword, which causes the element to be placed in the next available cell in the grid.
+
+.my-element {
+  grid-column: 2 / 4;
+}
+ -->
+

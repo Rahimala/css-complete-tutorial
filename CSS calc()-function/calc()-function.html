@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      border: 1px solid black;
+      padding: 20px;
+    }
+
+    .element {
+      width: calc(100% - 20px);
+      height: 100px;
+      background-color: lightblue;
+      margin: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="element"></div>
+  </div>
+</body>
+
+</html>
+<!--   width: calc(100% - 20px);
+In this example, the width of the element will be 100% of its parent container, minus 20 pixels. The calc() function can be used with length values (such as px, em, rem, etc.), percentage values, and even with other CSS units like vw, vh, etc. -->
+
+
+<!-- In this example, a .container class is defined with a width of 80% and a margin of 0 auto to center it horizontally. The container also has a border and padding. The .element class has a width calculated using the calc() function as 100% - 40px and a height of 100 pixels. The element also has a light blue background color and a margin of 20 pixels.
+
+When you load this HTML document in a browser, you will see a blue box with a calculated width inside a black bordered container with a width of 80% of the viewport. -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box {
+      width: calc(100% - 40px);
+      height: 100px;
+      background-color: lightblue;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <button id="btn-increase">Increase</button>
+    <button id="btn-decrease">Decrease</button>
+    <div class="box"></div>
+  </div>
+  <script>
+    const btnIncrease = document.querySelector('#btn-increase');
+    const btnDecrease = document.querySelector('#btn-decrease');
+    const box = document.querySelector('.box');
+
+    let width = 100;
+
+    btnIncrease.addEventListener('click', () => {
+      width += 100;
+      box.style.width = `calc(${width}% - 40px)`;
+    });
+
+    btnDecrease.addEventListener('click', () => {
+      width -= 10;
+      box.style.width = `calc(${width}% - 40px)`;
+    });
+
+  </script>
+</body>
+
+</html> -->

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations Transition</title>
+
+    <style>
+        div {
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+
+            animation-name: animation-transition;
+            animation-duration: 5s;
+
+        }
+
+        @keyframes animation-transition {
+            from {
+                transform: rotate(90deg);
+            }
+            to {
+                transform: scale(1, .5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

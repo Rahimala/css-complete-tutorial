@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            height: 400px;
+            width: 400px;
+            background-color: rgb(187, 15, 15);
+            position: relative;
+        }
+
+        .element {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(53, 149, 181);
+            position: absolute;
+            /* offset-path: none | ray() | path() | <url> | <basic-shape>; */
+            offset-path: path("M0 0 Q 200 200, 400 10");
+            /* offset-distance: <length-percentage>; */
+            offset-distance: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="element">10101</div>
+    </div>
+</body>
+
+</html>
+<!-- In this example, a path is defined using the offset-path property, and the offset-distance property is set to 50%, meaning that the element will be positioned at 50% of the distance along the path. The position property is set to absolute so that the element can be positioned relative to the container, which has its position property set to relative. -->

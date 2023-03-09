@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: yellowgreen;
+            margin: 40px;
+
+            /* justify-content: center; */
+
+            justify-content: space-around;
+
+            /* justify-content: space-evenly; */
+        }
+
+        .flex-container>div{
+            padding: 40px;
+            background-color: violet;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>item1</div>
+        <div>item1</div>
+        <div>item1</div>
+        <div>item1</div>
+    </div>
+</body>
+</html>
+
+<!-- 
+   1/ justify-content:
+     space-around; is a CSS property that is used to align the items within a container horizontally. It distributes the items evenly along the horizontal axis, with equal space around each item. This means that there will be the same amount of space between the first and second items, the second and third items, and so on, as well as between the first and last items and the container edges.
+
+
+
+     2/ justify-content: 
+     space-evenly; is a CSS property that is used to align the items within a container horizontally. It distributes the items evenly along the horizontal axis, with equal space around each item and between the first and last items and the container edges. This means that there will be an equal amount of space between each item as well as between the first and last items and the container.
+
+ -->

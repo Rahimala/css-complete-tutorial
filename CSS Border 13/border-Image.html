@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>border-images</title>
+
+    <style>
+        .items {
+            display: flex;
+        }
+
+        .bitmap {
+            width: 20.1rem;
+            margin: 30px;
+            padding: 10px;
+        }
+
+        .br1 {
+            border: 30px solid orange;
+            border-image: url("https://img00.deviantart.net/feb2/i/2008/309/e/5/border_lineart_8_by_inspyretash_stock.jpg") 150/
+                /* slice*/
+                20px 18px 18px 20px /
+                /*width*/
+                18px 14px 9px 10px
+                /*outset*/
+                round;
+        }
+
+        .br2 {
+            border: 4px outset olive;
+            border-width: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="items">
+
+
+        <div class="bitmap br1">This element is surrounded border image!</div>
+
+
+        <div class="bitmap br2">This element is surrounded by border image!</div>
+         <div class="bitmap br3">This element is surrounded by a border image!</div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+  The border-image property takes five main values:
+
+
+  url(image.jpg) which is the source of the image
+stretch which defines how the image should be scaled to fill the border area,
+round which defines how the image should be sliced, it could be round,repeat,stretch
+
+source which is the source of the image
+slice which defines how the image should be sliced, it could be a percentage, pixels or the keywords fill and round.
+width which defines the width of the border, it could be a length, percentage or the keywords auto and thick
+outset which defines how far the border-image should be out of the element's box, it could be a length or percentage
+repeat which defines how the image should be repeated, it could be round,repeat,stretch,space and round space  
+ -->

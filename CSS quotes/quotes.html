@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS|quotes</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 2rem;
+        }
+
+        blockquote p::before,
+        blockquote p::after {
+            content: "“";
+            font-family: Georgia;
+            font-size: 8rem;
+            margin: -2rem 0 0 -4rem;
+            position: absolute;
+            opacity: 0.5;
+
+
+        }
+
+        blockquote p::after {
+            content: "”";
+            margin: -1rem -4rem 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <blockquote>
+        <P>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi illo asperiores perspiciatis ipsam
+            adipisci. Optio non ipsa consequatur, voluptatibus neque iusto culpa? Voluptatem consectetur accusantium
+            accusamus quis qui dolorem saepe?
+        </P>
+
+    </blockquote>
+</body>
+
+</html>

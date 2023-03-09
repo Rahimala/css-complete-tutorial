@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Inline/Block</title>
+</head>
+
+<body>
+
+</body>
+<ul>
+    <li>Home</li>
+    <li>Products</li>
+    <li class="coming-soon">Services</li>
+    <li>About</li>
+    <li class="hi">Contact</li>
+</ul>
+
+</html>
+
+<style>
+    li {
+        /* display: inline; */
+        /* display: inline-block; */
+        display: block;
+        margin-right: 10px;
+    }
+    li.coming-soon {
+        /* display: none; */
+        visibility: visible;
+    }
+
+    li.hi {
+        visibility: hidden;
+    }
+</style>

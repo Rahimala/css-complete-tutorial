@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Slabo+13px);
+
+        .column-container {
+            display: flex;
+        }
+
+        .column:first-child {
+            order: 1;
+        }
+
+        .column:nth-child(2) {
+            order: 3;
+        }
+
+        .column:last-child {
+            order: 3;
+        }
+
+        /*
+  ****
+  Styling for demo. Not required.
+  ****
+*/
+        .column {
+            flex-grow: 1;
+            font-family: "Slabo 13px", serif;
+            font-weight: 400;
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top;
+            background: #F2F2F2;
+            font-size: 1.4rem;
+            color: #FFF;
+            padding: 4% 10%;
+            text-align: center;
+        }
+
+        .column:first-child {
+            background: #e48616;
+        }
+
+        .column:nth-child(2) {
+            background: #e4dd16;
+        }
+
+        .column:last-child {
+            background: #169ee4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="column-container">
+
+        <div class="column">
+            Column 1
+        </div>
+
+        <div class="column">
+            Column 2
+        </div>
+
+        <div class="column">
+            Column 3
+        </div>
+
+    </div </body>
+
+</html>

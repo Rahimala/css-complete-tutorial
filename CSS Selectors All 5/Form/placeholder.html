@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        input {
+            margin-top: 0.5rem;
+        }
+
+        /* The ::placeholder */
+
+        input::placeholder {
+            font-weight: bold;
+            opacity: .5;
+            color: red;
+        }
+    </style>
+
+    <!-- The ::placeholder pseudo-class is used to style the placeholder text of a form element -->
+</head>
+
+<body>
+    <form>
+        <label for="first-name">Your phone number:</label><br>
+        <input type="tel" name="phone" minlength="9" maxlength="9" placeholder="It must be 9 digits" />
+    </form>
+</body>
+
+</html>

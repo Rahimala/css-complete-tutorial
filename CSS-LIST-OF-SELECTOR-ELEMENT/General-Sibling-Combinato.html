@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div~h1 {
+            background-color: lightgreen;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Example of General Sibling Selector Selector</h2>
+    <h1>This is heading 1 before a div tag</h1>
+    <div>
+        <h1> This is heading 1 inside a div tag</h1>
+    </div>
+    <h1>This is heading 1 after a div tag</h1>
+    <h1>This is heading 1 after a div tag</h1>
+    <p> General Sibling Selector Selector styles every sibling selector.
+        It is denoted with tiled(~) symbol
+    </p>
+</body>
+
+</html>
+
+<!-- General sibling combinator: selects elements that are preceded by a specified element. It is represented by the "~" symbol.
+
+    Yes, that is correct. The general sibling combinator, represented by the "~" symbol, selects elements that are preceded by a specified element. The selected element does not have to be immediately preceded by the specified element, but can be any element that follows it, anywhere on the same level of the DOM tree.
+
+-->

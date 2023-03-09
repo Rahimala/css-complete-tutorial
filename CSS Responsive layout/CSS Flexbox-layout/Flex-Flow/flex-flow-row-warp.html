@@ -1,0 +1,68 @@
+<body>
+    <!-- /* flex-flow: <'flex-direction'> */
+
+
+        In CSS flexbox, flex-flow is a shorthand property for both flex-direction & flex-wrap. When we use this property then first we specify the flex-direction and then the flex-wrap value. Like in the example below.
+
+
+
+
+
+flex-flow: column-reverse;
+
+/* flex-flow: <'flex-wrap'> */
+flex-flow: nowrap;
+flex-flow: wrap;
+flex-flow: wrap-reverse;
+
+/* flex-flow: <'flex-direction'> and <'flex-wrap'> */
+flex-flow: row nowrap;
+flex-flow: column wrap;
+flex-flow: column-reverse wrap-reverse;
+
+/* Global values */
+flex-flow: inherit;
+flex-flow: initial;
+flex-flow: revert;
+flex-flow: revert-layer;
+flex-flow: unset;
+ -->
+</body>
+
+
+
+<div class="flex-container">
+    <div>flex-item1</div>
+    <div>flex-item2</div>
+    <div>flex-item3</div>
+    <div>flex-item4</div>
+    <div>flex-item5</div>
+    <div>flex-item6</div>
+    <!-- <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis error reprehenderit ipsa, sed tempora deserunt hic voluptatem facilis alias. Facere consequatur maxime voluptatem enim nisi, quod obcaecati corporis asperiores molestias!</div> -->
+</div>
+
+<!-- css styel sheets -->
+<style>
+    .flex-container {
+        display: flex;
+        background-color: aquamarine;
+        margin: 40px;
+
+        /* flex-flow: column; */
+
+        /* flex-flow:row-reverse; */
+
+        /* flex-flow: row-reverse nowrap; */
+
+        /* flex-flow: column wrap-reverse; */
+
+        flex-flow: column wrap;
+
+    }
+
+    .flex-container>div {
+        padding: 40px;
+        background-color: brown;
+        margin: 10px;
+        width: 80%;
+    }

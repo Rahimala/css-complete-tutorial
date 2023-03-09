@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-self</title>
+
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: 100px auto 100px;
+            grid-template-rows: 50px auto 50px;
+        }
+
+        .child {
+            background-color: #F8F3A8;
+            border-radius: 10px;
+            font: 30px Georgia;
+            border: 5px solid #949494;
+            text-align: center;
+        }
+
+        .parent {
+            height: 50vh;
+            border: 5px solid #333;
+            margin-bottom: 10px;
+        }
+
+        /* The align-self property can be applied to a grid item */
+
+        /* This will center the grid item within the grid area. */
+        
+        .start .child:nth-child(5) {
+            align-self: start;
+        }
+
+        .end .child:nth-child(5) {
+            align-self: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="property">align-self:</div>
+    <div class="parent start">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <div class="property-value">start</div>
+    <div class="parent end">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <div class="property-value">end</div>
+    <div class="parent center">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <div class="property-value">center</div>
+    <div class="parent stretch">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+    <div class="property-value">stretch</div>
+
+</body>
+
+</html>
+
+<!-- 
+auto
+stretch
+flex-start
+flex-end
+center
+baseline
+
+
+The possible values for align-self are:
+
+start: aligns the grid item to the start of the cross axis
+end: aligns the grid item to the end of the cross axis
+center: aligns the grid item to the center of the cross axis
+stretch: stretches the grid item to fill the full height of the cross axis
+ -->

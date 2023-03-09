@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div:only-child {
+            color: red;
+        }
+
+        div {
+            display: inline-block;
+            margin: 6px;
+            outline: 1px solid;
+        }
+    </style>
+
+    <!-- The :only-child CSS pseudo-class represents an element without any siblings. This is the same as :first-child:last-child or :nth-child(1):nth-last-child(1), but with a lower specificity -->
+</head>
+
+<body>
+    <div>
+        <div>I am an only child.</div>
+    </div>
+    <div>
+        <div>I am an only child.</div>
+    </div>
+
+    <div>
+        <div>I am the 1st sibling.</div>
+        <div>I am the 2nd sibling.</div>
+        <div>
+            I am the 3rd sibling,
+            <div>but this is an only child.</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

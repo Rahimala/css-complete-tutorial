@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @keyframes animation-duration {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(100px);
+            }
+        }
+
+        .box {
+            animation-name: animation-duration;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+</html>
+<!-- * The "animation-duration" CSS property sets the length of time an animation takes to complete one cycle. It is specified in seconds (s) or milliseconds (ms). -->

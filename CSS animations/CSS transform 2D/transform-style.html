@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-style css</title>
+
+    <style>
+        .container {
+/* "transform-style" are "flat" and "preserve-3d". */
+            transform-style:preserve-3d;
+            perspective: 500px;
+        }
+        .box {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            transform: rotateX(45deg) rotateY(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
+
+<!-- "transform-style" is a CSS property used to specify the rendering style of nested elements in 3D transforms. The possible values for "transform-style" are "flat" and "preserve-3d".
+
+"flat": This value is used to specify that the children of the transformed element should be flattened into the plane of the parent element.
+"preserve-3d": This value is used to specify that the children of the transformed element should be positioned in 3D space, preserving their 3D positions relative to the parent.
+The default value for "transform-style" is "flat". To use "transform-style", it is typically applied to the parent element that you want to transform in 3D, and its children will inherit the value. -->
+
+<!-- In this example, we have a container div with the CSS class container. This div has a "transform-style" property set to "preserve-3d", which means that any child elements within this container will be transformed in 3D space.
+
+We also have a perspective property set on the container class, which specifies the distance from the user to the 3D element. The larger the value of perspective, the further away the 3D element appears.
+
+Next, we have a box div with the CSS class box. This div has a width and height set, as well as a background-color set to red. Finally, it has a transform property set, which rotates the box div 45 degrees on the X and Y axes, creating a 3D effect.
+
+Note that to see the 3D effect, you'll need to view this example in a browser that supports CSS 3D transform -->

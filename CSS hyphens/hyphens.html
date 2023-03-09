@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        p {
+            width: 55px;
+            border: 1px solid #666;
+        }
+
+        p.none {
+            -webkit-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+        }
+
+        p.manual {
+            -webkit-hyphens: manual;
+            -ms-hyphens: manual;
+            hyphens: manual;
+        }
+
+        p.auto {
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Hyphens property example</h2>
+    <h3>none</h3>
+    <p class="none">An extreme&shy;ly lengthy sentence</p>
+    <h3>manual</h3>
+    <p class="manual">An extreme&shy;ly lengthy sentence</p>
+    <h3>auto</h3>
+    <p class="auto">An extreme&shy;ly lengthy sentence</p>
+</body>
+
+</html>
+
+<!-- The hyphens property defines how words should be hyphenated when text wraps across the lines of text.
+
+The hyphens property can take three values: none, manual, auto. It allows preventing hyphenation or allow it, or only allow it when certain characters are present. -->
+
+<!-- hyphens: none | manual | auto | initial | inherit; -->

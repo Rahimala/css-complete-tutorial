@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        p {
+            width: 200px;
+            margin: 3px;
+            background: #ccc;
+        }
+
+        .anywhere {
+            overflow-wrap: anywhere;
+        }
+
+        .break-word {
+            overflow-wrap: break-word;
+        }
+
+        .normal {
+            overflow-wrap: normal;
+        }
+
+        .auto {
+            overflow-wrap: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Overflow-wrap property example</h2>
+    <h3>Overflow-wrap: normal</h3>
+    <p>Lorem Ipsum has been the industry's standard <em class="normal"> dummydummydummydummydummydummydummydummy</em>
+        text ever since the 1500s...
+    </p>
+    <h3>Overflow-wrap: anywhere</h3>
+    <p>Lorem Ipsum has been the industry's standard <em class="anywhere">dummydummydummydummydummydummydummydummy </em>
+        text ever since the 1500s...
+    </p>
+    <h3>Overflow-wrap: break-word</h3>
+    <p>Lorem Ipsum has been the industry's standard <em class="break-word">dummydummydummydummydummydummydummydummy
+        </em> text ever since the 1500s...
+    </p>
+    <h3>Overflow-wrap: auto</h3>
+    <p>Lorem Ipsum has been the industry's standard <em class="auto">dummydummydummydummydummydummydummydummy</em> text
+        ever since the 1500s...
+    </p>
+</body>
+
+</html>
+<!-- The CSS overflow-wrap property, also known as "word-wrap", is used to control how text wraps within an element. It specifies whether or not the browser should insert line breaks within words to prevent text from overflowing the bounds of an element.
+It accepts the values normal and break-word
+normal : this will wrap the text only at the end of the line, and not in the middle of a word.
+break-word : this will insert line breaks within words if necessary to prevent overflow. This option is useful when you want to prevent a single long word from overflowing an element and breaking the layout. -->

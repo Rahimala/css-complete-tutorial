@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The title of the document</title>
+    <style>
+        #example1 {
+            border: 5px dashed #666;
+            padding: 15px;
+            background: #1c87c9;
+            background-clip: border-box;
+        }
+
+        #example2 {
+            border: 5px dashed #666;
+            padding: 15px;
+            /* background: #1c87c9; */
+            /* background-clip: padding-box; */
+            /* background-clip: content-box; */
+            background-color: red;
+            background-clip:content-box;
+            background-origin:padding-box;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Background-clip property example</h2>
+    <p>Here the background-clip is set to "border-box" (this is the default value).</p>
+    <div id="example1">
+        <p>The background extends behind the border.</p>
+    </div>
+    <p>Here the background-clip is set to "padding-box".</p>
+    <div id="example2">
+        <p>The background extends to the inside edge of the border.</p>
+    </div>
+</body>
+
+</html>

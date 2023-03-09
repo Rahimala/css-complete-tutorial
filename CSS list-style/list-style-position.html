@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul.a {
+            list-style-position: outside;
+        }
+
+        ul.b {
+            list-style-position: inside;
+        }
+        li {
+            border: 1px solid;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The list-style-position Property</h1>
+
+    <h2>list-style-position: outside (default):</h2>
+    <ul class="a">
+        <li>Coffee - A bted ce set</li>
+        <li>Tea - An aromatic Asia</li>
+        <li>Coca Col coca leaves</li>
+    </ul>
+
+    <h2>list-style-position: inside:</h2>
+    <ul class="b">
+        <li>Coffee - A brewed offfrom</li>
+        <li>Tea - An aromaaves of </li>
+        <li>Coca Cola - A caa </li>
+    </ul>
+
+</body>
+
+</html>
+
+<!-- The "list-style-position" CSS property sets the position of the list item marker (bullet or number) in relation to the content of the list item. The possible values are:
+
+"inside" (default) - The marker is placed inside the list item's content and is aligned with the left edge of the content.
+"outside" - The marker is placed outside the list item's content and is aligned with the left edge of the list item.
+For example, the following CSS code sets the list item marker position to "outside" for all unordered lists on the page:
+
+Copy code
+ul {
+  list-style-position: outside;
+} -->

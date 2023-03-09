@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-column-gap</title>
+
+    <style>
+        .container {
+            background-color: #583107;
+            /* for grid visualize */
+            display: grid;
+            margin: 40px auto;
+            width: 500px;
+            grid-template-columns: repeat(4, 4fr);
+            grid-template-rows: 100px 100px;
+
+            grid-column-gap: 10px;
+            /* pixels (px), em, or percentages (%). */
+
+
+            grid-row-gap: 20px;
+            /* <length> values row-gap: 20px; row-gap: 1em;row-gap: 3vmin;  row-gap: 0.5cm;
+
+                row-gap: 0.5cm; <percentage> value  row-gap: 10%; */
+
+        }
+
+        /* same style */
+
+        .grid-item {
+            color: #564e4a;
+            font-size: 1em;
+        }
+
+        .grid-item:nth-child(2),
+        .grid-item:nth-child(3),
+        .grid-item:nth-child(4),
+        .grid-item:nth-child(5) {
+            position: relative;
+        }
+
+        .grid-item:nth-child(2)::before,
+        .grid-item:nth-child(3)::before,
+        .grid-item:nth-child(4)::before,
+        .grid-item:nth-child(5)::before {
+            content: "10px";
+            left: -20px;
+            top: -25px;
+            position: absolute;
+        }
+
+        .grid-item:nth-child(5)::before {
+            content: "20px";
+            left: -40px;
+            top: -20px;
+        }
+
+        /* ------------ */
+        body {
+            margin: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            border: 1px solid #666;
+            border-radius: 6px;
+            margin: 0 auto;
+            overflow-x: scroll;
+            padding: 15px;
+            width: 60%;
+        }
+
+        .block {
+            display: inline-block;
+            height: 20px;
+            width: 40px;
+        }
+
+        .brown {
+            background-color: #583107;
+        }
+
+        .orange {
+            background-color: #f88a14;
+        }
+
+        .text {
+            color: #333;
+            font-size: 18px;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .text span {
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: top;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>CSS Grid: grid-column-gap / grid-row-gap</h1>
+    <div class="text">
+        <div class="block brown"></div>
+        <span>grid container</span>
+        <div class="block orange"></div>
+        <span>grid item</span>
+    </div>
+    <pre>
+.container {
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+</pre>
+    <div class="container">
+        <div class="grid-item orange"></div>
+        <div class="grid-item orange"></div>
+        <div class="grid-item orange"></div>
+        <div class="grid-item orange"></div>
+        <div class="grid-item orange"></div>
+        <div class="grid-item orange"></div>
+        <div class="grid-item orange"></div>
+        <div class="grid-item orange"></div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+grid-column-gap
+------------------
+    grid-column-gap is a CSS property that specifies the size of the gap between columns in a grid layout. It is a shorthand property that combines grid-column-gap and grid-row-gap into a single property.
+
+    The grid-column-gap property is used in conjunction with the display: grid and grid-template-columns properties. It specifies the size of the gap between the columns in the grid. The gap is created by adding empty space between the columns.
+----------------------------------------------------------------------------------------------
+
+grid-row-gap
+------------------
+
+grid-row-gap is a CSS property that defines the size of the gap between rows in a grid layout. It works in the same way as grid-column-gap, but applies to rows instead of columns
+
+
+-->

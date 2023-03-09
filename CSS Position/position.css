@@ -1,0 +1,40 @@
+:root {
+    --color-background: #be5e5e;
+    --color-background-a: #f9f9f9;
+    --color-primary: #272424;
+    --color-secondary: #7d7c7c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a,
+p {
+    color: var(--color-primary);
+}
+
+/* HEADER */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-background);
+    height: 80px;
+}
+
+.navbar a {
+    font-size: 14px;
+    line-height: 80px;
+}

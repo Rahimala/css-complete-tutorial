@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checked selector example</title>
+
+    <!-- css style sheet of link -->
+    <style>
+        input[type=checkbox] {
+            vertical-align: middle;
+        }
+
+        input[type=checkbox]+label {
+            color: #999999;
+            font-style: normal;
+        }
+
+        input[type=checkbox]:checked+label {
+            color: #bf4242;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>checked selector example</h2>
+    <form action="">
+        <input type="checkbox" id="css" name="css">
+        <label for="css">Here is css example.</label>
+    </form>
+
+
+
+    <!-- The :checked pseudo-class is used to select elements when they are in the selected state. It only relates to the <input> (only for radio buttons and checkboxes) and the <option> elements.
+
+Checkbox and radio elements can be toggled "on" and "off" by the user -->
+</body>
+
+</html>

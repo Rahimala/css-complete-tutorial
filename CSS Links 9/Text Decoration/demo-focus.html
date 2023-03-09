@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>a:focus</title>
+
+    <style>
+        label {
+            display: block;
+            margin-top: 1em;
+        }
+
+        /* input fixd static */
+        /* input {
+            background-color: lightblue;
+        } */
+
+        /* focus */
+
+        input:focus {
+            background-color: tomato;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <p>Which flavor would you like to order?</p>
+        <label>Full Name: <input name="firstName" type="text"></label>
+        <label>Flavor:
+            <select name="flavor">
+                <option>Cherry</option>
+                <option>Green Tea</option>
+                <option>Moose Tracks</option>
+                <option>Mint Chip</option>
+            </select>
+        </label>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        input {
+            width: 60%;
+            margin: 0;
+            border: none;
+            outline: 1px solid lightgrey;
+            outline-offset: 5px;
+        }
+
+        input:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+        }
+
+        form {
+            background: #67a6ec;
+            padding: 1.5em;
+            max-width: 400px;
+            width: 100%;
+            outline: 10px solid rgba(17, 58, 103, 0.6);
+        }
+
+        hr {
+            visibility: hidden;
+        }
+
+        label {
+            margin-right: 3%;
+            text-align: left;
+            display: inline-block;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>:disabled selector example</h2>
+    <form action="#">
+        <label for="name">Enabled Input:</label>
+        <input type="text" autofocus>
+        <hr>
+        <label for="name">Disabled Input:</label>
+        <input type="text" disabled>
+    </form>
+
+    <!-- The :disabled CSS pseudo-class represents any disabled element. An element is disabled if it can't be activated (selected, clicked on, typed into, etc.) -->
+</body>
+
+</html>

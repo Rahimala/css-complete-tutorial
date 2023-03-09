@@ -1,0 +1,241 @@
+<!-- In CSS, the transition-timing-function property is used to specify the timing function to be used for a CSS transition effect. A timing function defines how the intermediate values of a transition effect are calculated over time. -->
+
+
+<!-- todo: ease - The default timing function, which starts slowly, accelerates in the middle, and slows down towards the end. -->
+
+<!-- ! exm ease -->
+<div class="ease">ease</div>
+<style>
+    .ease {
+        background-color: tomato;
+        height: 100px;
+        width: 100px;
+        transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+    }
+
+    .ease:hover {
+        width: 100vw;
+    }
+</style>
+
+
+<!-- todo:  linear - A constant speed timing function, which moves at a steady(দৃঢ়) pace from start to finish-->
+<!-- ! linear  -->
+<div class="linear">linear </div>
+<style>
+    .linear {
+        background-color: rgb(71, 191, 255);
+        height: 100px;
+        width: 100px;
+        transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+    }
+
+    .linear:hover {
+        width: 100vw;
+    }
+</style>
+
+
+
+
+<!-- todo: ease-in - A timing function that starts slowly and accelerates towards the end. -->
+<!-- ease-in -->
+<div class="ease-in">ease-in</div>
+<style>
+    .ease-in {
+        background-color: bisque;
+        height: 100px;
+        width: 100px;
+        transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+    }
+
+    .ease-in:hover {
+        width: 100vw;
+    }
+</style>
+
+
+<!-- todo:  ease-out - A timing function that starts quickly and slows down towards the end.-->
+<!--         ease-out       -->
+<div class="ease-out">ease-out</div>
+<style>
+    .ease-out {
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+        transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+    }
+
+    .ease-out:hover {
+        width: 100vw;
+    }
+</style>
+
+
+<!-- todo:  ease-in-out - A timing function that starts slowly, accelerates in the middle, and slows down towards the end.-->
+<!--     ease-in-out    -->
+
+<div class="ease-in-out">ease-in-out</div>
+<style>
+    .ease-in-out {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(55, 0, 255);
+        transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+    }
+
+    .ease-in-out:hover {
+        width: 100vw;
+    }
+</style>
+
+
+<!-- todo:  step-start - A timing function that instantly jumps to the end state at the start of the transition.-->
+<!--      step-start    -->
+<div class="step-start">step-start</div>
+<style>
+    .step-start {
+        background-color: violet;
+        height: 100px;
+        width: 100px;
+        animation-name: my-animation;
+        animation-duration: 2s;
+        animation-timing-function: step-start;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes my-animation {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+</style>
+
+
+<!-- todo:  step-end - A timing function that instantly jumps to the end state at the end of the transition.-->
+
+<!--  -->
+
+<div class="step-end">step-end</div>
+<style>
+    .step-end {
+        animation-name: my-animation;
+        animation-duration: 2s;
+        animation-timing-function: step-end;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes my-animation {
+        0% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(100px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+</style>
+
+
+<!-- todo:  steps() - A timing function that allows you to define a custom number of steps for the transition-->
+<!--  steps -->
+<div class="steps">steps</div>
+<style>
+    .steps {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        animation: moves 2s steps(10, end) infinite;
+    }
+
+    @keyframes moves {
+        0% {
+            top: 0;
+        }
+
+        100% {
+            top: 250px;
+        }
+    }
+</style>
+
+<!-- todo: cubic-bezier() - The transition-timing-function property can also accept custom timing functions using the function.-->
+
+<!-- cubic-bezier() -->
+
+<div class="cubic-bezier">cubic-bezier</div>
+
+<style>
+    .cubic-bezier {
+        width: 100px;
+        float: right;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation: move 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+    }
+
+    /* @keyframes move {
+        0% {
+            top: 0;
+        }
+
+        50% {
+            top: 200px;
+        }
+
+        100% {
+            top: 0;
+        }
+    } */
+
+
+    @keyframes move {
+        0% {
+            left: 0;
+        }
+
+        100% {
+            left: 250px;
+        }
+    }
+</style>
+
+<!-- todo cubic-bezier(0.25, 0.1, 0.25, 1) is a timing function in CSS that defines the speed and progress of an animation over time.
+
+The cubic-bezier() function takes four values as its arguments
+
+ The four values correspond to the x and y coordinates of the control points at t=0, t=1/3, t=2/3
+
+ In the case of cubic-bezier(0.25, 0.1, 0.25, 1), the first two values (0.25, 0.1) 
+ represent the x and y coordinates of the first control point, while the second two values (0.25, 1) 
+ represent the x and y coordinates of the second control point.
+
+
+  ease-in and ease-out effect for the animation, which means that the animation starts slowly, 
+  accelerates in the middle, and then slows down again as it reaches its endpoint. 
+  The easing effect is not as dramatic as some other timing functions
+-->

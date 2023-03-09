@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After and Before</title>
+
+    <style>
+        .speech {
+            position: relative;
+            padding: 30px;
+            max-width: 500px;
+            background: #add8e6;
+            margin: auto;
+        }
+
+        /* After Class */
+        .speech::after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: -30px;
+            width: 0;
+            border-width: 30px 30px 0;
+            border-style: solid;
+            border-color: #add8e6 transparent;
+        }
+
+        .img-bg {
+            position: relative;
+            margin: 300px;
+            width: 400px;
+            padding: 25px;
+            background: #add8e6;
+        }
+
+        /* Before Class */
+        .img-bg::before {
+            content: " ";
+            background-image: url(circle.png);
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            left: -120px;
+            top: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img-bg">
+        I want to have an image on the left side of the text. But my image is too big and I can't resize it if I put it
+        in the content.
+    </div>
+
+    <div class="speech">My name is GirlThatLovesToCode. That's becouse I'm a girl and I love to code.</div>
+
+</body>
+
+</html>

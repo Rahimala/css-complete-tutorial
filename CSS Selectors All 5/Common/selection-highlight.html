@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      .green::-moz-selection {
+        background-color: #8ebf42;
+      }
+      .green::selection {
+        background-color: #8ebf42;
+      }
+      .yellow::-moz-selection {
+        background-color: #FFFF19;
+      }
+      .yellow::selection {
+        background-color: #FFFF19;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>::selection selector example</h2>
+    <p>This is a text with the default selection background-color.</p>
+    <p class="green">Select this text to see a green background.</p>
+    <p class="yellow">Select this text to see a yellow background.</p>
+  </body>
+</html>

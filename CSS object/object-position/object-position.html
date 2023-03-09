@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        img.tree {
+            width: 200px;
+            height: 400px;
+            border: 2px solid #8ebf42;
+            object-fit: none;
+            /* object-position: 50% 100%; */
+            object-position:right;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Object-position property example</h2>
+    <h3>Original image:</h3>
+    <img src="../img/ducks.jpg" alt="Tree" width="300"
+        height="200">
+    <h3>Object-position: 50% 50%</h3>
+    <img class="tree" src="../img/ducks.jpg" alt="Tree"
+        width="300" height="200">
+</body>
+
+<!-- The object-position property is used together with the object-fit property to specify how an element should be positioned with x/y coordinates inside its content box. The first value controls the x-axis and the second value controls the y-axis.
+
+This property can be specified by a string (left, center or right), or a number (in px or %). -->

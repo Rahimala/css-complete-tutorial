@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link-visited</title>
+</head>
+
+<body>
+    <p>Pages that you might have visited:</p>
+    <ul>
+        <li>
+            <a href="#">MDN Web Docs</a>
+        </li>
+        <li>
+            <a href="#">YouTube</a>
+        </li>
+    </ul>
+    <p>
+        Pages unlikely to be in your history:
+    </p>
+    <ul>
+        <li>
+            <a href="#">Random MDN page</a>
+        </li>
+        <li>
+            <a href="#">Random Example page</a>
+        </li>
+    </ul>
+</body>
+
+</html>
+
+<style>
+    /* p {
+        font-weight:bold;
+    }
+    a:visited{
+        color: forestgreen;
+        text-decoration: hotpink;
+    } */
+    a:link{
+        color: deeppink;
+        text-decoration: none;
+    }
+    a:visited{
+        color: black;
+    }
+    a:hover{
+        color: deeppink;
+        text-decoration: underline;
+    }
+    a:active{
+        color: darkcyan;
+    }
+</style>

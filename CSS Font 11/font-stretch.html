@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-stretch: ultra-expanded;</title>
+
+    <!-- Css style sheet -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+
+        body {
+            font-family: "Noto Sans";
+            background-color: #087CA7;
+            color: #fff;
+        }
+
+        .condensed {
+            font-stretch: ultra-condensed;
+            -webkit-transform: scale(0.8, 1);
+            /* Safari and Chrome */
+            -moz-transform: scale(0.8, 1);
+            /* Firefox */
+            -ms-transform: scale(0.8, 1);
+            /* IE 9 */
+            -o-transform: scale(0.8, 1);
+            /* Opera */
+            transform: scale(0.8, 1);
+            /* W3C */
+        }
+
+        .ultra-condensed {
+            /* font-stretch: ultra-condensed; */
+            /* font-stretch:condensed; */
+            /* font-stretch: semi-condensed; */
+
+            /* font-stretch: extra-expanded; */
+
+            font-stretch: 100%;
+
+            -webkit-transform: scale(0.7, 1);
+            /* Safari and Chrome */
+            -moz-transform: scale(0.7, 1);
+            /* Firefox */
+            -ms-transform: scale(0.7, 1);
+            /* IE 9 */
+            -o-transform: scale(0.7, 1);
+            /* Opera */
+            transform: scale(0.7, 1);
+            /* W3C */
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .text {
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Lorem ipsum dolor sit amea</h1>
+        <h1 class="condensed">Lorem ipsum dolor sit amea</h1>
+        <h1 class="ultra-condensed">Lorem ipsum dolor sit amea</h1>
+    </div>
+    <br /><br />
+    <div class="text">
+        <p>lorem ipsum dolor sit amea</p>
+        <p class="condensed">lorem ipsum dolor sit amea</p>
+        <p class="ultra-condensed">lorem ipsum dolor sit amea</p>
+    </div>
+</body>
+
+</html>

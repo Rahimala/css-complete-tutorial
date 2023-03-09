@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            position: relative;
+        }
+
+        img {
+            float: left;
+        }
+
+        .buttons {
+            left: -100%;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            display: block;
+            padding: 5px;
+            width: 100px;
+            margin: 5px;
+            transition: .2s;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .col {
+            position: absolute;
+            font-weight: bold;
+            font-size: 15px;
+            width: 100%;
+            left: 250px;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="buttons">
+            <button class="button" onclick="none()">none</button>
+            <button class="button" onclick="left()">left</button>
+            <button class="button" onclick="right()">right</button>
+            <button class="button" onclick="both()">both</button>
+
+        </div>
+        <img src="https://i0.wp.com/lenadesign.org/wp-content/uploads/2021/10/css-clock-animation.jpg?ssl=1&resize=320%2C320"
+            width="auto" height="120" ;>
+        <div id="clear" style="font-size: 25px;">This is some text.<br>This is some text.<br>This is some text.<br>This
+            is
+            some text.<br>This is some text.</div>
+
+        <div class="col">
+            <h2>CSS Code:</h2>
+            <p id="code">CSS code</p>
+        </div>
+    </div>
+
+    <script>
+        function none() {
+            document.getElementById("clear").style.clear = "none"
+
+            var x = document.getElementById("code");
+            if (x.innerHTML === "clear: none;") {
+                x.innerHTML = "clear: none;";
+            } else {
+                x.innerHTML = "clear: none;";
+            }
+        }
+
+        function left() {
+            document.getElementById("clear").style.clear = "left"
+
+            var x = document.getElementById("code");
+            if (x.innerHTML === "clear: left;") {
+                x.innerHTML = "clear: left;";
+            } else {
+                x.innerHTML = "clear: left;";
+            }
+        }
+
+        function right() {
+            document.getElementById("clear").style.clear = "right"
+
+            var x = document.getElementById("code");
+            if (x.innerHTML === "clear: right;") {
+                x.innerHTML = "clear: right;";
+            } else {
+                x.innerHTML = "clear: right;";
+            }
+        }
+
+        function both() {
+            document.getElementById("clear").style.clear = "both"
+
+            var x = document.getElementById("code");
+            if (x.innerHTML === "clear: both;") {
+                x.innerHTML = "clear: both;";
+            } else {
+                x.innerHTML = "clear: both;";
+            }
+        }
+    </script>
+</body>
+
+</html>

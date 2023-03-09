@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document :read-only:after, :before </title>
+
+    <style>
+        div:read-only:hover {
+            background-color: aqua;
+        }
+        div:read-only::before,div:read-only:after{
+            content: "/";
+            padding: 10px;
+            color: aqua;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div readonly>Here is an example of :read-only selector on hover.</div>
+    <br />
+    <div contenteditable="true">Example of a contenteditable paragraph! Just click and edit!</div>
+</body>
+
+</html>

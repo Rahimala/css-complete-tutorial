@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- The values can be set using keywords such as "top", "left", "right", "bottom", or length and percentage values to set a custom origin. -->
+    <style>
+        #parent {
+            perspective: 300px;
+            perspective-origin: right top;
+            position: relative;
+            height: 300px;
+            width: 300px;
+            margin: 50px;
+        }
+
+        .child {
+            position: absolute;
+            transform: rotateX(45deg) rotateY(45deg);
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>
+<!-- In this example, the parent element with the id of "parent" has a perspective property set to 300px and a perspective-origin property set to top left. The child element with the class of "child" is positioned absolutely within the parent and is transformed with rotations along the X and Y axes to create a 3D effect. The origin of the perspective, as set by perspective-origin, affects how the 3D transformation is viewed. -->
+
+
+
+
+
+
+<!-- The perspective-origin CSS property sets the position of the origin for the perspective property. It determines the origin for the perspective from which 3D elements are viewed. The values can be set using keywords such as "top", "left", "right", "bottom", or length and percentage values to set a custom origin.
+
+The default value is 50% 50%, which means the origin is centered. The perspective-origin property must be set on the parent element of the 3D elements to have an effect. -->

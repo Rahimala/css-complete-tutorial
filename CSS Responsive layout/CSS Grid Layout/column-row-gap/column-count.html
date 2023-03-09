@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>column-coun</title>
+
+    <!-- column-rule: column-rule-width  column-rule-style  column-rule-color; -->
+    <!-- 
+
+        column-count
+        column-width
+        columns
+        column-gap
+        column-rule-style
+        column-rule-width
+        column-rule-color
+        column-rule
+        column-span
+        column-fill
+     -->
+
+    <style>
+        .col-gap {
+            column-count: 2;
+            /* column-gap: 50px; */
+            /* column-width: 2em; */
+            /* column-width:100px; */
+            /* column-rule-style: solid; */
+            /* column-rule-width: 6px; */
+            /* border: 1px solid teal; */
+            /* column-rule: 2px solid dodgerblue; */
+            
+            padding: 10px;
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <h4> Use column-gap property to give space or gap between continuous columns</h4>
+    <div class="col-gap">
+        This is a long established fact that a reader will be distracted by the readable content of a page when looking
+        at its layout. The point of using .
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    The column-count property in CSS is used to specify the number of columns that an element should be divided into. The columns are created by dividing the element's content into equal parts, and then arranging the content into the columns. The property is commonly used for creating multi-column layouts for text, similar to a newspaper or magazine layout.
+
+
+    element {
+    column-count: value;
+}
+
+
+div {
+    column-count: 3;
+}
+
+This would divide the content of the div element into 3 columns.
+
+Additionally, you can control width and gap between columns by using column-width and column-gap properties.
+
+
+div {
+    column-count: 3;
+    column-width: 150px;
+    column-gap: 10px;
+}
+
+div {
+    column-count: 3;
+    column-width: 150px;
+    column-gap: 10px;
+}
+
+ -->

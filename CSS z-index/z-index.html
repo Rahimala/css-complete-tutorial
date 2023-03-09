@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>z-index</title>
+
+    <style>
+        img {
+            position: absolute;
+            left: 0;
+            top: 10px;
+
+            z-index:-1;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Z-index property</h2>
+    <img src="https://w7.pngwing.com/pngs/46/1016/png-transparent-business-w3-plus-solutions-graphic-design-world-wide-web-text-people-logo-thumbnail.png"
+        alt="W3docs logo" width="200" height="100">
+</body>
+</body>
+
+</html>
+
+<!-- 
+    The CSS z-index property specifies the stack order of an element. An element with a higher z-index is always in front of an element with a lower z-index.
+
+The z-index property only works on elements that have a position value of absolute, relative, or fixed.
+
+The default z-index value is auto, which means that the element will be placed on the same stack level as its parent element.
+
+
+
+The CSS z-index property specifies the stack order of an element, which is the order in which elements are stacked on top of one another. An element with a higher z-index will be stacked on top of an element with a lower z-index.
+
+The z-index property can take a number value (positive or negative), with larger values indicating a higher stack order. For example, an element with a z-index of 2 will be stacked on top of an element with a z-index of 1.
+
+It's important to note that z-index only works on elements that have a position value of absolute, relative, or fixed. Elements with a position value of static (the default) do not have a z-index and will not affect the stacking order.
+
+Also, the stacking context is determined by an element with a non-static position and z-index value other than 'auto' , all its child element will be stacked in that context.
+ -->

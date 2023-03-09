@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- It have to use the [flex-wrap] property first to see the effect. -->
+    <style>
+        body {
+            background-color: #E7E9EB;
+        }
+
+        /*  align-content stretch defulit */
+        /* #main-stretch {
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: stretch;
+        }
+
+        #main-stretch div {
+            width: 100%;
+            height: 40px;
+        } */
+
+        /*  align-content center */
+        /* #main-center {
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content:center;
+        }
+
+        #main-center div {
+            width: 100%;
+            height: 40px;
+        }
+ */
+        /* align-content space-between
+        #main-space-bewteen{
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+        #main-space-bewteen div {
+            width: 100%;
+            height: 40px;
+        } */
+
+        /*  align-content space-around */
+        /* #main-space-around{
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+
+        #main-space-around div {
+            width: 100%;
+            height: 40px;
+        } */
+
+        #main-space-around {
+            display: flex;
+            height: 600px;
+            background-color: #f7941d;
+            margin: 20px;
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+
+        #main-space-around>div {
+            padding: 40px;
+            background-color: aqua;
+            margin: 10px;
+            color: #0f0f10;
+        }
+
+        /* align-content flex-start */
+        #main-flex-start {
+            display: flex;
+            height: 600px;
+            background-color: #f7941d;
+            margin: 20px;
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            align-content: flex-end;
+        }
+
+        #main-flex-start>div {
+            padding: 40px;
+            background-color: aqua;
+            margin: 10px;
+            color: #0f0f10;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The align-content Property</h1>
+
+    <!-- align-content stretch defulit -->
+    <div id="main-stretch">
+        <div style="background-color:coral;"> align-content: stretch;</div>
+        <div style="background-color:lightblue;"> align-content: stretch;</div>
+        <div style="background-color:pink;"> align-content: stretch;</div>
+    </div>
+
+
+    <!-- align-content center -->
+    <div id="main-center">
+        <div style="background-color:coral;">align-content center .</div>
+        <div style="background-color:lightblue;">align-content center .</div>
+        <div style="background-color:pink;">align-content center .</div>
+    </div>
+
+
+    <!-- align-content space-between -->
+    <div id="main-space-bewteen">
+        <div style="background-color:coral;">align-content space-between.</div>
+        <div style="background-color:lightblue;">align-content space-between.</div>
+        <div style="background-color:pink;">align-content space-between .</div>
+    </div>
+
+    <!-- align-content space-around -->
+    <div id="main-space-around">
+        <!-- <div style="background-color:coral;">align-content space-between.</div>
+        <div style="background-color:lightblue;">align-content space-between.</div>
+        <div style="background-color:pink;">align-content space-between .</div> -->
+
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+    </div>
+
+
+    <!-- align-content flex-start -->
+    <div id="main-flex-start">
+        <!-- <div style="background-color:coral;">align-content space-between.</div>
+        <div style="background-color:lightblue;">align-content space-between.</div>
+        <div style="background-color:pink;">align-content space-between .</div> -->
+
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+        <div>align-content space-between</div>
+    </div>
+
+
+</body>
+
+</html>

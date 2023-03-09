@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .auto {
+            cursor:not-allowed ;
+        }
+        .help {
+            cursor: help;
+        }
+
+        .cursor {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .cursor > div {
+            flex: 120px;
+            padding: 10px 2px;
+            border: 1px solid #666;
+            border-radius: 30px;
+            margin: 0 5px 5px 0;
+            white-space: nowrap;
+        }
+
+        .cursor > div:hover {
+            background: rgb(12, 170, 96);
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor">
+        <div class="auto">auto</div>
+        <div class="help">help</div>
+    </div>
+</body>
+</html>
+
+<!-- cursor: auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | URL | vertical-text | alias | copy | move | no-drop | not-allowed | all-scroll | col-resize | row-resize | n-resize | s-resize | e-resize | w-resize | ns-resize | ew-resize | ne-resize | nw-resize | se-resize | sw-resize | nesw-resize | nwse-resize | zoom-in | zoom-out | grab | grabbing -->
+
+<!-- The CSS cursor property is used to specify the type of cursor that should be displayed when the mouse pointer is over an element. There are several pre-defined cursor types available, such as "pointer" (a pointing hand), "text" (an I-beam), "wait" (a hourglass), "crosshair" (a cross), and many more. Additionally, you can also use the "url" value to specify the URL of a custom cursor image. -->

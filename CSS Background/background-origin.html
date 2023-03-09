@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-origin</title>
+
+
+    <!-- links of stylesheet -->
+    <style>
+        .container{
+            padding: 3em;
+            margin: 5em;
+
+            background: url(http://icons.iconarchive.com/icons/goescat/macaron/128/mypaint-icon.png) no-repeat bottom right #58a;
+            /*background-position: 3em bottom 3em right;*/
+            /* background-color: #58a; */
+
+            /* background-origin: content-box; */
+            /* background-origin: border-box; */
+            background-origin: padding-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>title</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis soluta hic quod obcaecati quibusdam sunt maiores temporibus natus odio quia!</p>
+    </div>
+</body>
+</html>
+
+<!-- 
+
+    border-box: The background is painted within (clipped to) the border box. This is the default value.
+
+     background-origin CSS property determines the positioning area of the background images. It is used in conjunction with the background-position property, which sets the position of the background image within the background-origin area.
+
+
+    background-origin: padding-box | border-box | content-box | initial | inherit;
+
+The background-origin CSS property sets the background positioning area to a given set of coordinates. It determines the background's initial position within the element's frame.
+
+The possible values are:
+
+padding-box: The background is painted within the element's padding box.
+
+border-box: The background is painted within the element's border box.
+
+content-box: The background is painted within the element's content box.    
+
+.example {
+  background-image: url(image.jpg);
+  background-origin: border-box;
+}
+
+ -->

@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <style>
+        .gradient1 {
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            background-image: radial-gradient(closest-side at 60% 55%, #ff0509, #fff700, #103601);
+        }
+
+        .gradient2 {
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            background-image: radial-gradient(farthest-side at 60% 55%, #ff0509, #fff700, #103601);
+        }
+
+        .gradient3 {
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            background-image: radial-gradient(closest-corner at 60% 55%, #ff0509, #fff700, #103601);
+        }
+
+        .gradient4 {
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            background-image: radial-gradient(farthest-corner at 60% 55%, #ff0509, #fff700, #103601);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>closest-side:</h2>
+    <div class="gradient1"></div>
+    <h2>farthest-side:</h2>
+    <div class="gradient2"></div>
+    <h2>closest-corner:</h2>
+    <div class="gradient3"></div>
+    <h2>farthest-corner:</h2>
+    <div class="gradient4"></div>
+
+    <!-- closest-corner
+closest-side
+farthest-corner(default)
+farthest-side. -->
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS break-after Property</title>
+
+    <style>
+        .multicol {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+            column-count: 3;
+            column-rule: 2px dotted black;
+        }
+
+        /* left", "right", "page", "column", "region" */
+        /* Break-after, which is the value of the previous element. */
+        /* যা পূর্ববর্তী উপাদানের মান */
+        .multicol hr {
+            break-after:column;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Break-after property example</h2>
+    <div class="multicol">
+        <h2>Lorem ipsum</h2>
+        <p>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70</p>
+        <hr>
+        <h2>Lorem ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis, arcu ut pulvinar sollicitudin, enim
+            purus mollis tellus, et porta elit sem in nulla. Integer a magna eget justo convallis porta. Vestibulum
+            lacinia eget leo sed elementum. Quisque dapibus ullamcorper quam, at pretium quam eleifend a. Donec sit amet
+            blandit risus. Nunc tempus tellus vitae nibh pellentesque imperdiet. Ut pulvinar rhoncus velit, ut euismod
+            odio ornare vel.</p>
+    </div>
+</body>
+
+</html>
+<!-- break-after: auto | avoid | always | all | initial | inherit; -->
+
+<!-- The "break-after" property in CSS is used to specify whether or not a page, column, or region break should occur after an element. It allows controlling of how content flows within a web page or document, and can be used to create specific layout and formatting effects.
+
+The possible values are:
+
+"auto" : The default value, allows the browser to determine whether or not to insert a page, column, or region break after the element, based on the document's layout and the available space on the current page.
+"always" : Forces a page, column, or region break after the element.
+"avoid" : Attempts to prevent a page, column, or region break after the element.
+"left", "right", "page", "column", "region" : Allows to specify the type of break that should occur after the element.
+This property works in conjunction with the "break-before" and "break-inside" properties to control the flow of content within a web page or document. -->

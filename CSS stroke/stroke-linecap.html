@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+</head>
+
+<body>
+    <h2>Stroke-linecap property example</h2>
+    <svg viewBox="0 0 6 4">
+        <!-- Effect of the "butt" value -->
+        <path d="M1,1 h4" stroke="#8ebf42" stroke-linecap="butt" />
+        <!-- Effect of the "butt" value on a zero length path -->
+        <path d="M3,3 h0" stroke="#8ebf42" stroke-linecap="butt" />
+        <!--
+        the following pink lines highlight the
+        position of the path for each stroke
+        -->
+        <path d="M1,1 h4" stroke="#1c87c9" stroke-width="0.05" />
+        <circle cx="1" cy="1" r="0.05" fill="#1c87c9" />
+        <circle cx="5" cy="1" r="0.05" fill="#1c87c9" />
+        <circle cx="3" cy="3" r="0.05" fill="#1c87c9" />
+    </svg>
+</body>
+
+</html>

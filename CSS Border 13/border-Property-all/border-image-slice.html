@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-image-slice</title>
+
+    <style>
+        * {
+            font-size: 17px;
+            font-family: 'Noto Sans', sans-serif;
+
+        }
+
+        div {
+            margin-top: 20px;
+            width: 200px;
+            border: solid 20px;
+            border-image-source: url('https://www.dl.dropboxusercontent.com/s/fdltg3rhxn3oe95/border%20image.jpg'); 
+            border-image-width: 20px;
+            border-image-repeat: round;
+
+        }
+
+        #div1 {
+            border-image-slice: 10%;
+        }
+
+        #div2 {
+            border-image-slice: 20%;
+        }
+
+        #div6 {
+            border-image-slice: 50%;
+        }
+
+        #div7{
+            border-image-slice:60 40% 70;
+        }
+
+        #div4{
+            border-image-slice:40% fill;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="div1">border-image-slice: 10%</div>
+
+    <div id="div2">border-image-slice: 20%</div>
+
+    <div id="div3">border-image-slice: 30%</div>
+
+    <div id="div4">border-image-slice: 40%</div>
+
+    <div id="div5">border-image-slice: 70%</div>
+
+    <div id="div6">border-image-slice: 100%</div>
+
+    <div id="div7">border-image-slice: 60 40% 70</div>
+</body>
+
+</html>
+
+<!-- 
+    The border-image-slice property in CSS is used to define the slices of an image that are used to create the border. The property takes a value that is a combination of four numbers, which represent the top, right, bottom, and left offsets respectively. These offsets determine how much of the image is used for the top, right, bottom, and left border respectively.
+
+For example, if the value of border-image-slice is "30 20 10 15", it means that the top border will use the first 30 pixels of the image, the right border will use the next 20 pixels, the bottom border will use the next 10 pixels, and the left border will use the next 15 pixels.
+
+It is often used in combination with other border-image properties, such as border-image-source and border-image-repeat.
+
+Syntax: border-image-slice: number|%|fill|initial|inherit;
+
+Note: If the value is given as a percentage, it is relative to the size of the imag
+
+ border-image-slice is a CSS property that specifies how an image used for a border should be divided into regions. It is used in conjunction with the border-image-source and border-image-width properties to create a border around an element that is made up of an image. The property takes a number of values that determine how the image should be sliced up and used to create the border. The values are given as a number, a percentage or the keyword fill which will fill the available space. It can also accept multiple values to target specific sides of the element. The border-image-slice property creates 9 regions from the given image, 4 corners, 4 edges and the middle area, which is used to fill the element's border area.
+ -->

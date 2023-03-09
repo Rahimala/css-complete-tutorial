@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        /* 
+        1/ flex-shrink-সংকুচিত বা ছোটো হয়ে যাওয়া
+
+        with 0 indicating that the item will not shrink
+        flex-shrink value of 1, it will shrink by the same 
+        amount as the other items in the container
+
+        flex-shrink value of 2, it will shrink twice 
+        as much as the other items. The default value 
+        for flex-shrink is 1
+
+        flex shorthand: 0 0 1;
+        ================================================
+
+        2/ flex-grow- প্রসারিত হত্তয়া
+
+         flex items to specify how much the item should grow relative
+         to the remaining available space in the container..
+
+         unitless value
+
+         default value is 0, which means the flex item will not grow. 
+         A value of 1 means the item will take up as much space as it can, 
+         while a value of 2 means it will take up 
+         twice as much space as items with a value of 1.
+
+        ================================================
+
+        3/ flex-basis- মূল উপাদান
+
+        The flex-basis CSS property sets the initial 
+        main size of a flex item. It works similarly 
+        to the width or height property, but it's used 
+        specifically for flex items. It can be set 
+        using length, percentage, or the keyword auto, 
+        and it determines the size of the item before any f
+        ree space is distributed according to
+        the flex-grow and flex-shrink properties
+
+        Specify <'width'> 
+        flex-basis: 10em;
+        flex-basis: 3px;
+        flex-basis: 50%;        
+        flex-basis: auto;
+        
+        Intrinsic sizing keywords 
+        flex-basis: max-content;
+        flex-basis: min-content;
+        flex-basis: fit-content;
+
+        Automatically size based on the flex item content
+        flex-basis: content;
+        =================================================
+
+        flex-shothand: grow basis shrink;
+        ===================================================
+        
+        */
+        .box {
+            display: flex;
+            margin-left: 50px;
+            border: 1px solid gray;
+            width: 60%;
+        }
+
+        .item {
+            padding: 20px;
+            /* width: 100px; */
+            /* flex-basis: 100px; */
+        }
+
+        .items-1 {
+            background-color: yellow;
+            flex-shrink:0 ;
+        }
+
+        .items-2 {
+            background-color: aqua;
+            flex-grow: 2;
+        }
+
+        .items-3 {
+            flex: 5 3 1;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="item items-1">1-one</div>
+        <div class="item items-2">2-two</div>
+        <div class="item items-3">3-tree</div>
+    </div>
+</body>
+
+</html>

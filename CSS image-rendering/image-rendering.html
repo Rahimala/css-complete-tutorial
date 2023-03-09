@@ -1,0 +1,90 @@
+<style>
+    .grid {
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .item {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .item img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .item.crisp-edges {
+        image-rendering: crisp-edges;
+    }
+
+    .item.pixelated {
+        -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: pixelated;
+    }
+
+    @media only screen and (min-width: 700px) {
+        .item {
+            flex: 0 0 33.33%;
+        }
+
+        .item img {
+            width: 75%;
+            height: auto;
+        }
+    }
+
+    p {
+        margin-bottom: 3px;
+    }
+
+    p.warning {
+        display: block;
+        margin: 10px auto 0;
+        background: orange;
+        text-align: center;
+        max-width: 1000px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        line-height: 1.4;
+        color: white;
+    }
+</style>
+
+
+
+<p class="warning">This technology is currently experimental and hidden behind a features flag.</p>
+
+<div class="grid">
+    <div class="item">
+        <p>Auto (default)</p>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10811/tiger.png" alt="" />
+    </div>
+
+    <div class="item crisp-edges">
+        <p>Crisp Edges</p>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10811/tiger.png" alt="" />
+    </div>
+    <div class="item pixelated">
+        <p>Pixelated</p>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10811/tiger.png" alt="" />
+    </div>
+</div>
+
+<!-- image-rendering: auto | crisp-edges | pixelated | initial | inherit; -->
+
+<!-- The CSS image-rendering property is used to adjust the rendering of an image. It can be set to one of four values: auto, crisp-edges, pixelated, or smooth.
+
+auto: The browser chooses the most appropriate method for rendering the image, based on the user's device and the image itself.
+
+crisp-edges: The image is rendered with sharp edges, regardless of the resolution of the user's device. This can result in a pixelated appearance for high-resolution images.
+
+pixelated: The image is rendered with a pixelated appearance, as if it were a low-resolution image.
+
+smooth: The image is rendered with smooth edges, regardless of the resolution of the user's device. This can result in a blurrier appearance for low-resolution images.
+
+This property can be applied to an individual image using the style attribute, or to all images of a particular class or type using CSS selec -->

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Transform and Transition Example</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .box:hover {
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+
+
+<!-- CSS transforms and transitions are both used to change the appearance of elements on a webpage, but they are used in different ways.
+
+CSS transforms allow you to change the shape, size, and position of an element, without affecting the layout of the surrounding elements. With CSS transforms, you can rotate, scale, skew, and translate elements in 2D or 3D space.
+
+CSS transitions, on the other hand, allow you to animate the change of one or more CSS properties over time. Transitions are useful when you want to create smooth animations between different states of an element. For example, you could use a transition to smoothly change the color or opacity of an element when the user hovers over it.
+
+The key difference between CSS transforms and transitions is that transforms change the appearance of an element, while transitions animate the change of one or more CSS properties. Transforms are typically used to create more dramatic changes to an element's appearance, while transitions are used to create subtle animations that provide visual feedback to the user. -->
+
+
+<!-- In the example provided, transition: transform 0.5s ease-in-out; is a shorthand way of setting multiple transition properties at once.
+
+Let's break it down:
+
+transition is a shorthand property that allows you to set multiple transition properties in a single declaration.
+transform is the CSS property that we want to apply the transition to. In this case, we want to animate any changes to the transform property.
+0.5s is the duration of the transition. This specifies how long the transition will take to complete. In this case, the transition will take 0.5 seconds to complete.
+ease-in-out is the timing function of the transition. This specifies how the transition should progress over time. The ease-in-out function starts slow, speeds up in the middle, and then slows down again at the end, creating a smooth and natural-looking transition.
+Using the shorthand property transition in this way is convenient because it allows you to set multiple transition properties in a single line, which can make your code more concise and easier to read. Additionally, by using the shorthand property, you can avoid making mistakes when setting individual transition properties separately, which can lead to inconsistencies or unintended behavior in your code.
+
+
+
+
+ -->

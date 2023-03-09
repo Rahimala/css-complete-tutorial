@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example of :focus-within pseudo-class</title>
+	<style>
+		.container {
+			background-color: white;
+			padding: 20px;
+			border: 2px solid black;
+			margin: 20px;
+			width: 200px;
+			height: 100px;
+		}
+
+		.container:focus-within {
+			background-color: yellow;
+		}
+
+		input[type="text"] {
+			margin-bottom: 10px;
+			padding: 5px;
+			border: 2px solid gray;
+			border-radius: 5px;
+			width: 100%;
+		}
+
+		input[type="submit"] {
+			background-color: blue;
+			color: white;
+			padding: 5px 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Sign up</h2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name">
+
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email">
+
+			<input type="submit" value="Sign up">
+		</form>
+	</div>
+</body>
+</html>
+
+<!-- CSS :focus-within is a pseudo-class that allows you to apply styles to an element when any of its descendants[সন্তানসন্ততি] have focus. This can be useful for creating interactive and accessible user interfaces.
+
+To use the :focus-within pseudo-class, you can apply it to the parent element that you want to apply styles to when a descendant has focus -->

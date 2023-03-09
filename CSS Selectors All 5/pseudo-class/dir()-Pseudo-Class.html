@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        div:dir(ltr) {
+            background-color: #40739e;
+        }
+
+        div:dir(rtl) {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>:dir() selector example</h2>
+    <div dir="rtl">
+        <span>example1</span>
+        <div dir="ltr">
+            example2
+            <div dir="auto"> ففي </div>
+        </div>
+    </div>
+
+
+    <!--  Selects any element with right-to-left text */ :dir(rtl) { background-color: red; } The :dir(ltr) pseudo-class uses only the semantic value of the directionality, i.e., the one defined in the document itse -->
+</body>
+
+</html>

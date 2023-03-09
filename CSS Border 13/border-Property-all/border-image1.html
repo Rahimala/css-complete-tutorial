@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The title of the document</title>
+    <style>
+        .border {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") round;
+            border-image-slice: 30%;
+            border-image-repeat: repeat;
+            border-image-width: 15px;
+        }
+
+        .border2 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url("http://hermansvereecken.com/stuff/bingel/square-svg05d.svg") round;
+            border-image-slice: 20%;
+            border-image-repeat: round;
+            border-image-width: 10px;
+        }
+
+        .border3 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url("http://hermansvereecken.com/stuff/bingel/square-svg05d.svg") round;
+            border-image-slice: 15%;
+            /* border-image-repeat: space; */
+            border-image-outset: 10px 0 15px;
+            border-image-width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Border-image example with all values.</h2>
+    <p class="border">border-image: 30% 15px repeat</p>
+    <p class="border2">border-image: 20% 10px round;</p>
+    <p class="border3">border-image: 15% 20px space;</p>
+    <p>Here is the original image used:</p>
+    <img src="/uploads/media/default/0001/01/812bf6a749522b8185c1beee20dd99dd6c6c87da.jpeg" style="width:50%">
+</body>
+
+</html>
+
+<!-- border-image: source slice width outset repeat | initial | inherit; -->

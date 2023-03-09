@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid Template Areas Example</title>
+	<style>
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(3, 100px);
+			grid-template-areas:
+				"header header header"
+				"sidebar content content"
+				"footer footer footer";
+			grid-gap: 10px;
+		}
+
+		.header {
+			grid-area: header;
+			background-color: #ddd;
+			padding: 10px;
+		}
+
+		.sidebar {
+			grid-area: sidebar;
+			background-color: #aaa;
+			padding: 10px;
+		}
+
+		.content {
+			grid-area: content;
+			background-color: #bbb;
+			padding: 10px;
+		}
+
+		.footer {
+			grid-area: footer;
+			background-color: #ccc;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="header">Header</div>
+		<div class="sidebar">Sidebar</div>
+		<div class="content">Content</div>
+		<div class="footer">Footer</div>
+	</div>
+</body>
+</html>
+
+
+<!-- grid-template-areas is a CSS property used to define named grid areas within a CSS grid container. The property allows you to define the layout of the grid using ASCII art-like syntax, making it easy to create complex grid layouts with minimal code. -->

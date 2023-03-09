@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aligning-images</title>
+</head>
+
+<body>
+    <p><img src="images/padel1.jpg" alt="Magnolia" class="align-left medium">
+        <b><i>Magnolia</i> is a large genus that contains over 200 flowering plant species
+            In the CSS, you add selectors for
+            each of the class names, then
+            use the CSS width and height
+            properties to control the image
+            dimensions.
+        </b>
+    </p>
+
+    <p><img src="images/fat-bike.jpg" alt="fat-bike" class="align-right medium">
+        Some magnolisa, such as <i>Magnolia stellata</i>and<i>Magnolia soulangeana</i>,
+        flower quite
+        early in the spring before the leaves open
+        By default, images are inline
+        elements. This means that they
+        flow within the surrounding text.
+        In order to center an image, it
+        should be turned into a blocklevel element using the display
+        property with a value of block.
+    </p>
+</body>
+
+</html>
+
+<style>
+    img.align-left {
+        float: left;
+        margin-right: 10px;
+    }
+
+    img.align-right {
+        float: right;
+        margin-right: 10px;
+    }
+
+    img.medium {
+        width: 250px;
+        height: 250px;
+    }
+</style>

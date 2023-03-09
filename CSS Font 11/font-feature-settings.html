@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      h2 {
+        font-family: sans-serif;
+      }
+      h3 {
+        /* font-feature-settings: "smcp"1; */
+        /* font-feature-settings: "smcp" on; */
+        /* font-feature-settings: "c2sc", "smcp"; */
+        /* font-feature-settings: "zero"; */
+        /* font-feature-settings: "hist"; */
+        /* font-feature-settings: "liga" 0; */
+        font-feature-settings: "tnum";
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Font-feature-settings example</h2>
+    <h3>The font-feature-settings CSS property controls advanced typographic features in OpenType fonts.</h3>
+  </body>
+</html>
+
+<!-- The font-feature-settings CSS property is used to control advanced typographic features in OpenType fonts. It allows you to enable or disable specific OpenType features for text rendered in a web page. The property can be set to either a string containing a specific feature to enable or disable, or to the value "normal" to use the default settings for the font. Some examples of OpenType features that can be controlled with font-feature-settings include ligatures, small caps, and alternate characters. It is supported in all modern browsers -->
+
+<!-- * Use the default settings */
+font-feature-settings: normal;
+
+/* Set values for OpenType feature tags */
+font-feature-settings: "smcp";
+font-feature-settings: "smcp" on;
+font-feature-settings: "swsh" 2;
+font-feature-settings: "smcp", "swsh" 2; -->

@@ -1,0 +1,171 @@
+<html>
+
+<body>
+    <div>
+        <!-- We can apply six types of CSS properties to work with flex containers.
+
+                     1/ flex-direction
+                     2/ flex-wrap
+                     3/ flex-flow
+                     4/ justify-content
+                     5/ align-items
+                     6/ align-content -->
+    </div>
+    <!-- ============================================================================================ 1 -->
+    <!-- direction of flexible boxes inside a container.[ Flex-direction ] has four[4] values. -->
+    <!-- 
+            1 / flex-direction: row | 
+
+            2 / flex-direction: column | 
+
+            3 / flex-direction: row-reverse | 
+
+            4 / flex-direction: column-reverse | 
+         -->
+
+
+    <!-- ================================================================================================ 2 -->
+
+    <!-- By using the [flex-wrap] property, you can wrap your flex items. It has [3] values. -->
+
+    <!-- 
+        1 / flex-wrap: wrap |
+
+        2 / flex-wrap:nowrap |
+
+        3 / flex-wrap:wrap-reverse|
+     -->
+
+    <!-- =============================================================================================== 3 -->
+
+    <!-- In CSS flexbox, [flex-flow] is a shorthand property for both [flex-direction & flex-wrap.] When we use this property then first we specify the flex-direction and then the flex-wrap value. Like in the example below. -->
+
+    <!-- 
+        CSS flex-flow Property
+        -----------------------------------------------------
+
+         flex-flow: nowrap
+
+         flex-flow: wrap-reverse;
+
+         flex-flow: wrap 
+         
+         flex-flow: row
+     -->
+
+    <!-- ================================================================================================ 4 -->
+
+    <!-- 
+        By using the [justify-content] property, we can horizontally align the flex items. It has [6] values
+      -->
+
+    <!-- 
+        1/ justify-content: center |
+
+        2/ justify-content:flex-start |
+
+        3/ justify-content:space-between |
+
+        4/ justify-content:space-around |
+
+        5/ justify-content: flex-end |
+
+        6/ justify-content:space-evenly |
+       -->
+
+    <!-- 
+        ================================================================ -->
+
+    <!--                 CSS align-content Property
+
+            This property is used for aligning the flex lines in a flex container. It has four values like the other two properties.
+
+
+            align-content: space-between | space-around | flex-start | flex-end | center;
+        
+        
+        -->
+
+
+    <!-- Flex Items (Child Elements) – inside flex container
+
+           In CSS flexbox, flex items are child elements of the flex container. And these are inside of flex container. As we saw in the previous examples, the purple boxes are flex items
+           
+           
+                   Properties use for 
+      flex items: order | flex-grow | flex-shrink | flex-basis |flex align-self
+
+
+
+         -->
+
+
+
+    <!-- 
+
+
+                            /* flex-flow: <'flex-direction'> */
+                            
+                                    flex-flow: row;
+                                    flex-flow: row-reverse;
+                                    flex-flow: column;
+                                    flex-flow: column-reverse;
+
+                                    /* flex-flow: <'flex-wrap'> */
+                                    flex-flow: nowrap;
+                                    flex-flow: wrap;
+                                    flex-flow: wrap-reverse;
+
+                                    /* flex-flow: <'flex-direction'> and <'flex-wrap'> */
+                                    flex-flow: row nowrap;
+                                    flex-flow: column wrap;
+                                    flex-flow: column-reverse wrap-reverse;
+
+                                    /* Global values */
+                                    flex-flow: inherit;
+                                    flex-flow: initial;
+                                    flex-flow: revert;
+                                    flex-flow: revert-layer;
+                                    flex-flow: unset;
+          -->
+
+
+
+    <!--
+        =========================================================================================
+                                       CSS align-items Property
+     This property is used for aligning flex items vertically. Four types of values that you can use.
+
+               align-items: center | flex-start | flex-end | stretch | baseline 
+
+
+
+               /* Positional alignment */
+               
+/* align-items does not take left and right values */
+align-items: center; /* Pack items around the center */
+align-items: start; /* Pack items from the start */
+align-items: end; /* Pack items from the end */
+align-items: flex-start; /* Pack flex items from the start */
+align-items: flex-end; /* Pack flex items from the end */
+
+/* Baseline alignment */
+align-items: baseline;
+align-items: first baseline;
+align-items: last baseline; /* Overflow alignment (for positional alignment only) */
+align-items: safe center;
+align-items: unsafe center;
+
+/* Global values */
+align-items: inherit;
+align-items: initial;
+align-items: revert;
+align-items: revert-layer;
+align-items: unset;
+            
+            -->
+
+
+</body>
+
+</html>

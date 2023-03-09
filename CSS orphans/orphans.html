@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        body {
+            background-color: #eee;
+            color: #000;
+            font-size: 1em;
+            font-family: Roboto, Helvetica, sans-serif;
+        }
+
+        hr {
+            margin: 50px 0;
+        }
+
+        .example {
+            margin: 30px auto;
+            width: 800px;
+        }
+
+        .text {
+            padding: 20px;
+            background-color: #fff;
+            -moz-columns: 10em 3;
+            -webkit-columns: 10em 3;
+            columns: 10em 3;
+            -webkit-column-gap: 2em;
+            -moz-column-gap: 2em;
+            column-gap: 2em;
+            text-align: justify;
+        }
+
+        /* orphans: <integer>  */
+        .text p {
+            orphans: 6;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Orphans property example</h2>
+    <div class="example">
+        <div class="text">
+            <p>
+                Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is dummy text of the printing and
+                typesetting industry.
+            </p>
+            <p>
+                <span style="color: #8ebf42; font-weight: bold">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+            </p>
+            <p>
+                Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.
+            </p>
+            <p>
+                Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+                Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- The CSS orphans property is used to specify the minimum number of lines that must be left at the bottom of a page when a block element breaks across multiple pages or columns. This property is commonly used in print stylesheets to prevent widows, which are single words or short lines that appear alone at the top of a page.
+
+The orphans property can be used with the widows property to control the number of lines that must be left at the top and bottom of a page when a block element breaks across multiple pages or columns.
+
+Here's an example of how you might use the orphans property in your CSS:
+
+css
+Copy code
+p {
+  orphans: 2;
+}
+This example specifies that at least 2 lines of the paragraph must be left at the bottom of the page when the paragraph breaks across multiple pages or columns.
+
+It's worth noting that this property is mainly used in print stylesheets and not all browsers support it in web page -->
+
+<!-- It's important to note that this property is only supported by some browsers, and it's mostly used for print media and not for web design. -->

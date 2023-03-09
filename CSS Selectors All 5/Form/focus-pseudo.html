@@ -1,0 +1,32 @@
+<html>
+<head>
+
+    <!-- The :focus CSS pseudo-class represents an element (such as a form input) that has received focus. It is generally triggered when the user clicks or taps on an element or selects it with the keyboard's Tab key. -->
+    <style>
+        label {
+            display:block;
+            margin-top: 1em;
+        }
+
+        input:focus {
+            background-color: lime;
+            color: rgb(35, 21, 3);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>Which flavor would you like to order?</p>
+        <label>Full Name: <input name="firstName" type="text"></label>
+        <label>Flavor:
+            <select name="flavor">
+                <option>Cherry</option>
+                <option>Green Tea</option>
+                <option>Moose Tracks</option>
+                <option>Mint Chip</option>
+            </select>
+        </label>
+    </form>
+</body>
+
+</html>

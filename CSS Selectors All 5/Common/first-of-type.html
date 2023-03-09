@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <!-- The :first-of-type CSS pseudo-class represents the first element of its type among a group of sibling elements -->
+    <style>
+        dt {
+            font-weight: bold;
+        }
+
+        dd {
+            margin: 3px;
+        }
+
+        dd:first-of-type {
+            border: 2px solid lime;
+        }
+
+        p:first-of-type {
+            color: tomato;
+            font-style: italic;
+            box-shadow: 2px 1px 3px 0 red;
+        }
+    </style>
+</head>
+
+<body>
+    <dl>
+        <dt>Lorem ipsum dolor sit amet</dt>
+        <dd>Lorem ipsum dolor sit amet</dd>
+        <dd>Lorem ipsum dolor sit amet</dd>
+        <dd>Lorem ipsum dolor sit amet</dd>
+        <dd>Lorem ipsum dolor sit amet</dd>
+    </dl>
+
+    <h2>Heading</h2>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+
+</body>
+
+</html>

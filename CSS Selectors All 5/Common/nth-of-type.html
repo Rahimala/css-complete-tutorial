@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        p:nth-of-type(3) {
+            background: #8ebf42;
+        }
+
+        dt {
+            font-weight: bold;
+        }
+
+        dd {
+            margin: 3px;
+        }
+
+        dd:nth-of-type(2n) {
+            border: 2px solid orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>:nth-of-type() selector example</h2>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+
+    <dl>
+        <dt>Vegetables:</dt>
+        <dd>1. Tomatoes</dd>
+        <dd>2. Cucumbers</dd>
+        <dd>3. Mushrooms</dd>
+        <dt>Fruits:</dt>
+        <dd>4. Apples</dd>
+        <dd>5. Mangos</dd>
+        <dd>6. Pears</dd>
+        <dd>7. Oranges</dd>
+    </dl>
+</body>
+
+</html>
+
+<!-- 
+মনে রাখবেন যে nth-of-type nth-child pseudo-class থেকে আলাদা, যেটি টাইপ নির্বিশেষে তার সকল ভাইবোনের মধ্যে তার সূচকের উপর ভিত্তি করে একটি উপাদান নির্বাচন করে
+
+ :nth-of-type( <an-plus-b> | even | odd )
+
+-->

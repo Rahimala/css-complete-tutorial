@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 2D Translate</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: transform 2s;
+
+            /* transform: translateY,Z(y-axis-down -length); */
+            /* transform: translate(x-axis -length y-axis-up-length) */
+            transform: translate(200px, 0);
+        }
+
+        .box:hover {
+            transform: translate(50px, -50px);
+        }
+    </style>
+
+    <!-- In this example, when you hover over the red box, it will be transformed (moved) from its original position to a new position 50 pixels to the right and 50 pixels up, over a duration of 2 seconds. The transition property sets the transition effect to change the transform property, and the transition-duration property sets the duration of the transition to 2 seconds. -->
+
+    <!-- In the below example, on Mouse hover the image will move from one position to another position. -->
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
+
+<!-- The translate() function in CSS is used to transform an element in two-dimensional space. It moves an element horizontally (along the X-axis) and/or vertically (along the Y-axis) by the specified distance -->
+
+
+
+/*  
+
+The translate function moves an element horizontally (along the x-axis) and/or vertically (along the y-axis)
+
+transform: translate(50px, 100px); 
+
+element will be moved 50 pixels to the right and 100 pixels down from its original position. You can also use negative values to move the element to the left and up.
+
+ transform: translate(-50px, -100px);
+
+ element will be moved 50 pixels to the right and 100 pixels down from its original position. You can also use negative values to move the element to the left and up.
+
+  transform: translate(10%, 20%)
+
+   element will be moved 10% of its parent element's width to the right and 20% of its parent element's height down from its original position.
+*/

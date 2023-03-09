@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .padding_shorthand1 {
+            border: 3px solid powderblue;
+            
+            /* Apply to all four sides */
+            padding: 5px;
+        }
+
+        .padding_shorthand2 {
+            border: 3px solid orange;
+
+            /* vertical | horizontal */
+            padding: 20px 10px;
+        }
+
+        .padding_shorthand3 {
+            border: 3px solid pink;
+
+            /* top | horizontal | bottom */
+            padding: 30px 10px 20px;
+        }
+
+        .padding_shorthand4 {
+            border: 3px solid aqua;
+            padding: 0 15px 20px 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>If padding has 1 value</h3>
+    <div class="padding_shorthand1">
+        <p><strong>padding: 5px;</strong> means: padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:5px;
+        </p>
+    </div>
+
+    <h3>If padding has 2 values</h3>
+    <div class="padding_shorthand2">
+        <p><strong>padding: 20px 10px;</strong> means:
+            padding-top:20px;padding-right:10px;padding-bottom:20px;padding-left:10px;</p>
+
+    </div>
+
+    <h3>If padding has 3 values</h3>
+    <div class="padding_shorthand3">
+        <p><strong>padding: 30px 10px 20px;</strong> means:
+            padding-top:30px;padding-right:10px;padding-bottom:20px;padding-left:10px;</p>
+    </div>
+
+    <h3>If padding has 4 values</h3>
+    <div class="padding_shorthand4">
+        <p><strong>padding: 0 15px 20px 5px;</strong> means:
+            padding-top:0;padding-right:15px;padding-bottom:20px;padding-left:5px;</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 2D Matrix</title>
+
+    <style>
+        .matrix {
+            background-color: tomato;
+            width: 200px;
+            height: 100px;
+            margin: 40px;
+
+            transform: matrix(3,0.3,0.3,3,2,2);
+            /* transform: matrix(scale(3), skew(0.3), skew(0.3,0.3), translate(2,2) ); */
+
+            /*  */
+        }
+    </style>
+</head>
+<body>
+    <div class="matrix"></div>
+</body>
+</html>
+
+<!-- matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()); -->
+
+<!-- matrix(a,b,c,d,e,f);
+
+where a,d helps in scaling up or down the elements. It is like scale(a,d).
+
+Similarly, b,c skew the element in X and Y axis respectively. It is like skew(b,c).
+
+And e,f helps to translate the element(move the element) from one position to another. It is like translate(e,f). -->

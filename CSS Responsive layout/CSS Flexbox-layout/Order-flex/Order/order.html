@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Example of CSS3 order Property</title>
+    <style>
+        .flex-container {
+            height: 200px;
+            width: 300px;
+            font-size: 32px;
+            border: 1px solid black;
+            display: -webkit-flex;
+            /* Safari */
+            display: flex;
+            /* Standard syntax */
+        }
+
+        .flex-container div {
+            width: 100px;
+        }
+
+        .item1 {
+            background: #e84d51;
+            -webkit-order:2;
+            /* Safari 6.1+ */
+            order: -2;
+        }
+
+        .item2 {
+            background: #7ed636;
+            -webkit-order: 1;
+            /* Safari 6.1+ */
+            order: 1;
+        }
+
+        .item3 {
+            background: #2f97ff;
+            -webkit-order: 3;
+            /* Safari 6.1+ */
+            order:2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+</body>
+
+</html>
+
+<!-- The CSS 'order' property is used to control the display order of elements within a flex container. It allows for elements to be reordered visually without changing the order in the source code. The 'order' property can be set to a positive or negative integer value, with elements having a lower 'order' value appearing first in the visual layout. The default value is 0.
+
+For example, if you have three elements within a flex container and you set the 'order' property of the first element to 2, the second element to 1, and the third element to 3, the elements will be displayed in the following order: second, third, first. -->

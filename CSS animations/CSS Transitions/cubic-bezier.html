@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cubic-bezier</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            /* transition-property: background-color, left; */
+            transition: background-color 2s cubic-bezier(.34,1.34,.91,.06) ;
+        }
+
+        .box:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+
+<!-- curve-কার্ভ = বক্ররেখা -->
+
+<!-- The cubic-bezier function is used in CSS to specify a custom easing curve for a transition. It allows you to control the speed of the transition at different points during the animation.
+
+The cubic-bezier function takes four parameters, which represent the X and Y coordinates of two points on a graph. The graph represents the speed of the transition over time. The X axis represents the time elapsed during the transition, while the Y axis represents the progress of the transition. -->

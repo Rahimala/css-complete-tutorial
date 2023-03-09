@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document: content-box</title>
+
+    <style>
+        .contentbox {
+            /* Total width: 200px + (2 * 20px) + (2 * 8px) = 256px*/
+            box-sizing: content-box;
+            width: 200px;
+            border: 8px solid blueviolet;
+            padding: 20px;
+            background: yellow;
+        }
+
+        .borderbox {
+            /* Total width: 200px - (2 * 20px) - (2 * 8px) = 144px*/
+            box-sizing: border-box;
+            width: 200px;
+            border: 8px solid blueviolet;
+            padding: 20px;
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contentbox"> I am the content box</div>
+    <br />
+    <div class="borderbox"> I am the border box</div>
+
+
+    <!--
+        
+        content-box: This is the default value of box-sizing. The dimension of element only includes ‘height’ and ‘width
+
+
+
+        border-box: In this value, not only width and height properties are included but you will find padding and border inside of the box for example .box {width: 200px; border: 10px solid black;} renders a box that is 200px wide.
+    
+    
+    
+    
+    
+    -->
+
+    <!-- The "box-sizing" property in CSS is used to define how the dimensions of an element are calculated. The default value is "content-box", which means that the width and height of an element only include the content, and do not include the padding and border.
+
+There are two possible values for the "box-sizing" property:
+
+"content-box" : This is the default value, which means the width and height of an element only include the content, and do not include the padding and border.
+"border-box" : This value includes the content, padding, and border within the element's total width and height.
+This property can be used to include the padding and border within the element's dimensions, making it easier to size elements and make layout calculations. -->
+</body>
+
+</html>

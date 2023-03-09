@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>border-image-repeat</title>
+
+
+    <style>
+        body {
+            background-color: #F5F5F5;
+            color: #555;
+            font-size: 1.1em;
+            font-family: tahoma;
+        }
+
+        .container {
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        .element {
+            padding: 30px 20px 10px;
+            margin: 30px auto;
+            min-height: 250px;
+            text-align: center;
+            background-color: white;
+            border-image-source: url(http://assets.css-tricks.ir/images/border-img.png);
+            border-image-width: 27px;
+            /* border-image-slice: number | % | fill | initial | inherit; */
+            border-image-slice: 27 fill;
+            border-image-repeat: stretch round;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="element">
+            <p><code>border-image-repeat: stretch round;</code></p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    The border-image-repeat property in CSS is used to specify how a border image should be repeated or stretched to fill the area of the border. The property can take one of four values: stretch, repeat, round, or space.
+
+stretch: The image is stretched to fill the entire border.
+repeat: The image is repeated to fill the entire border.
+round: The image is repeated as many times as possible without being clipped, and the remaining space is filled with the last image.
+space: The image is repeated as many times as possible without being clipped, and the remaining space is distributed evenly between the images.
+It is often used in combination with other border-image properties, such as border-image-source and border-image-slice.
+
+border-image-repeat: stretch | repeat | round | initial | inherit;
+ -->

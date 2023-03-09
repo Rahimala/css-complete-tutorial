@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>animation-delay</title>
+    <!-- *The "animation-delay" CSS property sets the time to wait before starting an animation. It is specified in seconds (s) or milliseconds (ms) -->
+    <style>
+        @keyframes animation-delay {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(100px);
+            }
+        }
+
+        .box {
+            animation-name: animation-delay;
+            animation-duration: 1.0s;
+            animation-timing-function: ease-in-out;
+
+            animation-delay: 1s; /* animation will delay after 1 seconds from start */
+
+            animation-iteration-count: infinite;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>animation-play-state</title>
+    <!-- * animation-play-state: running| paused| inherit; -->
+
+    <style>
+        .animated-element {
+            animation: animation-name 5s linear infinite;
+            animation-play-state: running;
+        }
+
+        @keyframes animation-name {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .animated-element:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animated-element">
+        Hover over me to pause the animation
+    </div>
+</body>
+
+</html>

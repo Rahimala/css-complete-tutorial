@@ -1,0 +1,34 @@
+<div class="flex-container">
+    <div>flex-item1</div>
+    <div>flex-item2</div>
+    <div>flex-item3</div>
+</div>
+
+<style>
+
+    /*  You must have to apply display: flex; property only on the parent element to see the results. */
+
+    .flex-container {
+        display:flex;
+    }
+    /* CSS Flexbox Container (flex-container=Parent Element) 
+    Represents an element as a block-level-flex container.
+    
+    */
+
+     /* .flex-container {
+        display:flex;
+        background-color: #f7941d;
+        margin: 20px;
+        justify-content: center;
+    } */
+
+    /* flex items in this container are its child elements. */
+    .flex-container>div {
+        color: white;
+        padding: 40px;
+        background-color: #c597ec;
+        margin: 10px;
+        border: 1px solid gray;
+    }
+</style>

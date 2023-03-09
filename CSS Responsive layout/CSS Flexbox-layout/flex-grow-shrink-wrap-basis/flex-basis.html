@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+
+    <style>
+        h2 {
+            margin: 80px 0px 20px;
+        }
+
+        .first-h2 {
+            margin: 20px 0px;
+        }
+
+        pre {
+            margin: 30px 0px;
+        }
+
+        .flex-container {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            position: relative;
+            margin-bottom: 30px;
+            list-style: none;
+            background-color: beige;
+            padding: 10px 0px;
+            box-sizing: border-box;
+            max-width: 700px;
+            outline: 1px solid black;
+        }
+
+        .flex-container::after {
+            content: "700px";
+            background-color: #8e44ad;
+            font-style: italic;
+            font-size: 12px;
+            position: absolute;
+            color: white;
+            bottom: -20px;
+            right: 50%;
+            transform: translate(50%);
+        }
+
+        .flex-container::before {
+            content: "";
+            background-color: #8e44ad;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            bottom: -10px;
+        }
+
+        .flex-1 {
+            background-color: #e74c3c;
+        }
+
+        .flex-2 {
+            background-color: #e67e22;
+        }
+
+        .flex-3 {
+            background-color: #3498db;
+        }
+
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            color: black;
+            font-size: 18px;
+            text-align: center;
+        }
+
+
+
+        /* Flex Basis   Flex Basis  Flex Basis  Flex Basis  Flex Basis */
+
+        .flex-1 {
+            flex-basis: 100px;
+        }
+
+        .flex-2 {
+            flex-basis: 200px;
+        }
+
+        .flex-3 {
+            flex-basis: 300px;
+        }
+
+
+        /* -----------------------Flex Grows -------------------------- */
+
+
+        .flex-grow-1 .flex-item {
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+
+        .flex-grow-2 .flex-item {
+            flex-basis: 0;
+        }
+
+        .flex-grow-2 .flex-1 {
+            flex-grow: 1;
+        }
+
+        .flex-grow-2 .flex-2 {
+            flex-grow: 3;
+        }
+
+        .flex-grow-2 .flex-3 {
+            flex-grow: 1;
+        }
+
+        .flex-grow-3 .flex-1 {
+            flex-grow: 1;
+        }
+
+        .flex-grow-4 .flex-item {
+            flex-grow: 1;
+        }
+
+        .flex-grow-5 .flex-1 {
+            flex-grow: 1;
+        }
+
+        .flex-grow-5 .flex-2 {
+            flex-grow: 3;
+        }
+
+        .flex-grow-5 .flex-3 {
+            flex-grow: 1;
+        }
+
+        .flex-grow-6 {
+            max-width: 900px;
+        }
+
+        .flex-grow-6:after {
+            content: "900px";
+        }
+
+        .flex-grow-6 .flex-1 {
+            flex-basis: 300px;
+            flex-grow: 1;
+        }
+
+        .flex-grow-6 .flex-2 {
+            flex-basis: 100px;
+            flex-grow: 3;
+        }
+
+        .flex-grow-6 .flex-3 {
+            flex-basis: 350px;
+            flex-grow: 2;
+        }
+
+        .js-flex-grow-show {
+            margin-top: 0px;
+        }
+
+        .js-flex-grow-answer.hide {
+            display: none;
+        }
+
+        .flex-shrink-0 .flex-item {
+            flex-basis: 200px;
+            flex-shrink: 0;
+        }
+
+        .flex-shrink-1 .flex-item {
+            flex-basis: 200px;
+            flex-shrink: 1;
+        }
+
+        .flex-shrink-2 .flex-item {
+            flex-basis: 200px;
+            flex-shrink: 1;
+        }
+
+        .flex-shrink-2 .flex-2 {
+            flex-shrink: 3;
+        }
+
+        .flex-shrink-3 .flex-1 {
+            flex-basis: 400px;
+            flex-shrink: 2;
+        }
+
+        .flex-shrink-3 .flex-2 {
+            flex-basis: 100px;
+            flex-shrink: 1;
+        }
+
+        .flex-shrink-3 .flex-3 {
+            flex-basis: 150px;
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Grow, Flex Shrink and Flex Basis</h1>
+
+    <h1>Flex Basis</h1>
+    <p>Before we start growing or shrinking the elements, we need to should set the basis of the elements</p>
+    <p>The flex-basis CSS property specifies the flex basis which is the initial main size of a flex item. </p>
+    <p>This defines the default size of an element before the remaining space is distributed. It can be a length (e.g.
+        20%, 5rem, etc.) or a keyword. </p>
+    <p>Flex basis is similar to min-width. Try applying flex-wrap: wrap; on the flex containers.</p>
+
+    <ul class="flex-container flex-basis">
+        <li class="flex-item flex-1">flex-basis: 100px;</li>
+        <li class="flex-item flex-2">flex-basis: 200px;</li>
+        <li class="flex-item flex-3">flex-basis: 300px;</li>
+    </ul>
+
+    <h1 style="margin-top: 100px;">Flex Grows</h1>
+    <p>When we have extra space, how should the elements be divided among everybody on the same line?</p>
+    <h2 class="first-h2">Even Growth</h2>
+    <ul class="flex-container flex-grow-1">
+        <li class="flex-item flex-1">
+            flex-grow: 1;<br>
+        </li>
+        <li class="flex-item flex-2">
+            flex-grow: 1;<br>
+        </li>
+        <li class="flex-item flex-3">
+            flex-grow: 1;<br>
+        </li>
+    </ul>
+
+    <pre>
+(700px / 3) * 1 = 233.33px
+(700px / 3) * 1 = 233.33px
+(700px / 3) * 1 = 233.33px
+</pre>
+
+    <h2>Uneven Growth</h2>
+    <ul class="flex-container flex-grow-2">
+        <li class="flex-item flex-1">
+            flex-grow: 1;<br>
+        </li>
+        <li class="flex-item flex-2">
+            flex-grow: 3;<br>
+        </li>
+        <li class="flex-item flex-3">
+            flex-grow: 1;<br>
+        </li>
+    </ul>
+
+    <pre>
+(700px / 5) * 1 = 140px
+(700px / 5) * 3 = 420px
+(700px / 5) * 1 = 140px
+</pre>
+
+    <h1 style="margin-top: 100px;">Flex Grows with Flex Basis</h1>
+    <p>When we have extra space, how should the elements be divided among everybody on the same line?</p>
+    <p>Try setting the first box's flex-grow to 0</p>
+    <h2 class="first-h2">Flex Grow on one flex-item</h2>
+    <ul class="flex-container flex-grow-3">
+        <li class="flex-item flex-1">
+            flex-grow: 1;<br>
+            flex-basis: 100px;
+        </li>
+        <li class="flex-item flex-2">
+            flex-grow: 0;<br>
+            flex-basis: 200px;
+        </li>
+        <li class="flex-item flex-3">
+            flex-grow: 0;<br>
+            flex-basis: 300px;
+        </li>
+    </ul>
+    <pre>
+  width: 100px;
+  width: 200px;
+  width: 300px;
+  
+  empty-space-left: 700px - 600px = 100px;
+  
+  (flex-grow: 1) width: 200px (100px + 100px);
+  (flex-grow: 0) width: 200px;
+  (flex-grow: 0) width: 300px;
+</pre>
+
+    <h2>Even Flex Growth on all flex items</h2>
+    <ul class="flex-container flex-grow-4">
+        <li class="flex-item flex-1">
+            flex-grow: 1;<br>
+            flex-basis: 100px;
+        </li>
+        <li class="flex-item flex-2">
+            flex-grow: 1;<br>
+            flex-basis: 200px;
+        </li>
+        <li class="flex-item flex-3">
+            flex-grow: 1;<br>
+            flex-basis: 300px;
+        </li>
+    </ul>
+
+    <pre>
+  width: 100px;
+  width: 200px;
+  width: 300px;
+  empty-space-left: 700px - 600px = 100px;
+  
+  100px / 3 = 33.33px
+  (flex-grow: 1) width: 133.33px; (100 + 33.3)
+  (flex-grow: 1) width: 233.33px; (200 + 33.3)
+  (flex-grow: 1) width: 333.33px; (300 + 33.3)
+</pre>
+
+    <h2>Uneven Flex Growth on all flex items</h2>
+    <ul class="flex-container flex-grow-5">
+        <li class="flex-item flex-1">
+            flex-grow: 1;<br>
+            flex-basis: 100px;
+        </li>
+        <li class="flex-item flex-2">
+            flex-grow: 3;<br>
+            flex-basis: 200px;
+        </li>
+        <li class="flex-item flex-3">
+            flex-grow: 1;<br>
+            flex-basis: 300px;
+        </li>
+    </ul>
+
+    <pre>
+  width: 100px;
+  width: 200px;
+  width: 300px;
+  empty-space-left: 700px - 600px = 100px;
+  
+  100px / 5 = 20px
+  (flex-grow: 1) width: 120px; (100 + 20)
+  (flex-grow: 3) width: 260px; (200 + 20*3)
+  (flex-grow: 1) width: 320px; (300 + 20)
+</pre>
+
+
+    <h2>Calculate the width of each of the flexboxes!</h2>
+    <p>Check the dimensions on Chrome DevTools to see if you got it right</p>
+    <ul class="flex-container flex-grow-6">
+        <li class="flex-item flex-1">
+            flex-grow: 1;<br>
+            flex-basis: 300px;
+        </li>
+        <li class="flex-item flex-2">
+            flex-grow: 3;<br>
+            flex-basis: 100px;
+        </li>
+        <li class="flex-item flex-3">
+            flex-grow: 2;<br>
+            flex-basis: 350px;
+        </li>
+    </ul>
+    <button class="js-flex-grow-show">show calculation</button>
+    <pre class="js-flex-grow-answer hide">
+  width: 300px
+  width: 100px
+  width: 350px
+  empty-space-left: 900px - 750px = 150px
+  
+  150px / 6 = 25px
+  (flex-grow: 1) width: 325px; (300 + 25)
+  (flex-grow: 3) width: 175px; (100 + 25*3)
+  (flex-grow: 2) width: 400px; (350 + 25*2)
+</pre>
+
+
+    <h1 style="margin-top: 100px;">Flex Shrinks</h1>
+    <p>What do we do if we don't have space?</p>
+
+    <p>The flex-shrink CSS property specifies the flex shrink factor of a flex item. Flex items will shrink to fill the
+        container according to the flex-shrink number, when the default width of flex items is wider than the flex
+        container.</p>
+    <p>If the parent has flex-wrap: wrap; flex-shrink won't work;</p>
+
+    <h2 class="first-h2">No Shrink</h2>
+    <ul class="flex-container flex-shrink-0">
+        <li class="flex-item flex-1">
+            flex-shrink: 0;<br>
+            flex-basis: 200px;
+        </li>
+        <li class="flex-item flex-2">
+            flex-shrink: 0;<br>
+            flex-basis: 200px;
+        </li>
+        <li class="flex-item flex-3">
+            flex-shrink: 0;<br>
+            flex-basis: 200px;
+        </li>
+    </ul>
+
+    <h2>Even Shrink</h2>
+    <ul class="flex-container flex-shrink-1">
+        <li class="flex-item flex-1">
+            flex-shrink: 1;<br>
+            flex-basis: 200px;
+        </li>
+        <li class="flex-item flex-2">
+            flex-shrink: 1;<br>
+            flex-basis: 200px;
+        </li>
+        <li class="flex-item flex-3">
+            flex-shrink: 1;<br>
+            flex-basis: 200px;
+        </li>
+    </ul>
+    <p>What if we give the flex-container a max-width of 300px?</p>
+
+    <pre>
+/*Method 1*/
+(300px / 3) * 1 = 100px
+(300px / 3) * 1 = 100px
+(300px / 3) * 1 = 100px
+</pre>
+
+    <pre>
+/*Method 2*/
+total-flex-basis: 600px
+container-size: 300px
+space-remaining: -300px (300 - 600)
+total-size: (1 * 200) + (1 * 200) + (1 * 200) = 600
+
+How much each container shrinks?
+(1 * 200) / 600 * -300 = -100px
+(1 * 200) / 600 * -300 = -100px
+(1 * 200) / 600 * -300 = -100px
+
+Final Width
+200 - 100 = 100px;
+200 - 100 = 100px;
+200 - 100 = 100px;
+</pre>
+
+    <h2>Uneven Shrink</h2>
+    <ul class="flex-container flex-shrink-2">
+        <li class="flex-item flex-1">
+            flex-shrink: 1;<br>
+            flex-basis: 200px;
+        </li>
+        <li class="flex-item flex-2">
+            flex-shrink: 3;<br>
+            flex-basis: 200px;
+        </li>
+        <li class="flex-item flex-3">
+            flex-shrink: 1;<br>
+            flex-basis: 200px;
+        </li>
+    </ul>
+    <p>How about this one? What if we give it a width of 500px?</p>
+    <pre>
+  total-flex-basis: 600px
+  container-size: 500px
+  space-remaining: -100px
+  total-size: (1 * 200) + (3 * 200) + (1 * 200) = 1000
+
+  How much each container shrinks?
+  (1 * 200) / 1000 * -100 = -20px
+  (3 * 200) / 1000 * -100 = -60px
+  (1 * 200) / 1000 * -100 = -20px
+
+  Final Width
+  200 - 20 = 180px;
+  200 - 60 = 140px;
+  200 - 20 = 180px;
+</pre>
+
+
+    <h2>flex-shrink and flex-basis</h2>
+    <ul class="flex-container flex-shrink-3">
+        <li class="flex-item flex-1">
+            flex-shrink: 2;<br>
+            flex-basis: 400px;
+        </li>
+        <li class="flex-item flex-2">
+            flex-shrink: 1;<br>
+            flex-basis: 100px;
+        </li>
+        <li class="flex-item flex-3">
+            flex-shrink: 3;<br>
+            flex-basis: 150px;
+        </li>
+    </ul>
+    <p>Final one! What are the width values for each flex-item if we were to shrink the flex-container to 450px?</p>
+    <pre>
+  total-flex-basis: 650px
+  container-size: 450px
+  space-remaining: -200px
+  total-size: (2 * 400) + (1 * 100) + (3 * 150) = 1350
+
+  How much each container shrinks?
+  (2 * 400) / 1350 * -200 = -118.50px
+  (1 * 100) / 1350 * -200 = -14.80px
+  (3 * 150) / 1350 * -200 = -66.67px
+
+  Final Width
+  400 - 118.50 = 281.50px;
+  100 - 14.80 = 85.20px;
+  150 - 66.67 = 83.33px;
+</pre>
+
+    <p>Sidenote: Add flex-wrap: wrap to see how the layout changes</p>
+    <a href="https://madebymike.com.au/writing/understanding-flexbox/" target="_blank">Extra Read</a>
+</body>
+
+</html>
+
+<!-- 
+    flex-basis is a CSS property that sets the initial size of a flex item before any free space is distributed according to the flex factors defined by the flex-grow and flex-shrink properties. It can accept any valid CSS length value, such as px, em, rem, or %. The default value is auto, which means the flex item will take up the size of its content.
+ -->

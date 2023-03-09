@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute: selects </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px 0px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        a[target=_blank]::before {
+            content: "🆕";
+        }
+        a[target] {
+            color: tomato;
+        }
+
+        a[title~=Tips]:before {
+            content: "💡";
+        }
+
+        a[lang|=nl]:before {
+            content: "🇳🇱";
+        }
+
+        a[href^=https]:before {
+            content: "🔒";
+
+        }
+
+        a[href$=".pdf"]:before {
+            content: "📑";
+        }
+
+        a[href*=google]:before {
+            content: "🔍";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="">Link #1</a>
+        <a href="" target="_blank">Link #2</a>
+        <a href="" title="Daily Dev Tips">Link #4</a>
+        <a href="" lang="nl-NL">Link #5</a>
+        <a href="https://daily-dev-tips.com">Link #5</a>
+        <a href="http://download.org/file.pdf">Link #6</a>
+        <a href="http://google.com/">Link #6</a>
+    </div>
+</body>
+
+</html>
+
+<!-- Yes, that is correct. The square brackets "[]" are used to specify an attribute selector in CSS. The attribute selector is used to select elements based on their attributes or attribute values.
+
+For example, to select all elements that have a type attribute, the CSS selector could be "[type]". To select all elements with a specific value for an attribute, the attribute value can be added within the brackets. For example, to select all elements with a type attribute equal to "text", the CSS selector could be "[type='text']".
+
+Attribute selectors can also be used with different matching functions like "^=", "$=", "*=" , "~=" and "|=" to select elements with attribute values that starts with, ends with, contains, has a space-separated value or starts with a specific value respectively.
+
+It is important to note that attribute selectors have a lower specificity than class selectors and ID selectors. If there is a conflict between styles applied to an element using an attribute selector and a class or ID selector, the styles from the class or ID selector will take precedence.
+
+
+
+[attr]
+Represents elements with an attribute name of attr.
+
+[attr=value]
+Represents elements with an attribute name of attr whose value is exactly value.
+
+[attr~=value]
+Represents elements with an attribute name of attr whose value is a whitespace-separated list of words, one of which is exactly value.
+
+[attr|=value]
+Represents elements with an attribute name of attr whose value can be exactly value or can begin with value immediately followed by a hyphen, - (U+002D). It is often used for language subcode matches.
+
+[attr^=value]
+Represents elements with an attribute name of attr whose value is prefixed (preceded) by value.
+
+[attr$=value]
+Represents elements with an attribute name of attr whose value is suffixed (followed) by value.
+
+[attr*=value]
+Represents elements with an attribute name of attr whose value contains at least one occurrence of value within the string.
+
+[attr operator value i]
+Adding an i (or I) before the closing bracket causes the value to be compared case-insensitively (for characters within the ASCII range).
+
+[attr operator value s] Experimental
+Adding an s (or S) before the closing bracket causes the value to be compared case-sensitively (for characters within the ASCII range).
+-->

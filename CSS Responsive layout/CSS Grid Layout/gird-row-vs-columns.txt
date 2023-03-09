@@ -1,0 +1,26 @@
+grid-template-rows is a CSS property used to define the rows of a CSS grid layout. It sets the size and position of each row in the grid. The values for grid-template-rows can be specified in a space-separated list.
+
+In the example you provided, grid-template-rows: auto 1fr auto auto; sets four rows in the grid with different sizes. Here's what each value means:
+
+auto: This sets the height of the row to be the size of its content. In other words, the row will be as tall as the tallest item in that row.
+1fr: This sets the height of the row to be a fraction of the available space in the grid container. In this case, the first row with 1fr will take up as much vertical space as possible, as it is the only row with a flexible height.
+auto: This sets the height of the row to be the size of its content, just like the first auto.
+auto: This sets the height of the row to be the size of its content, just like the first two auto values.
+Overall, this property is used to create a grid layout where the rows have different heights based on their content or the available space.
+
+
+
+
+Rahial Alamin
+grid-template-columns: auto 1fr auto auto;
+grid-template-columns is a CSS property used to define the columns of a CSS grid layout. It sets the size and position of each column in the grid. The values for grid-template-columns can be specified in a space-separated list.
+
+In the example you provided, grid-template-columns: auto 1fr auto auto; sets four columns in the grid with different sizes. Here's what each value means:
+
+auto: This sets the width of the column to be the size of its content. In other words, the column will be as wide as the widest item in that column.
+1fr: This sets the width of the column to be a fraction of the available space in the grid container. In this case, the second column with 1fr will take up as much horizontal space as possible, as it is the only column with a flexible width.
+auto: This sets the width of the column to be the size of its content, just like the first auto.
+auto: This sets the width of the column to be the size of its content, just like the first two auto values.
+Overall, this property is used to create a grid layout where the columns have different widths based on their content or the available space.
+
+

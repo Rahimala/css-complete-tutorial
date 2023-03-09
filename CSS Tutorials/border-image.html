@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CSS Border Image Examples</h1>
+        <div class="box box0">
+            <h3>Original Image</h3>
+            <img src="http://stuff.maedgen.org/border-image-test.png" alt="original image">
+        </div>
+
+        <div class="box box1">
+            <h4>Sizzling Sausage Grill one payment</h4>
+        </div>
+
+        <div class="box box2">
+            Gradient border Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+
+        <div class="box">
+            <h3>Original Image Filled</h3>
+            <img src="https://dl.dropboxusercontent.com/u/32494584/border-fill.png" alt="original image filled">
+        </div>
+
+        <div class="box box3">
+            Border Image with the fill keyword.
+        </div>
+
+        <div class="box box4">
+            Border Image Width
+        </div>
+
+        <div class="box box5">
+            Border Image Inset
+        </div>
+
+        <div class="box box6">
+            Border Image Outset
+        </div>
+
+        <p class="p">Demo by Maria Antonietta Perna. <a
+                href="http://www.sitepoint.com/decorating-the-web-with-css-border-images" target="_blank">See
+                article</a>.</p>
+    </div>
+</body>
+
+</html>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    img,
+    section,
+    article,
+    aside,
+    figure {
+        display: block;
+    }
+
+    body {
+        background-color: #fff;
+        font-size: 100%;
+        font-weight: lighter;
+        line-height: 1.5;
+        color: #444;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .container {
+        margin: 0 auto;
+        background-color: #333;
+        padding: 1em 2em;
+    }
+
+    .box {
+        background-color: #666;
+        max-width: 60%;
+        max-height: 60%;
+        padding: .8em;
+        margin: 4em auto;
+    }
+
+    .box0 {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .box1 {
+        border: 19px dotted #c905c6;
+        border-image-source: url(http://stuff.maedgen.org/border-image-test.png);
+        border-image-slice: 100;
+        box-shadow: 10px 10px 5px #000;
+    }
+
+    .box2 {
+        border-image-source: linear-gradient(10deg, #fe01f5, #2e113d);
+        border-image-slice: 100;
+        border-image-width: 19px;
+    }
+
+    .box3 {
+        border: 19px dotted #c905c6;
+        border-image-source: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/border-bg.png);
+        border-image-slice: 19 fill;
+    }
+
+    .box4 {
+        border: 19px dotted #c905c6;
+        border-image-source: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/border-bg.png);
+        border-image-slice: 19;
+        border-image-width: 3;
+    }
+
+    .box5 {
+        -moz-border-image: url("http://stuff.maedgen.org/border-image-test.png") 11 11 11 11 round;
+
+        border: 19px dotted #c905c6;
+        outline: 10px dotted green;
+        /* border-image-source: url(http://stuff.maedgen.org/border-image-test.png); */
+        border-image-slice: 100;
+    }
+
+    .box6 {
+        border: 19px dotted #c905c6;
+        outline: 10px dotted green;
+        border-image-source: url(http://stuff.maedgen.org/border-image-test.png);
+        border-image-slice: 100;
+        border-image-width: 30px;
+        border-image-outset: 30px;
+        box-shadow: 50px 50px 5px #000;
+    }
+
+    .p {
+        text-align: center;
+        font-size: 13px;
+    }
+</style>

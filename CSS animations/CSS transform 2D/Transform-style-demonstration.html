@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            perspective: 750px;
+            perspective-origin: 250px 30px;
+        }
+
+        .wrapper {
+            position: relative;
+            left: 200px;
+            top: 200px;
+            background-color: #0ff;
+            width: 200px;
+            height: 200px;
+            transform-style:preserve-3d;
+            transform: rotateY(42deg);/*Y = horizentol ---------- line*/
+            
+        }
+
+        .red-bg {
+            height: 100%;
+            background-color: red;
+            transform-style: preserve-3d;
+            transform: translateZ(50px);
+        }
+
+        .demo {
+            height: 100%;
+            background-image: url("https://www.allaboutbirds.org/guide/assets/photo/299691691-480px.jpg");
+            background-size: cover;
+            transform: translateZ(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="red-bg">
+            <div class="demo"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- preserve-3d: Specifies that the child element is positioned in three-dimensional space. -->

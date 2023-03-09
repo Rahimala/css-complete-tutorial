@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex: 1 1 0;
+/*flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%; */
+        height: 500px;
+        background-color: lightgray;
+      }
+      .item {
+        flex: 1;
+        background-color: white;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>
+
+<!-- a container with class .container is created and three items with class .item are placed inside the container. The .container is set to be a flex container using display: flex, and the flex shorthand property is used to set the flex-grow, flex-shrink, and flex-basis properties to 1 1 0. This means that the items will grow and shrink in proportion to each other, and the initial size of each item will be determined by its content.
+
+Each .item has a flex property set to 1, which means that each item will take up an equal amount of space in the container. The margin property is used to add some space between each item.
+
+The height of the container is set to 500px, and its background color is set to lightgray to make it easier to see. The items have a white background colo -->
+
+
+
+
+<!-- The values in the flex shorthand are specified in the following order:
+
+flex-grow: A positive number that determines how much the item will grow relative to the rest of the items in the container when there is extra space.
+
+flex-shrink: A positive number that determines how much the item will shrink relative to the rest of the items in the container when there is not enough space.
+
+flex-basis: A length or percentage that determines the initial size of the item.
+
+Note that the flex-direction, justify-content, and align-items properties are not included in the flex shorthand, and must be set separately if needed. -->

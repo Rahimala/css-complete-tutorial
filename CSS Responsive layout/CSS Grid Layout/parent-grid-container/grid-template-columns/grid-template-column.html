@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid Template Columns Example</title>
+	<style>
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+			grid-template-rows: repeat(3, 100px);
+			grid-gap: 10px;
+		}
+
+		.grid-item {
+			background-color: #c05252;
+			padding: 10px;
+			text-align: center;
+			font-size: 24px;
+			border-radius: 5px;
+		}
+
+		.grid-item:nth-child(2n) {
+			background-color: #aaa;
+			color: #fff;
+		}
+
+		.grid-item--large {
+			grid-column-start: col-start 1;
+			grid-column-end: col-end 3;
+			grid-row-start: 2;
+			grid-row-end: 4;
+		}
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="grid-item">1</div>
+		<div class="grid-item">2</div>
+		<div class="grid-item">3</div>
+		<div class="grid-item">4</div>
+		<div class="grid-item grid-item--large">5</div>
+		<div class="grid-item">6</div>
+		<div class="grid-item">7</div>
+		<div class="grid-item">8</div>
+		<div class="grid-item">9</div>
+	</div>
+</body>
+</html>
+
+<!-- n this example, we have a grid-container with three columns, each using the 1fr unit to take up an equal fraction of the available space. We also set a 10px gap between each grid item using the grid-gap property.
+
+We have nine grid-item elements, which will be placed into the grid cells defined by the grid-template-columns and grid-template-rows properties. Each item has a background color, padding, text alignment, font size, and border radius applied, to make it easier to see the grid layout. We also use the nth-child pseudo-class to apply a different background color to every other item, for visual interest.
+
+One of the grid items, with the class grid-item--large, is larger than the others and spans across two columns and two rows. This is achieved using the grid-column-start, grid-column-end, grid-row-start, and grid-row-end properties, which reference the optional grid line names col-start and col-end defined in grid-template-columns.
+
+When you open this HTML file in a browser, you should see a grid with nine items arranged in three columns and three rows. The 1fr unit used in grid-template-columns means that each column will take up an equal fraction of the available space, which allows the grid to be responsive and adapt to different screen sizes. The grid-item--large element spans two columns and two rows, demonstrating how the grid can be used to create complex layouts. -->

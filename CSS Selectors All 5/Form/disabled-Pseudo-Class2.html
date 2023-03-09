@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        label {
+            display: block;
+            margin-top: 1em;
+        }
+
+        *:disabled {
+            background-color: dimgray;
+            color: linen;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="name">Nane</label>
+        <input name="name" type="text">
+
+        <label for="emp">Employed</label>
+        <select name="emp" disabled>
+            <option value="">No</option>
+            <option value="">Yes</option>
+        </select>
+
+        <label for="empDate">Employment Date:</label>
+        <input name="empDate" type="date" disabled>
+
+        <label for="resume">Resume:</label>
+        <input name="resume" type="file">
+
+
+    </form>
+</body>
+
+</html>

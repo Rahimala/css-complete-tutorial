@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+
+    <style>
+        a {
+            outline: none;
+            text-decoration: none;
+            padding: 2px 1px 0;
+        }
+
+        a:link {
+            color: #265301;
+        }
+        a:visited {
+            color: tomato;
+        }
+        a:focus {
+            border: 1px solid;
+            background: red;
+        }
+
+        a:hover {
+            border-bottom:1px solid ;
+            background: #cbe3d3;
+        }
+
+        a:active {
+            background: #84b160;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li class="link">a:link</li>
+        <li class="a:visited">a:visited</li>
+        <li class="a:hover">a:hover</li>
+        <li class="focus">a:focus</li>
+        <li class="active">a:active</li>
+        <a href="#">Go to page</a>
+    </ol>
+</body>
+
+</html>

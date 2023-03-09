@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>flex</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		.box {
+			border: 1px solid black;
+			width: 60%;
+			margin-left: 50px;
+			display: flex;
+		}
+		.item {
+			padding: 20px;
+			/* flex-grow: 1; */
+			/* width: 100px; */
+		}
+
+		.item-1 {
+			background-color: pink;
+			/*max-width-basis like work  */
+			flex-basis:100px;
+			
+		}
+		.item-2 {
+			background-color: tomato;
+			flex-shrink: 1;
+	
+		}
+
+		.item-3 {
+			background-color: gray;
+			/* width-besis work */
+			flex-grow:1 ;
+			
+		}
+
+		/* shothand : flex: 0=grow, 0=basis, 1=shrink */
+
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="item item-1">First</div>
+		<div class="item item-2">Second</div>
+		<div class="item item-3">Thrid</div>
+	</div>
+</body>
+</html>
+
+<!-- 
+1/ flex-grow: উঠা - হত্তয়া
+
+
+    Flexbox layout that determines how much a flex item should grow relative to the rest of the items in the flex container, when there is extra space available.
+
+	the first item will get 1/6 of the extra space, 
+	the second item will get 2/6 of the extra space, 
+	and the third item will get 3/6 of the extra space
+
+	this means that the third item will be three times larger than the first item when the container grows.
+===========================================================================================
+
+
+2/ flex-basis: মূল উপাদান
+
+	flex item is either the size specified by the width or height property (depending on the flex container's flex-direction), or the size of the content inside the item, whichever is larger. The flex-basis property allows you to specify a size for the flex item that overrides this default behavior.
+
+	max-width-basis like work
+
+============================================================================================
+
+
+3/ flex-shrink: সঙ্কুচিত
+	1 means the item will shrink at the same rate as all other items in the container, while a value of 0 means the item will not shrink at all.
+
+-->

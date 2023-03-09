@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>flex-grow in css</title>
+
+    <style>
+        body {
+            background: #ccc;
+        }
+
+        .columns-wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .col {
+            padding: 10px;
+            margin: 0 10px;
+            background: #fff;
+        }
+
+        .col {
+            flex-basis: 120px;
+            flex-grow: 1;
+        }
+
+        .col:last-child {
+            flex-grow: 2;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Flex-basis &amp; Flex-grow demo</h1>
+    <div class="columns-wrapper">
+        <div class="col">
+            <h2>Block 1</h2>
+            <p>Flex-basis is set at 120px. This provides the starting point for the width of each block.</p>
+        </div>
+        <div class="col">
+            <h2>Block 2</h2>
+            <p>Flex-grow is set to 1 on all blocks.</p>
+        </div>
+        <div class="col">
+            <h2>Block 3</h2>
+            <p>This block (being the "last-child") has flex-grow set to 2.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- 
+
+    In CSS, the flex-grow property specifies how much a flex item should grow relative to the other items in a flex container when there is extra space in the container. The value of flex-grow is a number, where 1 is the default value. A value of 2, for example, means the item will take up twice as much space as an item with a value of 1. The space is distributed proportionally among all items with a non-zero flex-grow value. This property can be used in conjunction with the flex-shrink and flex-basis properties to control the size of flex items.
+
+
+
+    In CSS, the "flex-grow" property is used to determine how much a flex item should grow relative to the remaining items in a flex container. The value of "flex-grow" is a number, and the default value is 0. A flex item with a value of 1 will grow to fill the remaining space in the container, while a flex item with a value of 2 will grow twice as much as an item with a value of 1. Flex items with a value of 0 will not grow at all.
+ -->

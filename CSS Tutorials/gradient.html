@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3: Gradients</title>
+</head>
+
+<body>
+    <div id="gradient"></div>
+</body>
+
+</html>
+
+<style>
+    #gradient {
+        /* fallback color */
+        background-color: #66cccc;
+        /* fallback image */
+        background-image: url(images/butterfly.jpg);
+        /* Firefox 3.6+ */
+        background-image: -moz-linear-gradient(rgb(17, 159, 19), rgb(219, 48, 48));
+        /* Safari 4+, Chrome 1+ */
+        background-image: -webkit-gradient(linear, 0% 0%,
+                0% 100%, from(#66cccc), to(#336666));
+        background-image: -webkit-linear-gradient(#336666,
+                #66cccc);
+        /* Opera 11.10+ */
+        background-image: -o-linear-gradient(#336666,
+                #66cccc);
+
+        height: 800px;
+        width: 800px;
+
+    }
+</style>

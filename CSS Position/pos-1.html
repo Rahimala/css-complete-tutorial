@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #header {
+            height: 50px;
+            background-color: lightgray;
+            position: fixed;
+            top: 1%; 
+            left: 0;
+            right: 0;
+            /* bottom: 50%;*/
+
+
+
+        }
+
+        #sidebar {
+            width: 200px;
+            height: 100%;
+            background-color: lightblue;
+            position: absolute;
+            top: 50px;
+            left: 0;
+        }
+
+        #main-content {
+            margin: 50px 0 0 200px;
+            padding: 20px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Header</h1>
+    </div>
+    <div id="sidebar">
+        <h2>Sidebar</h2>
+    </div>
+    <div id="main-content">
+        <h2>Main Content</h2>
+        <p>In this example, the header has a position value of fixed, which means it stays at the top of the viewport and does not move when the page is scrolled. The sidebar has a position value of absolute, which means it is positioned relative to the nearest positioned ancestor (the header, in this case) and does not move when the page is scrolled. The main content has a margin applied that creates a gap to the left of 200px to accommodate the sidebar..</p>
+    </div>
+</body>
+
+</html>

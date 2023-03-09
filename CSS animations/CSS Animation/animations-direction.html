@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animations Direction</title>
+
+    <style>
+        @keyframes example {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(100%);
+            }
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: reverse;
+            animation-fill-mode: both;
+        }
+
+        /* In this example, the animation moves the element 100% to the right over a 2-second duration, with a linear timing function, no delay, and a single iteration in the normal direction. The fill mode is set to both, meaning the animation will apply the styles of the animation both before and after it runs.
+ */
+    </style>
+</head>
+
+<body>
+    <div class="box">Animate me!</div>
+</body>
+
+</html>
+
+<!-- /* Single animation */
+animation-direction: normal;
+animation-direction: reverse;
+animation-direction: alternate;
+animation-direction: alternate-reverse;
+
+/* Multiple animations */
+animation-direction: normal, reverse;
+animation-direction: alternate, reverse, normal;
+
+/* Global values */
+animation-direction: inherit;
+animation-direction: initial;
+animation-direction: revert;
+animation-direction: revert-layer;
+animation-direction: unset;
+
+The animation-direction sets the direction of the animation & it can take any one of these 4 values –
+
+normal – This is the default direction which is always in forwards direction.
+reverse – This is the reverse of the default direction. It means the direction will be backwards.
+alternate – First, the animation goes to forward direction in one cycle & then in backward direction in the next cycle.
+alternate-reverse – First, the animation goes to the backward direction in one cycle & then in forward direction in the next cycle.
+ -->

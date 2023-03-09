@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>invalid</title>
+
+    <style>
+        label {
+            display: block;
+            margin-top: 1em;
+        }
+
+        /* invalid css */
+
+        input:invalid {
+            background-color: ivory;
+            border: none;
+            outline: 2px solid red;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="#">
+        <label for="email">Email Address</label>
+        <input type="email" type="email" value="rahialalamin@gmail.com" <label for="secret">Secret Code: (lower case
+        letters)</label>
+        <input name="secret" type="text" value="test" pattern="[a-z]+">
+
+        <label for="age">Your age: (18+)</label>
+        <input name="age" type="number" value="5" min="18">
+
+        <label><input name="tos" type="checkbox" required checked> - Do you agree to ToS?</label>
+    </form>
+
+    </form>
+</body>
+
+</html>

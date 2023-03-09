@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<style>
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+		.image {
+			position: relative;
+			display: inline-block;
+			margin: 10px;
+			cursor: pointer;
+		}
+		.image img {
+			max-width: 100%;
+			height: auto;
+		}
+		.image .caption {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 97%;
+			background-color: rgba(0,0,0,0.5);
+			color: #ffffff;
+			padding: 10px;
+			opacity: 0;
+			transition: opacity 0.5s;
+		}
+		.image:hover .caption {
+			opacity: 1;
+/* 			opacity: 0; */
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="image">
+			<img src="https://imgs.search.brave.com/pbep3158smHhndVtZ1y2eFLoSEwMwKG0eoP1z3CZHGw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/dHJhdmVsd2l0aGFt/YXRlLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8wMi9w/ZXhlbHMtcGhvdG8t/NjcyMzU4LmpwZWc" alt="Image 1">
+			<div class="caption">This is Image 1</div>
+		</div>
+	</div>
+
+</body>
+
+<!-- opacity. The value of the property ranges from 0 to 1, with 0 meaning completely transparent and 1 meaning completely opaque -->
+
+<!-- অস্বচ্ছতা সম্পত্তির মান 0 থেকে 1 পর্যন্ত, 0 অর্থ সম্পূর্ণ স্বচ্ছ এবং 1 অর্থ সম্পূর্ণ অস্বচ্ছ -->
+
+
+<!-- The CSS opacity property controls the level of transparency of an element. The value of the property ranges from 0 to 1, with 0 indicating complete transparency and 1 indicating complete opacity.
+
+When an element has an opacity value of 0, it becomes completely transparent, which means that it is not visible at all. This can be useful for creating invisible dividers, overlays or elements that are only displayed when certain conditions are met.
+
+On the other hand, when an element has an opacity value of 1, it is completely opaque and not transparent at all. This means that the element is fully visible, and its color and other properties are displayed normally.
+
+Values between 0 and 1 can be used to create partially transparent elements, allowing the elements behind them to be partially visible. This can be used to create interesting visual effects and to layer content on top of each other.
+
+It's important to note that the opacity property affects not only the element itself but also its child elements. When an element has an opacity value less than 1, the child elements inherit that opacity value. Therefore, it's essential to use the opacity property carefully and thoughtfully, especially when dealing with complex layouts and layering of elements. -->
+</html>
+

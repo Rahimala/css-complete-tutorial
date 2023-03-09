@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+</head>
+
+<body>
+    <h2>Stroke property example</h2>
+    <svg viewBox="5 5 100 100">
+        <style>
+            path {
+                fill: none;
+                stroke-width: 3px;
+                marker: url(#diamond);
+            }
+        </style>
+        <path d="M 10,50 v -20 h 40 v -20" stroke="#235" />
+        <path d="M 30,70 v -20 h 40 v -20" stroke="#8ebf42" />
+        <path d="M 50,90 v -20 h 40 v -20" stroke="#1c87c9" />
+        <marker id="diamond" markerWidth="12" markerHeight="12" refX="6" refY="6" markerUnits="userSpaceOnUse">
+            <circle cx="6" cy="6" r="3" fill="#000" stroke="#ccc" stroke-width="1,5" />
+        </marker>
+    </svg>
+</body>
+
+</html>

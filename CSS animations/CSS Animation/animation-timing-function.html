@@ -1,0 +1,39 @@
+<html>
+<head>
+    <!-- *In CSS, the "animation-timing-function" property specifies the speed curve of an animation. It determines the progression of an animation over time. Common timing functions include "linear", "ease", "ease-in", "ease-out", and "ease-in-out". The default value is "ease". -->
+    <title>animation-timing-function</title>
+    <style>
+        #element {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            animation-name: example;
+            animation-duration: 1s;
+            /* animation-timing-function: linear| ease| ease-in| ease-out| ease-in-out| cubic-bezier(a,b,c,d); */
+            /* Animations Fade in */
+            animation-timing-function:step-end;
+
+
+            animation-iteration-count:infinite;
+        }
+
+        @keyframes example {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="element"></div>
+</body>
+
+</html>
+
+<!-- *In this example, there is a blue square element with an id of "element". The CSS styles in the head of the HTML document define the animation named "example" that will make the element move horizontally from 0px to 100% of its width over a 4 second duration with an "ease-in-out" speed curve. The animation will repeat indefinitely -->

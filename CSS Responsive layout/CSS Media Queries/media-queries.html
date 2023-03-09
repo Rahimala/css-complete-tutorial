@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        /* effective when minimum width is greater than 500px */
+        @media only screen and (min-width:500px) {
+            body {
+                background-color: lightgreen;
+                color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p>Adjust screen size using slider, background-color change to lightpink below screen width 768p
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat dolores veniam ad officiis blanditiis
+        excepturi dicta repellendus quibusdam optio, accusantium earum soluta modi nostrum quos assumenda rerum, quam,
+        nisi nam. Natus vitae nostrum sed commodi aperiam. Nisi suscipit autem natus at est voluptas numquam facilis
+        quam aperiam corrupti minima beatae vitae quos consectetur minus sint, ut, animi perferendis praesentium
+        reiciendis! Nostrum tempora sapiente, possimus dolorum impedit nihil dicta placeat atque vel sint
+        necessitatibus, minus cum repudiandae ipsum quaerat aspernatur numquam quam accusantium blanditiis unde quas.
+        Vel eligendi aut cupiditate placeat veritatis perferendis nemo, quidem esse vero omnis labore adipisci. Fugiat
+        neque ipsum eos aliquid sed, odit dignissimos et, similique deleniti corrupti facere laboriosam exercitationem
+        minus, quod qui. Nam incidunt, consequatur voluptas, dolores repellat unde nesciunt ab officia quae vel quis et
+        iure. Error tenetur consequatur molestiae omnis magni animi debitis nostrum assumenda inventore sunt quibusdam
+        alias pariatur velit laboriosam voluptas dicta, placeat eos. Nostrum asperiores non illum sint deleniti
+        distinctio dolorem numquam, corrupti vitae perspiciatis minima maiores assumenda exercitationem praesentium, et
+        sit quaerat consequatur odio voluptatibus totam. Quasi earum repellat minima eveniet omnis quos placeat
+        provident. Nostrum provident iste ipsa eveniet. Illo aspernatur, magnam dignissimos temporibus itaque at
+        deleniti tenetur, explicabo, harum vitae eaque impedit quos dolore. Nostrum consequuntur placeat libero
+        laboriosam alias possimus quasi exercitationem eum, animi totam voluptates minus, eveniet mollitia provident
+        ipsum voluptate voluptas rerum saepe nulla doloremque obcaecati. Nobis libero nisi non fugit. Nostrum,
+        perspiciatis. Possimus, reiciendis! Non quos reiciendis numquam asperiores dolores laboriosam consectetur,
+        beatae provident at doloremque neque esse id soluta praesentium sunt voluptas! Quia at odio magni reiciendis
+        nihil voluptatum error laboriosam? Consequatur velit ducimus fuga dolore blanditiis culpa aliquid atque est
+        ullam, non laboriosam dolor maxime minus. Provident, sed numquam. At, eligendi et alias, odit consequatur sunt
+        aliquid expedita voluptatibus labore qui perferendis, perspiciatis itaque! Error ipsam in exercitationem
+        recusandae doloribus qui consectetur molestias, voluptates omnis quidem nesciunt voluptate corporis repellendus,
+        porro atque sequi sunt adipisci est reprehenderit rem et, nostrum facere? In eos, natus mollitia, eum pariatur
+        dicta voluptatem necessitatibus accusantium a enim ad dolorum corporis nesciunt. Debitis cumque ipsam sint
+        voluptate laudantium illum exercitationem, impedit corporis. Odit nulla repellendus ut facilis pariatur sequi
+        aliquam ex voluptatem tempora nostrum at repudiandae modi, recusandae, nemo officiis porro eum earum! Aliquam
+        iusto exercitationem praesentium. Harum eaque, voluptas minima dolores voluptates inventore obcaecati ipsam,
+        laudantium illum ratione laborum ullam expedita quis eligendi soluta. Labore dicta officiis culpa aperiam, rem
+        quas voluptate similique ipsum unde rerum doloremque commodi quibusdam ex at deleniti animi error dolorem harum
+        ipsam voluptatem et aspernatur! Nam suscipit repudiandae cum itaque aliquid ipsum, iusto necessitatibus quae
+        laboriosam mollitia nostrum quas temporibus sequi nihil magnam omnis in, nulla impedit. Vitae doloremque dolores
+        consequatur ea eum atque nesciunt. Suscipit error, nostrum nulla ipsam magnam beatae modi commodi sed reiciendis
+        temporibus ipsa porro, neque quis ipsum corporis iure corrupti dolorum adipisci debitis dolor? Delectus
+        cupiditate numquam vero eos atque voluptates! Sapiente a illo, provident ad reiciendis aliquid nulla ea rem
+        minima accusamus animi.</p>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+        width and height of the viewport
+        width and height of the device
+        orientation (is the tablet/phone in landscape or portrait mode?)
+        resolution
+
+
+
+        @media not|only mediatype and (expressions) {
+        CSS-Code;
+          }
+
+
+          @media only screen and (min-width: 576px) {
+        // apply the styles here from this minimum width of 
+         // 576px (medium screen sized devices)
+
+
+         What Does Media Query Mean? A media query is an HTML/CSS functionality that allows the content of a Web page to adapt to the type of media that the page is being rendered in, such as a computer screen or that of a phone or tablet.
+
+
+
+
+         A Media query has 4 different parts:
+
+          At-rule (@media) - Media query starts with the @media ruleset itself.
+          Logical operator (not, only, and) - Media query support logical operators like other programming languages like and, not, or (comma) and only.
+          Media type (screen, printer, etc) - It defines the type of media we are targeting like print, screen, speech or all.
+          Media-feature (width, max-width, height, etc) - Media feature target match features  like width, height, aspect-ratio, orientation, etc.
+          }
+
+          Only: 1
+
+          only screen: The only keyword is used to prevent older browsers that do not support media queries with media features from applying the specified styles.
+
+          Note: The operator only is optional operator modern browser don't need it.
+
+
+
+
+
+
+
+
+
+
+
+             all: Matches all devices
+             print: Matches documents that are viewed in a print preview or any media that breaks the content up into pages intended to print.
+             screen: Matches devices with a screen
+             speech: Matches devices that read the content audibly, such as a screenreader. This replaces the now deprecated aural type since Media Queries Level 4.
+     -->
+</body>
+
+</html>

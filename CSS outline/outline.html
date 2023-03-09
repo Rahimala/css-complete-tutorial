@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS outline Property</title>
+
+    <style>
+        .outline p {
+            background-color: rgb(66, 55, 55);
+            color: #fff;
+            width: 220px;
+            padding: 20px;
+        }
+/* border insite in border */
+        .outline p {
+            /* border: 5px dotted; border insite in border */
+
+            /* outline: 5px solid tomato; outline border */
+            outline-style: solid;
+            outline-width: 5px;
+            outline-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="outline">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
+
+<!-- outline-style property are:
+
+solid: creates a solid outline
+dotted: creates a dotted outline
+dashed: creates a dashed outline
+double: creates a double outline
+groove: creates a 3D groove outline
+ridge: creates a 3D ridge outline
+inset: creates a 3D inset outline
+outset: creates a 3D outset outline
+none: no outline is displayed
+hidden: the same as none, but the outline is still accessible to screen readers -->
+
+
+<!-- selector {
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 2px;
+}
+ -->
+
+ <!-- The CSS outline property is used to add a border around an element that is outside of the element's box. Unlike the border property, which is within the element's box and takes up space, the outline does not take up any space and is used to enhance the element's visibility without affecting the layout of the page. The outline property can be used to set the color, style, and width of the outline. It also accepts the values invert which use the color of the text as the outline and auto which automatically adjust the outline to the color of the element. -->

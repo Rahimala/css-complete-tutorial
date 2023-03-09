@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .color {
+            background-color: rgb(83, 58, 54);
+            height: 220px;
+            width: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .clo-1 {
+            /* color property with a named color value  */
+            /* CSS supports named colors as values for the 
+            "color" property. Some of the named
+             color values in CSS are:
+
+             red, green,blue,yellow,purple,purple,orange,pink, */
+            color: white;
+        }
+
+        .clo-2 {
+            /* color property with a hexadecimal value
+            In CSS, you can use a hexadecimal value to set the color 
+            of an element using the "color" property. 
+            A hexadecimal value starts with a # symbol and is followed by 6 hexadecimal characters (0-9, A-F).
+
+             color: #0000FF;
+            */
+            color: #ff0000;
+        }
+
+        .clo-3 {
+            /*  the color property with a RGB value: 
+            In CSS, you can use an RGB value to set the color of an element using 
+            the "color" property. An RGB value is specified using the rgb() 
+            function and provides values for the amount of red, green, 
+            and blue to use in the color.
+            color: rgb(0, 0, 255);
+            RGB value rgb(0, 0, 255) specifies 0% red, 0% green, and 100% blue, which results in a blue color. 
+            */
+            color: rgb(142, 191, 66);
+
+        }
+
+        .clo-4 {
+            /* 
+             the color property with a HSL value
+
+            hsl(hue, saturation, lightness), 
+            where hue is an angle in degrees (0-360) 
+            representing the hue of the color, 
+            saturation is a percentage (0-100%) representing the saturation of the color, 
+            and lightness is a percentage (0-100%) representing the lightness
+            
+            */
+            color: hsl(110, 90%, 50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color clo-1">color named color value.</div>
+
+    <div class="color clo-2">color hexadecimal value</div>
+
+    <div class="color clo-3"> the color RGB value:.</div>
+
+    <div class="color clo-4">the color HSL value:</div>
+</body>
+
+</html>

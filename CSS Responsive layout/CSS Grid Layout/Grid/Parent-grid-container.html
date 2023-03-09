@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Container</title>
+
+    <!-- link of stylesheets -->
+    <style>
+        body {
+            background-color: #282931;
+            color: #ee7305;
+            text-align: center;
+            font-family: "roboto";
+        }
+
+        .grid-container {
+            display: grid;
+            /* display:inline-grid; */
+
+            /* grid with three columns, with 
+            the first column having a width of 200px, 
+            the second column having a width of 100px, 
+            and the third column having a width of 300px */
+
+            /* grid-template-columns:200px 100px 300px; */
+
+
+            /*  fr unit to specify the size of a column as a fraction of the available space */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+
+            /* grid-template-columns:repeat(auto-fill, 250px 200px 100px 150px); */
+
+            grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
+
+            grid-gap: 10px;
+            background-color: #ee7305;
+            padding: 10px;
+            border-radius: 3px;
+        }
+
+        .grid-container>div {
+            background-color: #282931;
+            text-align: center;
+            font-size: 60px;
+            border-radius: 3px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grid Container</h1>
+
+    <p>A Grid Container consists of grid items arranged in columns and rows</p>
+
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+    <p>Direct child elements(s) of the grid container automatically becomes grid items.</p>
+</body>
+
+</html>
+
+<!-- grid: none | grid-template-rows / grid-template-columns | grid-template-areas | grid-template-rows / [grid-auto-flow] grid-auto-columns | [grid-auto-flow] grid-auto-rows / grid-template-columns | initial | inherit;
+
+
+A grid container is an element that has the [display property] set to[ grid or inline-grid]. It is the parent element of the grid and defines the structure of the grid
+You can then place elements inside the grid container using the [grid-column and grid-row] properties:.
+
+Grid Container
+Create a grid container by setting the display property with a value of grid or inline-grid. All direct children of grid containers become grid items.
+ -->
+
+<!-- 
+
+    CSS Grid is a two-dimensional layout system for the web. It allows you to create a grid of rows and columns, and then place elements onto the grid within specific rows and columns. CSS Grid is a powerful tool for building complex and responsive layouts, and it can be used in combination with other CSS techniques such as Flexbox.
+
+
+    CSS এ display: inline-grid; হুবহু display:grid এর মতোই কাজ করে , পার্থক্য হচ্ছে display:grid এর অধীনে <div> block গুলো screen এর সাথে তাদের size automatically adjust করে নেয়, কিন্তু display: inline-grid screen এর সাথে adjust করেনা।অর্থাৎ fixed ই থাকে। চলুন নিচের উদাহরণে দেখা যাক:
+
+
+        The value of grid-template-columns is a space-separated list of values that define the track size of the columns in the grid. These values can be lengths (e.g. 20px, 10em), percentages (e.g. 10%, 25%), or the auto keyword.
+
+
+
+
+        The grid-template-columns property takes a sequence of values that define the size of the columns in the grid. The values can be specified in various ways, including:
+
+auto: This value specifies that the column size should be determined by the content of the cells in the column.
+keyword auto, which means that the column will take up as much space as is available.
+
+কীওয়ার্ড অটো, যার মানে কলামটি যতটা স্থান পাবে ততটুকু জায়গা নেবে
+
+
+
+%: The size of the column can be specified as a percentage of the total width of the grid.
+
+fr: The fr unit represents a fraction of the available space in the grid. For example, if you specify 2fr, that column will take up twice as much space as a column with 1fr.
+
+fr ইউনিট গ্রিডে উপলব্ধ স্থানের একটি ভগ্নাংশ উপস্থাপন করে। উদাহরণস্বরূপ, আপনি যদি 2fr নির্দিষ্ট করেন, তাহলে সেই কলামটি 1fr সহ একটি কলামের চেয়ে দ্বিগুণ জায়গা নেবে
+
+px: The size of the column can also be specified in pixels.
+
+ -->

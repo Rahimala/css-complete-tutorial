@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        /* object-fit: fill | contain | cover | scale-down | none | initial | inherit; */
+        img.tree {
+            width: 200px;
+            height: 400px;
+            /* object-fit: fill; */
+            /* object-fit: cover; */
+            /* object-fit: contain; */
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Object-fit property example</h2>
+    <h3>Original image:</h3>
+    <img src="../img/ducks.jpg" alt="Tree" width="300"
+        height="200">
+    <h3>Fill value:</h3>
+    <img class="tree" src="../img/ducks.jpg" alt="Tree"
+        width="300" height="200">
+</body>
+
+</html>
+
+<!-- The object-fit property in CSS is used to control how an object (such as an image) should be fitted within the containing box. It can be used to specify how an image should be scaled and positioned within a <img> element, or within a background-image property.
+
+The object-fit property can accept the following values:
+
+fill: The image is scaled to fill the entire containing box, regardless of its aspect ratio. This can result in the image being stretched or distorted.
+contain: The image is scaled to fit within the containing box, while preserving its aspect ratio. This can result in empty space around the image.
+cover: The image is scaled to cover the entire containing box, while preserving its aspect ratio. This can result in some parts of the image being cut off.
+none: The image is not scaled, and its original size is used.
+scale-down: The image is scaled down to fit the containing box, if the original size of the image is larger than the containing box.
+Here's an example of how to use the object-fit property on an image:
+
+css
+Copy code
+img {
+    object-fit: cover;
+}
+In this example, the image will be scaled to cover the entire containing box, while preserving its aspect ratio.
+
+
+
+
+ -->

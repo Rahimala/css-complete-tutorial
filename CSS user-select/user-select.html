@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-select</title>
+
+    <style>
+        .unselectable {
+            -webkit-user-select: none;
+            /* Safari */
+            -ms-user-select: none;
+            /* IE 10+ */
+            user-select: none;
+        }
+
+        .all {
+            -webkit-user-select: all;
+            -ms-user-select: all;
+            user-select: all;
+        }
+    </style>
+</head>
+
+<body>
+    <p>You should be able to select this text.</p>
+    <p class="unselectable">Hey, you can't select this text!</p>
+    <p class="all">Clicking once will select all of this text.</p>
+
+</body>
+
+</html>
+
+<!-- 
+user-select = 
+  auto     |
+  text     |
+  none     |
+  contain  |
+  all
+  
+  
+
+  ChatGPT
+The CSS user-select property is used to control whether or not the user can select text on a web page. It can be set to one of several values:
+
+none: The user is not able to select any text on the page.
+text: The user can select text on the page.
+all: The user can select all content on the page, including form elements and text.
+auto: The user can select text, but not form elements.
+Example:
+
+p {
+  user-select: none;
+}
+In this example, the user will not be able to select text within the <p> element.
+
+Note: The user-select property is not supported in some older browsers.
+ -->

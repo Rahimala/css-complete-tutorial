@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:first-child pseudo-class</title>
+
+
+    <!-- CSS Style Sheet -->
+
+    <style>
+        span:first-child {
+            color: lime;
+            background-color: black;
+            padding: 5px;
+            border: 2px solid;
+        }
+
+        p:first-child{
+            color: tomato;
+            background-color: aliceblue;
+            padding: 5px;
+            font-size: large;
+            border: 2px solid;
+            width: 400px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>:first-<span>Hi How to work</span> child pseudo-class</p>
+        <p>This text is selected.</p>
+    </div>
+
+    <div>
+        <h2>THis text isn't selected: it's not a `p`.</h2>
+        <p>This text isn't selected:</p>
+    </div>
+
+
+    <!-- The CSS :first-child pseudo-class selects the element if it is the first child among other elements. -->
+</body>
+
+</html>

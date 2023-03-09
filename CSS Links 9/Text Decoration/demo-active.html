@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS ACTIVE</title>
+
+    <style>
+        .joinBtn {
+            width: 10em;
+            height: 5ex;
+            background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* .joinBtn {
+            box-shadow: 2px 2px 5px #fc894d;
+        } */
+
+        .joinBtn:active {
+            box-shadow: 2px 2px 5px #fc894d;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Would you like to subscribe to our channel?</p>
+    <button class="joinBtn">Subscribe</button>
+</body>
+
+</html>

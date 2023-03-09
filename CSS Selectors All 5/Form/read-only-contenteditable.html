@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        p:-moz-read-only {
+            background: #8ebf42;
+        }
+
+        p:read-only {
+            background: #8ebf42;
+        }
+
+        p[contenteditable="true"] {
+            color: #777777;
+        }
+    </style>
+
+    <!-- true (or the empty string), indicating that the element should be editable;
+    false, indicating that the element should not be editable -->
+</head>
+
+<body>
+    <h2>:read-only selector example</h2>
+    <p>Example of a normal paragraph.</p>
+    <p contenteditable="true">Example of a contenteditable paragraph! Just click and edit!</p>
+</body>
+
+</html>

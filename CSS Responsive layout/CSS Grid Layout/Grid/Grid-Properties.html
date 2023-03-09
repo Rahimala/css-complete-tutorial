@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Properties / Parent (Grid Container)</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!--                               -----------------------   Grid Properties / Parent (Grid Container)---------------------------------------
+
+
+    1 / grid-template-columns :One: 1fr 2fr 1fr 3fr / Two: auto auto auto auto / Three: 200px 100px / four: 100% 100% / five: 10em 50em / six: max-content max-content;
+
+    the grid-template-columns property specifies the number (and the widths) of columns in a grid layout. The values are a space separated list:
+    গ্রিড-টেমপ্লেট-কলাম বৈশিষ্ট্য একটি গ্রিড বিন্যাসে কলামের সংখ্যা (এবং প্রস্থ) নির্দিষ্ট করে। মান একটি স্থান বিভক্ত তালিকা
+    -------------------------------------------------------------------------------------------------------------------------------------------
+
+    2 / grid-template-rows ::One: 1fr 2fr 1fr 3fr / Two: auto auto auto auto / Three: 200px 100px / four: 100% 100% / five: 10em 50em / six: max-content max-content;
+
+      repeat function to specify that a particular pattern of row sizes 
+
+      grid-template-rows: repeat(3, 50px 100px);
+
+      grid-template-rows: 50px 100px 150px;
+
+      grid-template-rows: 50px 100px 50px 100px 50px 100px;
+
+      You can also use the auto keyword to size rows based on the content that they contain.
+      grid-template-rows: 50px auto 100px;
+
+      This will create a grid with three rows, with the first row having a size of 50 pixels, the second row being sized automatically based on the content it contains, and the third row having a size of 100 pixels
+
+
+
+    The grid-template-rows property is used in CSS to define the number of rows in a grid layout, and the size of those rows. It is used along with the grid-template-columns property to specify the grid layout
+
+    গ্রিড-টেমপ্লেট-সারি বৈশিষ্ট্যটি একটি গ্রিড বিন্যাসে সারির সংখ্যা এবং সেই সারির আকার নির্ধারণ করতে CSS-এ ব্যবহৃত হয়। গ্রিড লেআউট নির্দিষ্ট করতে এটি গ্রিড-টেমপ্লেট-কলাম বৈশিষ্ট্যের সাথে ব্যবহার করা হয়
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    3 / grid-template-areas : List of names of areas. First, name areas via selector
+
+    The grid-template-areas property in CSS is used to define a grid layout using named grid areas. It is used in conjunction with the grid-area property, which assigns a name to a grid item.
+
+   Here's an example of how grid-template-areas can be used
+
+.grid {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+}
+
+.item-1 {
+  grid-area: header;
+}
+
+.item-2 {
+  grid-area: sidebar;
+}
+
+.item-3 {
+  grid-area: main;
+}
+
+.item-4 {
+  grid-area: footer;
+}
+
+
+1 / 2
+
+The grid-template-areas property in CSS is used to define a grid layout using named grid areas. It is used in conjunction with the grid-area property, which assigns a name to a grid item.
+
+Here's an example of how grid-template-areas can be used:
+
+Copy code
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+}
+
+.item-1 {
+  grid-area: header;
+}
+
+.item-2 {
+  grid-area: sidebar;
+}
+
+.item-3 {
+  grid-area: main;
+}
+
+.item-4 {
+  grid-area: footer;
+}
+This will create a grid with four named areas: header, sidebar, main, and footer. The grid-template-areas property defines the layout of these areas using a series of strings, with each string representing a row in the grid. In this example, the header area spans all three columns of the first row, the sidebar area occupies the first column of the second row, and the main area occupies the last two columns of the second row. The footer area spans all three columns of the third row.
+
+এটি চারটি নামযুক্ত এলাকা সহ একটি গ্রিড তৈরি করবে: হেডার, সাইডবার, প্রধান এবং ফুটার। গ্রিড-টেমপ্লেট-এরিয়াস প্রপার্টি স্ট্রিংগুলির একটি সিরিজ ব্যবহার করে এই অঞ্চলগুলির বিন্যাস সংজ্ঞায়িত করে, প্রতিটি স্ট্রিং গ্রিডে একটি সারি উপস্থাপন করে। এই উদাহরণে, হেডার এলাকাটি প্রথম সারির তিনটি কলামকে বিস্তৃত করে, সাইডবার এলাকাটি দ্বিতীয় সারির প্রথম কলাম দখল করে এবং প্রধান এলাকাটি দ্বিতীয় সারির শেষ দুটি কলাম দখল করে। পাদচরণ এলাকাটি তৃতীয় সারির তিনটি কলামকে বিস্তৃত করে
+
+
+The grid-area property is then used to assign each of the grid items to a particular named area. In this example, item-1 is assigned to the header area, item-2 is assigned to the sidebar area, etc.
+
+
+
+he grid-template-areas property is used in CSS to specify a grid layout using named grid areas. It is used in conjunction with the grid-template-rows and grid-template-columns properties, which define the number of rows and columns in the grid, and the grid-area property, which assigns a named grid area to a grid item.
+
+Here's an example of how grid-template-areas can be used:
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 100px 100px;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: main;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+    4 / Shorthand for grid-template-rows, grid-template-columns, and grid-template-areas
+
+    1 / grid-column-gap
+
+    2 / grid-row-gap
+
+    3 / grid-gap
+
+    4 / justify-items
+
+    5 / align-items
+
+    6 / justify-content
+
+    7 / align-content
+
+
+    ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    --------------------------------------------------------- Children (Grid Items) ------------------------------------------------------------------------
+
+    1 / grid-column-start
+
+    2 / grid-column-end
+
+    3 / grid-row-start
+
+    4 / grid-row-end
+
+    5 / grid-column
+
+    6 / grid-row
+
+    7 / grid-area
+
+    8 / justify-self
+
+    9 / align-self
+
+    10 / 
+ -->

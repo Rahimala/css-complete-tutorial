@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+       input[type="text"]::placeholder {
+         color: blue;
+         font-weight: bold;
+       }
+
+
+
+      input::-moz-selection {
+        color: #1c87c9;
+        background-color: #eee;
+      }
+      input::selection {
+        color: #1c87c9;
+        background-color: #eee;
+      }
+      textarea::-moz-selection {
+        color: white;
+        background-color: #8ebf42;
+      }
+      textarea::selection {
+        color: white;
+        background-color: #8ebf42;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>::selection selector example</h2>
+    <p>Input element</p>
+    <form>
+    <input type="text" placeholder="Enter your name">
+
+      <input type="text" value="Select this input text" />
+      <p>Textarea element</p>
+      <textarea rows="5" cols="25">Select this textarea text</textarea>
+    </form>
+  </body>
+</html>

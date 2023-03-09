@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <link rel="stylesheet" href="BackgroundImageWithRGBA.css">
+  <title>Transparent Color</title>
+
+  <style>
+    body {
+      background: url("./image/beautiful-wallpaper-download-13.jpg");
+    }
+
+    div {
+      background-color: gray;
+      border: 10px solid maroon;
+      padding: 40px;
+      margin: 40px;
+    }
+
+    .second {
+      /* স্বচ্ছ */
+      background-color: transparent;
+      /* opacity: 0.2; */
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>First</h1>
+  </div>
+  <div class="second">
+    <h1>Second</h1>
+  </div>
+</body>
+
+</html>
+
+<!--  CSS, the "transparent" value is used to set the opacity of an element to 0, making it completely transparent. This means that any content or background behind the element will be visible.-->
+
+<!-- In the above code First header is taken without transparent so the background portion is not visible, but the Second header is taken with transparent, so the background image portion is completely visible (transparent gives 100% transparency). -->

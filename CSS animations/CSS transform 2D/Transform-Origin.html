@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Origin</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(207, 124, 15);
+            transform: rotate(45deg);
+            margin: 5em;
+
+            transform-origin:10% 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+
+<!-- The CSS transform-origin property defines the origin point of a 2D transformation. It specifies the position of the origin of the transformation, relative to the element being transformed. The default value is 50% 50%, which represents the center of the element. The values can be set in lengths (px, em, etc.) or percentages, and the origin point can be set for both the X and Y axes independently. By changing the transform origin, you can control the point around which the element will be scaled, rotated, skewed, etc. -->
+
+<!--  By default, the transform origin is set to the center of the element, but it can be changed to any other point, either in pixels, percentages, or key terms like "top", "left", "bottom", "right". The value of the transform-origin property is specified using two values, separated by a space, to define the horizontal and vertical position of the origin. -->

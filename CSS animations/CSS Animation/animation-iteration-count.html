@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The animation-iteration-count CSS property sets the number of times an animation should run. It can have the following values:
+
+a number (e.g. 2): The animation will run the specified number of times.
+infinite: The animation will run indefinitely until it is stopped by some other means (e.g. hovering over an element, etc.).
+Here's an example of using the animation-iteration-count property in CSS: -->
+
+<!-- the animation named move will run indefinitely (animation-iteration-count: infinite;) until stopped by some other means. -->
+    <title>animation-iteration-count</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: move 2s ease-in-out;
+
+            /*  Animations Loop css */
+            /* infinite – Repeats the animation for an infinite time which means the animation keeps on running foreve */
+            animation-iteration-count:1;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(200px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
+
+<!-- A positive number (e.g. 3): The animation will play the specified number of times.
+infinite: The animation will repeat indefinitely.
+A fractional number (e.g. 0.5): The animation will play partially, and will stop at the halfway poi -->

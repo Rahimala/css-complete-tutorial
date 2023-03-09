@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caret-color</title>
+
+    <style>
+        input {
+            /* color: red; */
+            caret-color: blue;
+        }
+
+        textarea {
+            caret-color: transparent;
+        }
+
+        p[contenteditable=true] {
+            background: black;
+            color: yellowgreen;
+            caret-color:tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Input</p>
+    <input />
+    <p>Textarea</p>
+    <textarea rows="5"></textarea>
+    <p>Text with contenteditable attribute</p>
+    <p contenteditable="true">Click this text and edit it</p>
+</body>
+
+</html>
+
+<!-- The CSS caret-color property is used to specify the color of the text input cursor (also known as the "caret") in an input field or a textarea. The value can be set to any valid CSS color value, such as a named color, a hex code, or an RGB value.
+
+Example:
+
+Copy code
+input {
+  caret-color: blue;
+
+  caret-color: auto | color;
+} -->

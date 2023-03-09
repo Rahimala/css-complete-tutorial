@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document required</title>
+
+    <style>
+         .example {
+            margin: 40px auto;
+            max-width: 400px;
+         }
+
+         label, select, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 1.5em;
+         }
+         input,select,button {
+            padding: .4em 1em;
+         }
+         input {
+            border: 1px solid #666666;
+         }
+
+         input:optional,select:optional{
+            background-color: #eeeeee;
+            color: #666666;
+         }
+         input:required,textarea:required{
+            border-bottom: 3px solid #1c87c9;
+         }
+    </style>
+</head>
+
+<body>
+    <div class="example">
+        <form action="#">
+            <label>
+                <input type="name" required>name*
+            </label>
+            <label>
+                <input type="email" required>Email*
+            </label>
+            <label>
+                <input type="phone"> phone(option)
+            </label>
+            <label>
+                <input type="url">Address(option)
+            </label>
+        </form>
+    </div>
+</body>
+
+<!-- he :required selector selects those elements that are required. The :required selector selects form elements that have the required attribute set. Before submission forms can indicate which fields should have valid data which allows the user to avoid the unnecessary wait -->
+
+</html>

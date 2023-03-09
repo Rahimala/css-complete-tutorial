@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>color borders for different sides</title>
+
+    <style>
+        #div2 {
+            background-color: powderblue;
+            border-width: 4px;
+            padding: 5px;
+
+            /*  Example of different color borders for different sides */
+
+            border-left-style: solid;
+            border-left-color: red;
+
+            border-top-style: dashed;
+            border-top-color: rgb(40, 228, 165);
+
+            border-right-style: groove;
+            border-right-color: brown;
+
+            border-bottom-style: dotted;
+            border-bottom-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <p><strong>Note: </strong>Style attribute is mandatory and must come before color attribute. rgb(255,255,0) is the
+        rgb value for yellow color</p>
+    <div id="div2">
+        <ul>
+            <li>The left color border is set using border-left-color.</li>
+            <li>The top color border is set using border-top-color.</li>
+            <li>The right color border is set using border-right-color.</li>
+            <li>The bottom color border is set using border-bottom-color.</li>
+        </ul>
+    </div>
+</body>
+
+</html>

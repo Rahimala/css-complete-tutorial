@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ***********************
+    The animation-fill-mode CSS property sets how a CSS animation applies styles to its target before and after it is executing. It can have the following values:
+
+none (default): No styles are applied.
+forwards: The animation retains the computed values set by the last keyframe (the end state).
+backwards: The animation applies the values from the first keyframe (the start state) to the target before the animation is executed.
+both: The animation retains the computed values from the last keyframe and applies values from the first keyframe to the target before the animation starts.
+-->
+    <title>animation-fill-mode</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: move 2s;
+            
+            animation-fill-mode:forwards;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(200px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+</body>
+
+</html>
+
+<!-- In this example, we have a div with the class .box which is given a red background color. The animation property specifies the animation named move which will last 2 seconds and use an ease-in-out timing function. The animation-fill-mode property is set to forwards, which means that the computed values set by the last keyframe of the animation will be retained by the target after the animation has finished.
+
+The @keyframes rule defines the animation, specifying that the target should move from its original position (translateX(0)) to a position 200 pixels to the right (translateX(200px)). -->

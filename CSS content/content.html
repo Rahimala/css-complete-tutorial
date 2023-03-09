@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>content</title>
+
+    <style>
+        p::after {
+            content: "⛅.. ";
+        }
+
+        p::before {
+            content: "⛅.. ";
+        }
+
+        .country::before {
+
+            /* content:open-quote; */
+
+            /* content:url(images/content.jpg); */
+
+            content: attr(href);
+
+        }
+
+
+
+        a:before {
+            counter-increment: mycounter;
+            content: "Link " counter(mycounter) ": ";
+        }
+
+        a[title]:hover:after {
+            content: attr(href);
+            padding: 4px 8px;
+            color: white;
+            background: green;
+            position: absolute;
+            left: 20px;
+            top: 100%;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 20px;
+            box-shadow: 0px 0px 4px #222;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Content property example</h2>
+    <p>my name is Rahim</p>
+    <p class="country">I live in Bangladesh</p>
+    <p><a href="/home.html" title="">link name</a></p>
+</body>
+
+</html>
+
+<!-- content: normal | none | counter | attr | string | open-quote | close-quote | no-open-quote | no-close-quote | url | initial | inherit; -->
+
+<!-- The content property in CSS is used to insert content before or after an element. It is commonly used with the :before and :after pseudo-elements to add content to an element without modifying the HTML. -->
+
+
+
+<!-- /* Keywords that cannot be combined with other values */
+content: normal;
+content: none;
+
+/* <image> values */
+content: url("http://www.example.com/test.png");
+content: linear-gradient(#e66465, #9198e5);
+content: image-set("image1x.png" 1x, "image2x.png" 2x);
+
+/* alt text for generated content, added in the Level 3 specification */
+content: url("http://www.example.com/test.png") / "This is the alt text";
+
+/* <string> value */
+content: "prefix";
+
+/* list of content values */
+content: "prefix" url("http://www.example.com/test.png");
+content: "prefix" url("http://www.example.com/test.png") "suffix" / "This is some alt text";
+
+/* <counter> values, optionally with <list-style-type> */
+content: counter(chapter_counter);
+content: counter(chapter_counter, upper-roman);
+content: counters(section_counter, ".");
+content: counters(section_counter, ".", decimal-leading-zero);
+
+/* attr() value linked to the HTML attribute value */
+content: attr(value string);
+
+/* Language- and position-dependent keywords */
+content: open-quote;
+content: close-quote;
+content: no-open-quote;
+content: no-close-quote;
+
+/* Except for normal and none, several values can be used simultaneously */
+content: open-quote counter(chapter_counter);
+
+/* Global values */
+content: inherit;
+content: initial;
+content: revert;
+content: revert-layer;
+content: unset;
+ -->

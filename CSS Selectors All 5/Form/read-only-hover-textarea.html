@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>read-only selector with HTML <textarea> tag on hover</title>
+
+        <style>
+            textarea:read-only{
+                background-color:whitesmoke;
+            }
+            textarea:read-only:hover {
+                cursor: not-allowed;
+                background: tomato;
+            }
+        </style>
+</head>
+<body>
+    <textarea cols="40" rows="5" readonly>Here is an example of :read-only selector on hover.</textarea>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>test-project</title>
+
+    <style>
+        .box {
+            width: 300px;
+            height: 50px;
+            padding: 20px;
+            margin: 20px;
+            border-width: 20px;
+
+
+
+            border-radius: 0px;
+            border-style: solid;
+            background-color: #F4F4F4;
+        }
+
+        .box:hover {
+            border-width: 30px;
+            border-color: #29AAE1;
+            background-color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: 24px;
+            font-style: italic;
+            font-weight: lighter;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: table;
+
+        }
+
+        main {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .wrapper {
+            width: auto;
+            display: inline-block;
+            border: 1px dashed;
+            cursor: pointer;
+        }
+
+        .content {
+  display:table;
+  width:100%;
+  height:100%;
+  border:1px dashed black;
+}
+
+h1 {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+* { /* antimated trantitions for all elements */
+  -webkit-transition:0.10s; /* For Safari 3.1 to 6.0 */
+  transition:0.10s; 
+}
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="box">
+                <div class="content">
+                    <h1>Content Goes Here</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

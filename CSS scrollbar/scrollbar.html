@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- The CSS "scrollbar" property is a shorthand property that sets the properties of an element's scrollbar. It can set the width, style, color and other aspects of the scrollbar. However, it is not a standard property and may not be supported by all browsers. Instead, it's recommended to use other CSS properties, such as "overflow" and "::webkit-scrollbar", to style the scrollbar. -->
+    <title>Title of the document</title>
+    <style>
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            height: 100%;
+            background: #eee;
+            overflow: scroll;
+            width: 85%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 3em;
+            font: 100%/1.4 lora, serif;
+            border: 1px solid #666;
+        }
+
+        p {
+            margin: 0 0 1.5em;
+        }
+
+        body::-webkit-scrollbar {
+            width: 1em;
+        }
+
+        body::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #666;
+            outline: 1px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Scrollbar property example</h2>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make
+        a typ e specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+    </div>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book.
+    </div>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book.
+    </div>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+    </div>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book.
+    </div>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book.
+    </div>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+    </div>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book.
+    </div>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+    </div>
+    <div>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+    </div>
+</body>
+
+</html>
+
+<!-- ::-webkit-scrollbar
+::-webkit-scrollbar-button
+::-webkit-scrollbar-track
+::-webkit-scrollbar-track-piece
+::-webkit-scrollbar-thumb
+::-webkit-scrollbar-corner
+::-webkit-resizer -->
+
+<!-- These are pseudo-elements in CSS used to style various parts of a scrollbar in webkit-based browsers (e.g. Google Chrome, Safari).
+
+::-webkit-scrollbar: styles the entire scrollbar.
+::-webkit-scrollbar-button: styles the buttons (increment/decrement) of the scrollbar.
+::-webkit-scrollbar-track: styles the track (background) of the scrollbar.
+::-webkit-scrollbar-track-piece: styles a portion of the track.
+::-webkit-scrollbar-thumb: styles the draggable thumb of the scrollbar.
+::-webkit-scrollbar-corner: styles the corner of the scrollbar where two scrollbars meet.
+::-webkit-resizer: styles the resizing handle in the bottom-right corner of a textarea element.
+Note: These pseudo-elements are only supported in webkit-based browsers and might not work in other browsers. It's recommended to use feature detection or progressive enhancement to ensure compatibility. -->

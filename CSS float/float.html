@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMELINE</title>
+
+    <style>
+        .container {
+            border: 1px solid lightgray;
+            width: 300px;
+        }
+        .container img {
+            margin: 5px;
+            max-width: 120px;
+            height: auto;
+            float: left;
+        }
+
+        .second-container {
+            border: 1px solid lightblue;
+            width: 300px;
+        }
+        .second-container img {
+            margin: 5px;
+            max-width: 120px;
+            height: auto;
+            float: right;
+        }
+
+        .text::after {
+            clear: both;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://www.tutorialbrain.com/wp-content/uploads/2019/03/css-float-left-right.jpg"
+            alt="tutorialbrain">
+        <p class="text">In CSS, the float property is used to specify whether an element should float to the left,
+            right, or not at all. When an element is floated, it is taken out of the normal flow of the document and
+            shifted to the left or right as far as possible.</p>
+        <p>multiple columns or to place an image alongside text</p>
+    </div>
+
+    <div class="second-container">
+        <img src="https://www.tutorialbrain.com/wp-content/uploads/2019/03/css-float-left-right.jpg"
+            alt="tutorialbrain">
+        <p>In CSS, the float property is used to specify whether an element should float to the left, right, or not at
+            all. When an element is floated, it is taken out of the normal flow of the document and shifted to the left
+            or right as far as possible. </p>
+        <p>multiple columns or to place an image alongside text.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3: Rounded Corners </title>
+</head>
+
+<body>
+    <p>Pet Sounds featured a number of unconventional
+        instruments such as bicycle bells, buzzing
+        organs, harpsichords, flutes, Electro-Theremin,
+        dog whistles, trains, Hawaiian-sounding string
+        instruments, Coca-Cola cans and barking dogs.</p>
+
+    <h1 class="shadow">Pet Sounds featured a number of unconventional
+        instruments such as bicycle bells, buzzing
+        organs, harpsichords, flutes, Electro-Theremin,
+        dog whistles, trains, Hawaiian-sounding string
+        instruments, Coca-Cola cans and barking dogs.</h1>
+</body>
+
+</html>
+
+<style>
+    p {
+        border: 5px solid #cccccc;
+        padding: 20px;
+        width: 275px;
+        text-align: center;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px
+    }
+
+    h1.shadow {
+        border: 3px solid red;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        padding: 4px;
+        text-align: center;
+        width: 300px;
+        font-size: 150%;
+    }
+</style>
+
+<!-- You can also use a shorthand 
+of these four properties (in 
+clockwise order: top, right, 
+bottom, left). For example:
+border-radius: 5px, 10px, 
+5px, 10px; -->

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@font-face</title>
+
+    <style>
+        @font-face {
+            font-family: "DroidSerif";
+            src: url("https://rawgit.com/google/fonts/master/ufl/ubuntu/Ubuntu-Bold.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "DroidSerif";
+            src: url("https://rawgit.com/google/fonts/master/ufl/ubuntumono/UbuntuMono-Italic.ttf") format("truetype");
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'MyWebFont';
+            src: url('webfont.eot');
+            /* IE9 Compat Modes */
+            src: url('webfont.eot?#iefix') format('embedded-opentype'),
+                /* IE6-IE8 */
+                url('webfont.woff2') format('woff2'),
+                /* Super Modern Browsers */
+                url('webfont.woff') format('woff'),
+                /* Pretty Modern Browsers */
+                url('webfont.ttf') format('truetype'),
+                /* Safari, Android, iOS */
+                url('webfont.svg#svgFontName') format('svg');
+            /* Legacy iOS */
+        }
+
+        section {
+            padding: 2em;
+            font-family: "DroidSerif";
+        }
+
+        section .two {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p class="one">one UbuntuBold (normal font-face)</p>
+        <p class="two">two UbuntuMonoItalic (bold font-face)</p>
+    </section>
+</body>
+
+</html>
+
+<!-- The CSS @font-face rule is used to import custom fonts into a web page. It allows web designers to use custom fonts that are not available on the user's computer, instead of being limited to the fonts that are pre-installed on the user's computer.
+
+The syntax for using the @font-face rule is as follows:
+
+@font-face {
+font-family: 'CustomFontName';
+src: url('font-file.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+You can then apply the custom font to elements on the web page by setting the font-family property to the custom font's name.
+
+p {
+font-family: 'CustomFontName', Arial, sans-serif;
+}
+
+It is important to note that in order to ensure compatibility across different web browsers, you will need to have the font file in different format such as 'truetype', 'woff' and 'woff2' and provide the url of those font files in the @font-face rule.
+
+Also, in order to use the custom font on your website, you will need to have the rights to use the font and it is important to check the license agreement before using it.
+
+
+
+ -->

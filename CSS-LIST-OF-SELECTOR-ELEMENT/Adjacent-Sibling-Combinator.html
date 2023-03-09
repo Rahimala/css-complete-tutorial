@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div+h1 {
+            border: 2px solid black;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Example of Adjacent Sibling Selector</h2>
+    <h1>This is heading 1 before div tag starts</h1>
+    <div>
+        <h1> This is heading 1 inside div tag</h1>
+    </div>
+    <h1>This is heading 1 after div tag ends</h1>
+    <h1>This is heading 1 after div tag ends</h1>
+    <p>Adjacent Sibling Selector styles very first sibling. It is denoted with plus(+) symbol. </p>
+</body>
+
+</html>
+
+<!-- The Adjacent Sibling Combinator is represented by the "+" symbol, it selects elements that are immediately preceded by a specified element.
+It only selects the element that immediately follows the specified element on the same level of the DOM tree. -->

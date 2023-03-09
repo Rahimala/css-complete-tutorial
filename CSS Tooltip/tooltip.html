@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a {
+        position: relative;
+      }
+      a span {
+        display: none;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+      }
+      a:hover span {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Hover over me
+      <span>This is a tooltip</span>
+    </a>
+  </body>
+</html>
+
+/* In this example, the text link is given a position: relative property, and the tooltip text is given a position: absolute property. The display property for the tooltip text is set to none so that it is hidden by default.
+
+When the user hovers over the text link, the :hover pseudo-class is activated, and the display property for the tooltip text is set to inline-block, making it visible. The top and left properties are used to position the tooltip text relative to the text link, and the transform property is used to center it horizontally.
+
+You can customize the appearance of the tooltip by changing the background-color, color, padding, and border-radius properties, as well as its position using the top and left properties. */

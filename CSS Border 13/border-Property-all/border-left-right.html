@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-left</title>
+
+    <style>
+        #a {
+            border-left: 2px solid;
+            border-left-color: red;
+            border-left-width: 20px;
+            padding: 20px;
+        }
+
+        #b {
+            border-right: 2px solid wheat;
+            /* border-right-color: red; */
+            border-right-width: 20px;
+            padding: 25px;
+
+        }
+
+        #c {
+            border-top: 2px solid;
+            border-top-color: rgb(33, 20, 20);
+            border-top-width: 20px;
+            padding: 25px;
+
+        }
+
+        #b {
+            width: 300px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #666;
+            border-left-color: #1c87c9;
+
+        }
+
+        div {
+            border-left-style: dotted;
+            border-left-width: 20px;
+            border-left-color: blue;
+            border-top-left-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a">left</div>
+
+    <div id="b">right</div>
+
+    <div id="c">top</div>
+
+    <div id="d">max</div>
+
+    <div>border-left-style</div>
+
+
+</body>
+
+</html>
+
+<!-- 
+    border-left-width: medium | thin | thick | length | initial | inherit;
+
+    border-left is a CSS property that is used to set the styling for the left border of an element. It allows you to set the width, style, and color of the border all in one property. The values for the property can be given as one, two, or three values.
+
+When given one value, it sets the width of the left border.
+When given two values, the first value sets the width and the second value sets the style.
+When given three values, the first value sets the width, the second value sets the style, and the third value sets the color.
+
+You can also use the longhand properties border-left-width, border-left-style, and border-left-color to set these values individually.
+
+Examples:
+border-left: solid 2px red; /* width, style, color /
+border-left: dotted 1em; / width, style /
+border-left: 5px; / width */
+ -->

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animations Shorthand</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <style>
+            div {
+                background-image: linear-gradient(to top right, lawngreen, dodgerblue);
+                position: relative;
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                /* animation: shorthand-val 4s ease-in 2s 3 reverse; */
+
+                animation: rotate 5s linear 1s infinite normal;
+                -webkit-animation: shorthand-val 4s ease-in 2s 3 reverse;
+            }
+
+            /*animation:animation-name, animation-duration, animation-timing-function, 
+               animation-delay, animation-iteration-count, animation-direction */
+
+            @-webkit-keyframes shorthand-val {
+                from {
+                    top: 200px;
+                }
+
+                to {
+                    top: 0px;
+                }
+            }
+
+            @keyframes shorthand-val {
+                from {
+                    top: 200px;
+                }
+
+                to {
+                    top: 0px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2><a href="https://animate.style/">Go to Animate.css.</a></h2>
+        <div> </div>
+    </body>
+
+    </html>
+</body>
+
+</html>
+
+<!-- 
+    The CSS animation shorthand property is a shorthand property that combines six of the animation properties into a single line of code. These six properties are:
+
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count
+animation-direction
+The shorthand property is written as follows:
+
+css
+Copy code
+animation: [animation-name] [animation-duration] [animation-timing-function] [animation-delay] [animation-iteration-count] [animation-direction];
+For example:
+
+css
+Copy code
+.element {
+  animation: rotate 5s linear 1s infinite normal;
+}
+In this example, the animation will have the following values:
+
+animation-name: "rotate"
+animation-duration: 5 seconds
+animation-timing-function: "linear"
+animation-delay: 1 second
+animation-iteration-count: "infinite"
+animation-direction: "normal"
+-->

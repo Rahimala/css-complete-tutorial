@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        .a {
+            fill: #ccc;
+        }
+
+        .b {
+            fill: #8ebf42;
+        }
+
+        .c {
+            fill: #1c87c9;
+            pointer-events: none;
+        }
+
+        .d {
+            stroke: #666;
+            fill: none;
+            pointer-events: all;
+        }
+
+        .box:hover {
+            stroke: #000;
+            stroke-width: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Pointer-events property example</h2>
+    <svg width="300" height="300">
+        <g transform="translate(20, 20)">
+            <path class="a box" d="M 0 0 L 100 0 L 100 100 L 0 100 z" />
+            <path class="b box" d="M 50 50 l 100 0 l 0 100 l -100 0 z" />
+            <path class="c box" d="M 100 100 l 100 0 l 0 100 l -100 0 z" />
+            <path class="d box" d="M 150 150 l 100 0 l 0 100 l -100 0 z" />
+        </g>
+    </svg>
+</body>
+
+</html>

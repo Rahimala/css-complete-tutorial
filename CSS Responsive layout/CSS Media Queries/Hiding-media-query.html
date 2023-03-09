@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS - media query hide and show</title>
+    <style>
+        div.container {
+            background-color: rosybrown;
+            width: 200px;
+            height: 100px;
+            padding: 15px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        @media screen and (max-width: 700px) {
+            div.large{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 300px){
+            div.medium{
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 200px){
+            div.small{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container large">This will be visible if the max screen width is 700px or wider.</div>
+
+    <div class="container medium">This will be visible if the max screen width is 300px or wider.</div>
+
+    <div class="container small">This will be visible if the max screen width is 200px or wider.</div>
+</body>
+
+</html>

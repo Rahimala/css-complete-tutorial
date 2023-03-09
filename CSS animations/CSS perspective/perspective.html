@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perspective</title>
+
+    <style>
+        .container {
+            perspective:500px;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            transform: rotateY(45deg);
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* In this example, the .container class is given a perspective value of 500px, which sets the observer's position 500 pixels away from the elements in 3D space. The height and width properties are used to set the size of the container, and the display and justify-content properties are used to center the element within the container.
+
+The .element class is transformed using the rotateY function, which rotates the element around the y-axis by 45 degrees, giving it a 3D appearance. The width and height properties are used to set the size of the element, and the background-color property is used to set its color. */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
+
+<!-- In CSS, the perspective property defines the position of the observer in 3D space and affects the way elements are transformed in 3D space. It sets the perspective from which an element is viewed, giving it the illusion of depth and making 3D transforms appear more realistic.
+
+The perspective property can be applied to any container element, such as a div, and its value is specified in pixels. The greater the value of perspective, the more pronounced the 3D effect will be. A value of 0 disables the 3D effect entirely.
+
+Here's an example of using the perspective property: -->

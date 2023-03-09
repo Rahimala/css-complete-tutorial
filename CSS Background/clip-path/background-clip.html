@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background-clip</title>
+
+
+  <style>
+    body {
+      margin: 5rem;
+    }
+
+    .css-ref-container {
+      padding: 5rem;
+      background-color: #fff;
+      border: 1px solid orange;
+    }
+
+    .example-lay>div {
+      margin: 1rem auto 0 auto;
+      padding: 2rem 1rem;
+      background: url(https://stackdiary.com/wp-content/uploads/2022/09/Stable-Diffusion-Resources.png) no-repeat;
+      background-size: cover;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #overlay_boxc {
+      background-clip: padding-box;
+      -webkit-background-clip:padding-box;
+      /* color: rgba(0, 0, 0, 0); */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="css-ref-container">
+    <section class="example-lay">
+      <div id="overlay_boxc">background-clip image overlay</div>
+    </section>
+  </div>
+</body>
+
+</html>
+
+
+<!-- 
+
+    background-clip is a CSS property that specifies the area of an element's background that is visible. It can be used to display a background image or color partially, or to display the background image or color only within a certain shape.
+
+The background-clip property takes one of the following values:
+
+border-box: The background is painted within (clipped to) the border box. This is the default value.
+padding-box: The background is painted within (clipped to) the padding box.
+content-box: The background is painted within (clipped to) the content box.
+Here's an example of how to use background-clip:
+
+
+.box {
+  background-color: red;
+  background-clip: content-box;
+  width: 200px;
+  height: 200px;
+  border: 10px solid blue;
+  padding: 20px;
+}
+
+
+In CSS, the background-clip property specifies the area within which the background of an element is painted. It determines the painting area of the background, which is the area within the border edge or the outline of the element. The background-clip property can have the following values:
+
+border-box: The background is painted within the border box. This is the default value.
+padding-box: The background is painted within the padding box.
+content-box: The background is painted within the content box.
+The background-clip property is often used in combination with the background-origin property, which specifies the area within which the background is positioned.
+
+Here's an example of how to use the background-clip and background-origin properties:
+
+
+.element {
+  background-color: red;
+  background-clip: padding-box;
+  background-origin: content-box;
+}
+
+ -->
